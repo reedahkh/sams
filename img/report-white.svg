@@ -1,0 +1,38 @@
+<svg width="90" height="150" viewBox="0 0 90 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>report-white</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-18008 -3639)">
+<g id="report-white">
+<g id="Vector">
+<use xlink:href="#path0_fill" transform="translate(18024.1 3697.88)" fill="#FFFFFF"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(18024.1 3714)" fill="#FFFFFF"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path2_fill" transform="translate(18024.5 3730.12)" fill="#FFFFFF"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path3_fill" transform="translate(18024.5 3745.88)" fill="#FFFFFF"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path4_fill" transform="translate(18056.8 3763.5)" fill="#FFFFFF"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path5_fill" transform="translate(18008 3639)" fill="#FFFFFF"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path6_fill" transform="translate(18053 3651.38)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 3 6L 19.125 6C 20.625 6 22.125 4.5 22.125 3C 22.125 1.5 20.625 2.86102e-06 19.125 2.86102e-06L 3 2.86102e-06C 1.5 2.86102e-06 -2.86102e-06 1.5 -2.86102e-06 3C -2.86102e-06 4.5 1.125 6 3 6Z"/>
+<path id="path1_fill" d="M 3 6L 37.5 6C 39 6 40.5 4.5 40.5 3C 40.5 1.5 39 0 37.5 0L 3 0C 1.5 0 -2.86102e-06 1.5 -2.86102e-06 3C -2.86102e-06 4.5 1.125 6 3 6Z"/>
+<path id="path2_fill" d="M 52.125 -2.86102e-06L 3 -2.86102e-06C 1.5 -2.86102e-06 -1.43051e-06 1.5 -1.43051e-06 3C -1.43051e-06 4.5 1.5 6 3 6L 52.125 6C 53.625 6 55.125 4.5 55.125 3C 55.125 1.125 53.625 -2.86102e-06 52.125 -2.86102e-06Z"/>
+<path id="path3_fill" d="M 52.125 0L 3 0C 1.5 0 -1.43051e-06 1.5 -1.43051e-06 3C -1.43051e-06 4.5 1.5 5.99999 3 5.99999L 52.125 5.99999C 53.625 5.99999 55.125 4.5 55.125 3C 55.125 1.5 53.625 0 52.125 0Z"/>
+<path id="path4_fill" d="M 19.125 2.86102e-06L 3 2.86102e-06C 1.5 2.86102e-06 0 1.5 0 3C 0 4.5 1.5 6 3 6L 19.125 6C 20.625 6 22.125 4.5 22.125 3C 22.125 1.5 21 2.86102e-06 19.125 2.86102e-06Z"/>
+<path id="path5_fill" d="M 82.125 135C 82.125 138.75 79.125 142.125 75 142.125L 15 142.125C 11.25 142.125 7.875 139.125 7.875 135L 7.875 15C 7.875 11.25 10.875 7.875 15 7.875L 43.875 7.875L 43.875 0L 15 0C 6.75 0 0 6.75 0 15L 0 135C 0 143.25 6.75 150 15 150L 75 150C 83.25 150 90 143.25 90 135L 90 67.875L 82.125 67.875L 82.125 135Z"/>
+<path id="path6_fill" d="M 22.5 45C 34.875 45 45 34.875 45 22.5C 45 10.125 34.875 7.15256e-07 22.5 7.15256e-07C 10.125 7.15256e-07 0 10.125 0 22.5C 0 34.875 10.125 45 22.5 45ZM 19.875 7.5C 19.875 6.375 20.625 5.625 21.75 5.625C 22.875 5.625 23.625 6.375 23.625 7.5L 23.625 22.125L 33.75 17.625C 34.875 17.25 36 17.625 36.375 18.75C 36.75 19.875 36.375 21 35.25 21.375L 22.125 27C 21.75 27 21.75 27 21.375 27C 21 27 20.625 27 20.25 26.625C 19.875 26.25 19.5 25.5 19.5 25.125L 19.5 7.5L 19.875 7.5Z"/>
+</defs>
+</svg>

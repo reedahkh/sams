@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Karma:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700,800,900');
+.header-col-1-row{
+	padding: 0 0 0 10%;
+}
+.header-col-1-row-col{
+	padding: 3% 3%;
+}
+.fa{
+	color: #0b2d40;
+	font-size: 16px;
+	margin-top: 5px;
+}
+.search{
+	background-color: #0b2d40;
+	/*padding: 4%;*/
+	/*padding-top: 3%;*/
+}
+.navbar{
+	background-color: #0b2d40;
+	margin-top: -0.2%;
+}
+.auth-btn{
+
+}
+
+.navbar-toggler{
+	/*color: white;*/
+	/*background-color: #fff;*/
+}
+
+
+
+
+
+
+
+@media(min-width:576px) and (max-width:768px){
+	.header-1{
+		display: none;
+	}
+}
+
+@media(min-width:410px)and (max-width:575px){
+	.header-1{
+		display: none;
+	}
+}
+
+@media (max-width:400px){
+	.header-1{
+		display: none;
+	}
+}
