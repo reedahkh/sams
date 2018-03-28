@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Karma:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700,800,900');
+
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Fira Sans','Karma', sans-serif , serif !important;
+	background-color: #BDBDBD !important;
+	/* -webkit-font-smoothing: antialiased;
+	  	-moz-osx-font-smoothing: grayscale; */
+}
+.header {
+	position: absolute;
+	width: 19%;
+	z-index: 3;
+	height: 73px;
+	background-color: #fff;
+	border-bottom: 3px solid #fff;
+}
+.hide{
+	overflow: hidden;
+}
+/* logo in header(mobile version) and side-nav (tablet & desktop) */
+.logo {
+	height: 73px;
+	padding: 10px;
+	font-weight: 700;
+}
+.bg-linear{
+	background: linear-gradient(180.02deg, #103148 -6.2%, rgba(74, 88, 153, 0.99) 130.46%) !important;
+}
+.f-fira{
+	font-family: 'Fira Sans', sans-serif;
+}
+.mt-4e{
+	margin-top: 4em;
+}
+.mt-5e{
+	margin-top: 5em;
+}
+.width-60{
+	width:60px;
+}
+.h-37{
+	height: 37px;
+}
+.h-73{
+	height: 73px;
+}
+.plr-5{
+	padding: 0 7px !important;
+}
+.blue-color{
+	color:#4368A5;
+}
+.add_btn{
+	background: #4368A5;
+	height: ;
+	color: #fff;
+	box-shadow: 0px 1px 4px rgba(55, 126, 182, 0.25);
+}
+.add_btn:hover{
+	color: #fff;
+}
+.dropdown-toggle::after{
+	color:#4368A5;
+}
+
+.mlr-0{
+	margin-right: 0px;
+	margin-left: 0px;
+	padding-right: 0;
+	padding-left: 0;
+}
+.search-input{
+	width:80px;
+	display: inline;
+}
+
+.list-group-item{
+	background: transparent;
+	font-size: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-left: 2em;
+	padding-left: 80px;
+}
+img.dashboard{
+	padding-top: 10px 15px !important;
+}
+.bd-b-blue{
+	border-bottom: 3px solid #2B95C9;
+}
+.bd-b-green{
+	border-bottom: 3px solid #219653;
+}
+.bd-b-red{
+	border-bottom:3px solid #EB5757;
+}
+.bd-b-dark{
+	border-bottom: 3px solid #0B2D40;
+}
+.header .logo {
+	color: #0b2d40;
+}
+.side-nav .logo {
+	background-color: #0b2d40;
+	color: #fff;
+}
+.header .logo {
+	float: left;
+}
+.header .logo {
+	height: 44px;
+	z-index: 1;
+	padding: 10px;
+	font-weight: 700;
+	color: #233245;
+}
+.logo  i {
+	font-size: 22px;
+}
+.logo span {
+	margin-left: 5px;
+	text-transform: uppercase;
+}
+.nav-trigger {
+	position: relative;
+	float: right;
+	width: 20px;
+	height: 44px;
+	right: 30px;
+	display: block;	
+}
+.nav-trigger span, .nav-trigger span:before, span:after {
+	width: 20px;
+	height: 2px;
+	background-color: #35475e;
+	position: absolute;
+}
+.nav-trigger span {
+	top: 50%;
+}
+.nav-trigger span:before, .nav-trigger span:after {
+	content: '';
+}
+.nav-trigger span:before {
+	top: -6px;
+}
+.nav-trigger span:after {
+	top: 6px;
+}
+/* side navigation styles */
+
+/* set element styles to fit tablet and higher(desktop) */
+@media(max-width: 1200px){
+	.employee_card{
+		margin-bottom: 20px;
+	}
+	.search-input{
+		float: left;
+		width: 150px;
+		margin:0 10px;
+	}
+}
+@media( max-width: 768px){
+	.list-group-item{
+		margin-left: 1em;
+		padding-left: 30px;
+	}
+	#startDate, #endDate, #workTime, #employee{
+		margin:5px 0;
+	}
+	img.dashboard{
+		padding-left: 2em;
+	}
+	.employee_card{
+		margin-bottom: 20px;
+	}
+
+}
+
+
+@media(max-width: 575px){
+	#startDate, #endDate, #workTime, #employee{
+		margin:5px 0;
+	}
+	.search-input{
+		float: left;
+		width: 215px;
+		margin:0 10px;
+	}
+	.employee_card{
+		margin-bottom: 20px;
+	}
+	.list-group-item{
+		margin-left: 1em;
+		padding-left: 60px;
+	}
+}
+
+
+
+
+

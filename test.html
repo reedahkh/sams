@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+    <style>
+      /* .card-container{
+        perspective: 700px;
+      }
+      .flip{
+        margin:50px;
+        width:300px;
+        border:1px solid #ddd;
+        transition: all 0.6s ease;
+        transform-style: preserve-3d;
+      }
+      .flip:hover{
+        transform: rotateY(180deg);
+      } */
+      #side-2{
+        display: none;
+      }
+    </style>
+
+   
+  </head>
+  <body>
+    <select class="selectpicker">
+      <option value= "relish" data-content="<span><img src='Assets/img/flag.png' style='padding-right:10px;'>Nigeria</span>"></option>
+      <option value= "fr" data-content="<span><img src='Assets/img/flag.png'>france</span>"></option>
+      <option value= "can" data-content="<span><img src='Assets/img/flag.png'>can</span>"></option>
+      <option value= "res" data-content="<span><img src='Assets/img/flag.png'>russia</span>"></option>
+
+    </select>
+
+  <!--   <h3>flipping card</h3>
+    <div class="card-container">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="img/image 3.1.png" alt="Card image cap">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3>flipping card 2</h3>
+    <div class="col-md-4 col-sm-4 col-xs-12 bd-white banner_bg-color">
+          <div class="pb-3 text-white text-center banner_bg-color features_card flip" id="side-1">
+            <div class="icon">
+              <img src="Assets/img/calendar.png"  class="img-fluid" alt="">
+              <img class="card-img-top" src="img/image 3.1.png" alt="Card image cap">
+              
+            </div>
+
+            <div class="card_details px-2">
+              <p class="title f-36">Scheduling </p>
+              <p class="f-14 f-karma feature_details">Explore the history of the classic Lorem Ipsum passage and generate your own text using</p>
+            </div>
+            
+          </div>
+          <div class="pb-3 text-white text-center banner_bg-color features_card flip" id="side-2">
+              <div class="icon">
+                <img src="Assets/img/calendar.png"  class="img-fluid" alt="">
+                <img class="card-img-top" src="img/image 3.1.png" alt="Card image cap">
+                
+              </div>
+
+              <div class="card_details px-2">
+                <p class="title f-36">Scheduling side 2 </p>
+                <p class="f-14 f-karma feature_details">Explore the history of the classic Lorem Ipsum passage and generate your own text using</p>
+              </div>
+              
+            </div>
+          
+          
+        </div>
+
+        <div class="col-md-4 col-sm-4 col-xs-12 bd-white banner_bg-color">
+            
+            
+            
+          </div>
+    
+ 
+   -->
+
+    <!-- jQuery -->
+   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" ></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+    <script>
+      $("#side-1").mouseover(function(e) {
+        console.log(e)
+        // $(this).hide();
+        $("#side-1").hide();
+        //$("#side-2").show();
+        
+      })
+      $("#side-2").mouseleave(function(e) {
+        //$("#side-2").hide();
+        $("#side-1").show();
+
+      })
+    </script>
+  </body>
+</html>

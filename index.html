@@ -15,6 +15,8 @@
 	<link rel="stylesheet" href="Assets/plugins/BigVideo/bower_components/BigVideo/css/bigvideo.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+	<!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
 
 	<!-- External CSS -->
 	<link rel="stylesheet" type="text/css" href="css/header.css">
@@ -90,70 +92,51 @@
 	<!-- start main -->
 	<div class="main">
 		<div class="wrapper">
-			<div class="big_banner" id="video_bg">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-12 col-sm-12 col-md-12 mt-5 px-5">
-						<h2 class="text-white f-48">Intuitive time and<br>attendance tracking app</h2>
-						<p class="text-white f-18" style="opacity:0.5">..effectively monitor absense and productivity on-the-go</p>
-						<div class="form_card-small">
-							<div class="form-group login_form p-60 mt-5">
-								<form action="">
+			<div id="video_bg" class=""></div>
+			<div class="big_banner"  >
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-12 col-sm-12 col-md-12 mt-5 px-5 " id="video-text">
+							<h2 class=" f-48">Intuitive time and<br>attendance tracking app</h2>
+							<p class="text-white f-18" style="opacity:0.5">..effectively monitor absense and productivity on-the-go</p>
+							<div class="form_card-small">
+								<div class="form-group login_form p-60 mt-5">
+									<form action="">
 										<div class="form-group mt-4">
-												<label for="Country">Country Code</label>
-												<!-- <br> -->
-												<!-- <label for="country"></label> -->
-												<!-- <select name="country" id="country_code">
-													
-													<option value="mypodcast" data-class="fr">France</option>
-													  <option value="myvideo" data-class="can">Canada</option>
-													  <option value="myrss" data-class="nig">Nigeria</option>
-												</select> -->
-												<!-- <div class="btn-group">
-													<button class="btn btn-white bg-white btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-													  
-													</button>
-													<div class="dropdown-menu">
-													  ...
-													</div>
-												  </div> -->
-		
-												  <select class="form-control bg-light border-0 form-control-lg" id="sel1" >
-													<option>France</option>
-													<option>Canada</option>
-													<option>Nigeria</option>
-													<option>Kenya</option>
-												  </select>
-											</div>
-									<label for="phone-number">Phone Number</label>
-									<br>
-									<input type="text" name="phone-number" class="form-control h-47 green-caret" required="">
-									<div class="form-group mt-4">
-										<div class="checkbox">
-											<label class="control control-checkbox green_color">
-									            I agree to terms and conditions 
-									            <input type="checkbox" checked="checked" />
-									            <div class="control_indicator"></div>
-									        </label>
+											<label for="Country" class="mt-4">Country Code</label>
+											<select class="form-control bg-light border-0 form-control-lg mb-4" id="sel1" >
+												<option>France</option>
+												<option>Canada</option>
+												<option>Nigeria</option>
+												<option>Kenya</option>
+											</select>
+											<label for="phone-number">Phone Number</label>
+											<br>
+											<input type="text" name="phone-number" class="form-control h-47 green-caret" required="">
 											
 										</div>
-									</div>
 										
-										<div class="buttons text-center mt-5">
-											<button class="btn login_btn_2">Sign Up</button>
+										<div class="form-group mt-4">
+											<div class="checkbox">
+												<label class="control control-checkbox green_color">
+										            I agree to terms and conditions 
+										            <input type="checkbox" checked="checked" />
+										            <div class="control_indicator"></div>
+										        </label>
+												
+											</div>
 										</div>
-										
-								</form>
+											<div class="buttons text-center mt-5">
+												<button class="btn login_btn_2">Sign Up</button>
+											</div>
+									</form>
+								</div>
 							</div>
 						</div>
+						
 					</div>
-					
-				</div>
-
-				
-
-			</div>			
-		</div>
+				</div>			
+			</div>
 		</div>
 		<!-- <div class="d-flex justify-content-end"> -->
 			<div class="play">
@@ -177,7 +160,7 @@
 									to manage workforce productivity
 									effectively.
 								</p>
-								<p class="grey_text text-muted mt-4" style="font-size:15px">
+								<p class="grey_text text-muted mt-4 pl-2 pr-1" style="font-size:15px">
 									SAMS solution is designed to automatically store your
 									data in the cloud and syncs across your devices,making 
 									it easy to manage workforce on-the-go
@@ -217,14 +200,14 @@
 							</div>
 							<div class="app_store-buttons mt-112">
 								<div class="row">
-									<div class="col-12 col-sm-6 col-md-6">
-										<a href="https://play.google.com/store/apps/details?id=com.stetis.sams&hl=en" class="btn btn_playStore">
-											<img src="Assets/img/app-icon-android.png" class="img-fluid" alt="">
+									<div class="col-6 col-sm-6 col-md-6">
+										<a href="https://play.google.com/store/apps/details?id=com.stetis.sams&hl=en" class="btn btn_playStore_1">
+											<img src="img/playstore.png" class="img-fluid" alt="">
 										</a>
 									</div>
-									<div class="col-12 col-sm-6 col-md-6">
-										<a href="https://itunes.apple.com/us/app/sams-ng/id1352987922?ls=1&mt=8" class="btn btn_playStore">
-											<img src="Assets/img/app-icon-ios.png" class="img-fluid" alt="">
+									<div class="col-6 col-sm-6 col-md-6">
+										<a href="https://itunes.apple.com/us/app/sams-ng/id1352987922?ls=1&mt=8" class="btn btn_playStore_2">
+											<img src="img/appstore.png" class="img-fluid" alt="">
 										</a>
 									</div>
 								</div>
@@ -251,11 +234,11 @@
 				</div>
 
 				
-				<div class="row" style="height:300px">
+				<div class="row" >
 					<div class=" col-md-4 col-sm-6 col-xs-12 bd-white banner_bg-color card_container">
 						<div class="pb-3 text-white text-center banner_bg-color side_1">
 							<div class="icon">
-								<img src="img/time-white.svg" height="150%" width="150%" class="img-fluid" alt="">
+								<img src="img/time-white.svg" class="width-50" alt="">
 							</div>
 							<div class="card_details ">
 								<p class="f-30">Time and Attendance</p>
@@ -264,7 +247,7 @@
 						<!-- side 2 -->
 						<div class=" side_2">
 							<div class="icon">
-								<img src="img/time.svg"  class="img-fluid" alt="">
+								<img src="img/time.svg"  class="width-50" alt="">
 							</div>
 
 							<div class="card_details px-2">
@@ -276,10 +259,10 @@
 						
 					</div>
 					<!-- end col-4 -->
-					<div class="col-md-4 col-sm-6 col-xs-12 bd-white banner_bg-color card_container">
+					<div class="col-xs-12 col-sm-6 col-md-4  bd-white banner_bg-color card_container">
 						<div class="pb-3 text-white text-center banner_bg-color side_1">
-							<div class="icon" style="width:13%">
-								<img src="img/report-white.svg" class="img-fluid" alt="">
+							<div class="icon">
+								<img src="img/report-white.svg" class="width-50" alt="">
 							</div>
 							<div class="card_details px-2">
 								<p class="f-30 title">Real Time Reporting</p>
@@ -288,8 +271,8 @@
 						</div>
 						<!-- side 2 -->
 						<div class="side_2">
-							<div class="icon" style="width:13%">
-								<img src="img/report.svg"  class="img-fluid" alt="">
+							<div class="icon">
+								<img src="img/report.svg" style="width:25%" alt="">
 							</div>
 
 							<div class="card_details px-2">
@@ -304,7 +287,7 @@
 					<div class="col-md-4 col-sm-6 col-xs-12 bd-white banner_bg-color card_container">
 						<div class="pb-3 text-white text-center banner_bg-color side_1">
 							<div class="icon">
-								<img src="img/calender-white.svg"  class="img-fluid" alt="">
+								<img src="img/calender-white.svg"  class="width-50" alt="">
 							</div>
 							<div class="card_details px-2">
 								<p class="title f-30">Scheduling </p>
@@ -314,7 +297,7 @@
 							<!-- side 2 -->
 							<div class="side_2">
 								<div class="icon">
-									<img src="img/calender.svg"  class="img-fluid" alt="">
+									<img src="img/calender.svg"  class="width-50" alt="">
 								</div>
 
 								<div class="card_details px-2">
@@ -329,11 +312,11 @@
 					<!-- end col-4 -->
 				</div>
 
-				<div class="row" style="height:300px">
+				<div class="row">
 					<div class="col-md-4 col-sm-4 col-xs-12 bd-white banner_bg-color card_container">
 						<div class="pb-3 text-white text-center banner_bg-color side_1">
 							<div class="icon">
-								<img src="img/payroll-white.svg" height="500px" class="img-fluid" alt="">
+								<img src="img/payroll-white.svg"  class="width-50" alt="">
 								
 							</div>
 							<div class="card_details px-2">
@@ -343,7 +326,7 @@
 						<!-- side 2 -->
 						<div class="side_2">
 							<div class="icon">
-								<img src="img/payroll.svg"  class="img-fluid" alt="">
+								<img src="img/payroll.svg"  class="width-50" alt="">
 							</div>
 
 							<div class="card_details px-2">
@@ -356,10 +339,10 @@
 						
 					</div>
 					<!-- end col-4 -->
-					<div class="col-md-4 col-sm-4 col-xs-12 bd-white banner_bg-color card_container">
+					<div class="col-md-4  col-sm-4  col-xs-12 bd-white banner_bg-color card_container">
 						<div class="text-white text-center banner_bg-color side_1">
-							<div class="icon"  style="width:27%"> 
-								<img src="img/mobile-white.png"  class="img-fluid" alt="">
+							<div class="icon" > 
+								<img src="img/mobile-white.png" class="width-50" alt="">
 							</div>
 							<div class="card_details px-2">
 								<p class="f-30">Mobile compatibility </p>
@@ -367,8 +350,8 @@
 						</div>
 						<!-- side 2 -->
 						<div class="side_2">
-							<div class="icon"  style="width:26%"> 
-								<img src="img/mobile.png"  class="img-fluid" alt="">
+							<div class="icon" > 
+								<img src="img/mobile-blue.png"  class="width-50" alt="">
 							</div>
 
 							<div class="card_details px-2">
@@ -380,10 +363,10 @@
 						
 					</div>
 					<!-- end col-4 -->
-					<div class="col-md-4 col-sm-4 col-xs-12 bd-white banner_bg-color card_container">
+					<div class="col-xs-12 col-sm-4 col-md-4 bd-white banner_bg-color card_container">
 						<div class="text-white text-center banner_bg-color side_1">
 							<div class="icon">
-								<img src="img/ease-white.svg"  class="img-fluid" alt="">
+								<img src="img/ease-white.svg"  class=" width-50" alt="">
 							</div>
 							<div class="card_details px-2">
 								<p class="f-30">Ease of Use</p>
@@ -392,7 +375,7 @@
 						<!-- side 2 -->
 						<div class="side_2">
 							<div class="icon">
-								<img src="img/ease.svg"  class="img-fluid" alt="">
+								<img src="img/ease.svg"  class="width-50" alt="">
 							</div>
 
 							<div class="card_details px-2">
@@ -568,13 +551,13 @@
 				<div class="col-6 col-md-2 pt-4">
 					<ul>
 						<header class="sams-blue mb-3 font-weight-bold">Links</header>
-						<a href="pricing.html" class="links" style="text-decoration: none;">
+						<a href="general.html" class="links" style="text-decoration: none;">
 							<li class="mb-2">Pricing</li>
 						</a>
-						<a href="faq.html" class="links" style="text-decoration: none;">
+						<a href="general.html" class="links" style="text-decoration: none;">
 							<li class="mb-2">FAQs</li>
 						</a>
-						<a href="#" class="links" style="text-decoration: none;">
+						<a href="general.html" class="links" style="text-decoration: none;">
 							<li class="mb-2">Privacy Policy</li>
 						</a>
 					</ul>
@@ -618,16 +601,33 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-<script src="https://vjs.zencdn.net/4.3/video.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<!-- <script src="https://vjs.zencdn.net/4.3/video.js"></script> -->
 
 <!-- BigVideo -->
-<script src="Assets/plugins/BigVideo/bower_components/BigVideo/lib/bigvideo.js"></script>
+
 <script src="Assets/plugins/video.js/video.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script src="Assets/plugins/BigVideo/bower_components/BigVideo/lib/bigvideo.js"></script>
+<script src="Assets/plugins/BigVideo/bower_components/modernizr/modernizr-2.5.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+
 <script src="js/script.js"></script>
+<script type="text/javascript">
+	$(function() {
+        var BV = new $.BigVideo({container: $('#video_bg')});
 
-</html>
+        BV.init();
+        //BV.getPlayer().pause();
+        if (Modernizr.touch) {
+			    BV.show('img/poster.jpg');
+			} else {
+			    BV.show('video/SAMS_Advert.mp4', {ambient:false}, {autoplay:true});
+			}
+        
 
-
+    });
+</script>
 
 </body>
+
+</html>

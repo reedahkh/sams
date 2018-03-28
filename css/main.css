@@ -275,7 +275,9 @@ iframe{
 		padding: 1%;
 		text-align: center;
 	}
-
+	.details-div{
+		margin-top: 3em;
+	}
 	.hr{
 	    width: 50%;
 	    border: 3px solid #219653;
