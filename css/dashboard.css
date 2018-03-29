@@ -25,6 +25,7 @@ body {
 }
 .bg-linear{
 	background: linear-gradient(180.02deg, #103148 -6.2%, rgba(74, 88, 153, 0.99) 130.46%) !important;
+	height: 700px;
 }
 .f-fira{
 	font-family: 'Fira Sans', sans-serif;
