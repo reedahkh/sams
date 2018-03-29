@@ -1,425 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<!-- meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>SAMS- Employee Dashboard</title>
-
-	<!-- favicon -->
-	<link rel="icon" href="img/logo-fav.png" sizes="16x16" type="image/png">
-	<!-- Bootstrap & Fontawesome CDN -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="Assets/plugins/BigVideo/bower_components/BigVideo/css/bigvideo.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
-	<!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
-
-	<!-- External CSS -->
-	<link rel="stylesheet" type="text/css" href="css/header.css">
-	<link rel="stylesheet" type="text/css" href="css/footer.css">
-	<link rel="stylesheet" type="text/css" href="css/custom.css">
-	<link rel="stylesheet" type="text/css" href="css/dashboard.css">
-</head>
-	<body>
-		<main class="hide">
-			<section>
-				<div class="row">
-					<div class="col-md-3 bg-linear">
-						
-						<header>
-							<div class="logo ">
-								<nav class="navbar navbar-expand-lg bg-transparent">
-									<img src="img/Logo/sams-logo-sams-white-text-side copy.png" width="150px">
-									<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation">
-										<span class="text-white fa fa-bars"></span>
-									</button>
-								</nav>
-								
-							</div>
-						</header>
-						<div class="side-bar  navbar-collapse" id="navbarToggleExternalContent">
-							<ul class=" navbar-nav list-group mt-4e">
-								 <a href="#" class="list-group-item text-white border-0">
-								 	<img src="img/dashboard/file.svg" alt="" class="dashboard pr-3">Dashboard
-								 </a>
-								 <a href="#" class="list-group-item text-white border-0">
-								 	<img src="img/dashboard/vector.svg" alt="" class=" dashboard pr-3">Attendance
-								 </a>
-								 <a href="#" class="list-group-item text-white border-0">
-								 	<img src="img/dashboard/users.svg" alt="" class="dashboard pr-3">Employee
-								 </a>
-								 <a href="#" class="list-group-item text-white border-0">
-								 	<img src="img/dashboard/chart.svg" alt="" class="dashboard pr-3">Punctuality
-								 </a>
-								 <a href="#" class="list-group-item text-white border-0">
-								 	<img src="img/dashboard/analytics.svg" alt="" class="dashboard pr-3">Analytics
-								 </a>
-								 <a href="#" class="list-group-item text-white border-0">
-								 	<img src="img/dashboard/gears.svg" alt="" class="dashboard pr-3">Settings
-								 </a>
-							</ul>
-						</div>
-					</div>
-					<div class="col-md-9 mlr-0">
-						<header>
-							<nav class="navbar navbar-expand-lg bg-white">
-								<a class="navbar-brand blue-color" href="#"><i class="fa fa-long-arrow-left"></i> Employees</a>
-								<button class="navbar-toggler banner_bg-color" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-								<span class="fa fa-bars text-white"></span>
-								</button>
-								<div class="collapse navbar-collapse" id="navbarSupportedContent">
-									<ul class="navbar-nav mr-auto">
-										<li class="nav-item">
-											<a class="btn btn-md add_btn" href="#">Add New Employee </a>
-										</li>
-										
-										
-									</ul>
-									<form class="form-inline my-2 my-lg-0 mr-3">
-										<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-										<li class="nav-item dropdown">
-											<a class="nav-link dropdown-toggle bb_black f-16" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-												Chizoba Egeonu
-											</a>
-											<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-												<a class="dropdown-item" href="#">View Profile</a>
-												<a class="dropdown-item" href="#">Go to Dashboard</a>
-												<div class="dropdown-divider"></div>
-												<a class="dropdown-item" href="#">View Notification</a>
-											</div>
-										</li>
-									</form>
-								</div>
-							</nav>
-						</header>
-						<main>
-							<div class="container-fluid">
-								<div class="row mt-5 px-3">
-									<div class="col-md-4 col-lg-4 col-xl-2">
-										<input type="date" class="form-control" id="startDate" placeholder="start date">
-									</div>
-									<div class="col-md-4 col-lg-4 col-xl-2">
-										<input type="date" class="form-control" id="endDate" placeholder="End date">
-									</div>
-									<div class="col-md-4 col-lg-4 col-xl-2">
-										<select name="" id="location" class=" form-control" data-live-search="true">
-											<option value="">Location</option>
-											<option value="">Lagos</option>
-											<option value="">Abia</option>
-											<option value="">Abuja</option>
-											<option value="">Anambra</option>
-											<option value="">Enugu</option>
-											<option value="">Imo</option>
-											<option value="">Kebbi</option>
-											<option value="">Kano</option>
-											<option value="">Nasarrawa</option>
-											<option value="">Ebonyi</option>
-											<option value="">Kaduna</option>
-										</select>
-									</div>
-									<div class="col-md-4 col-lg-4 col-xl-2">
-										<select name="" id="employee" class="form-control">
-											<option value="">Employee</option>
-											<option value="">Junior Staff</option>
-											<option value="">Supervisor</option>
-											<option value="">Manager</option>
-											
-										</select>
-									</div>
-									<div class="col-md-4 col-lg-4 col-xl-2">
-										<select name="" id="workTime" class="form-control">
-											<option value="">Work Time</option>
-											<option value="">7am </option>
-											<option value="">8 am</option>
-											<option value="">9 am</option>
-											<option value="">10 am</option>
-										</select>
-									</div>
-									<div class="col-md-4 col-lg-4 col-xl-2 plr-5">
-										<input type="search" class="form-control search-input light_grey" placeholder="Search">
-										<button class="btn bg-white width-60 h-37">
-											<i class="fa fa-tachometer"></i></button>
-									</div>
-								</div>
-							</div>
-							<div class="container-fluid">
-								<div class="row mt-5 pr-4 px-3">
-									<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
-										<div class="card bd-b-blue employee_card">
-											<div class="card-header">
-												
-											</div>
-											<div class="card-body f-fira">
-												<p class="name f-16 text-center">Dike Thelma Kelechi</p>
-												<p class="title f-14 light_grey text-center">LEAD DESIGNER</p>
-											</div>
-											<div class="card-footer bg-white border-0">
-												<div class="row">
-													<div class="col-md-6">
-														<p class="light_grey f-14 text-center">
-															Attendance
-														</p>
-														<p class="f-24">95%</p>
-														<p class="f-14 light_grey">157 Days</p>
-													</div>
-													<div class="col-md-6">
-														<p class="light_grey text-center f-14">Punctuality</p>
-														<p class="light_grey text-center">
-
-														</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
-										<div class="card bd-b-green employee_card">
-											<div class="card-header"></div>
-											<div class="card-body f-fira">
-												<p class="name f-16 text-center">Friends Forever Ibeh</p>
-												<p class="title f-14 light_grey text-center">WEB DEVELOPER</p>
-											</div>
-											<div class="card-footer bg-white border-0">
-												<div class="row">
-													<div class="col-md-6">
-														<p class="light_grey f-14 text-center">
-															Attendance
-														</p>
-														<p  class="f-24">95%</p>
-														<p class="f-14 light_grey">157 Days</p>
-													</div>
-													<div class="col-md-6">
-														<p class="light_grey text-center f-14">Punctuality</p>
-														<p class="light_grey text-center">
-
-														</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
-										<div class="card bd-b-red employee_card">
-											<div class="card-header"></div>
-											<div class="card-body f-fira">
-												<p class="name f-16 text-center">Okoye Chidi Barth</p>
-												<p class="title f-14 light_grey text-center">WEB DEVELOPER</p>
-											</div>
-											<div class="card-footer bg-white border-0">
-												<div class="row">
-													<div class="col-md-6">
-														<p class="light_grey f-14 text-center">
-															Attendance
-														</p>
-														<p  class="f-24">95%</p>
-														<p class="f-14 light_grey">157 Days</p>
-													</div>
-													<div class="col-md-6">
-														<p class="light_grey text-center f-14">Punctuality</p>
-														<p class="light_grey text-center">
-
-														</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
-										<div class="card bd-b-dark employee_card">
-											<div class="card-header"></div>
-											<div class="card-body f-fira">
-												<p class="name f-16 text-center">Felicity Frida Abu</p>
-												<p class="title f-14 light_grey text-center">CONTENT DEVELOPER</p>
-											</div>
-											<div class="card-footer bg-white border-0">
-												<div class="row">
-													<div class="col-md-6">
-														<p class="light_grey f-14 text-center">
-															Attendance
-														</p>
-														<p  class="f-24">95%</p>
-														<p class="f-14 light_grey">157 Days</p>
-													</div>
-													<div class="col-md-6">
-														<p class="light_grey text-center f-14">Punctuality</p>
-														<p class="light_grey text-center">
-
-														</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="container-fluid">
-								<div class="row mt-5e pr-4 px-3">
-									<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
-										<div class="card bd-b-blue employee_card">
-											<div class="card-header">
-												
-											</div>
-											<div class="card-body f-fira">
-												<p class="name f-16 text-center">Dike Thelma Kelechi</p>
-												<p class="title f-14 light_grey text-center">LEAD DESIGNER</p>
-											</div>
-											<div class="card-footer bg-white border-0">
-												<div class="row">
-													<div class="col-md-6">
-														<p class="light_grey f-14 text-center">
-															Attendance
-														</p>
-														<p class="f-24">95%</p>
-														<p class="f-14 light_grey">157 Days</p>
-													</div>
-													<div class="col-md-6">
-														<p class="light_grey text-center f-14">Punctuality</p>
-														<p class="light_grey text-center">
-
-														</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class=" col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
-										<div class="card bd-b-green employee_card">
-											<div class="card-header"></div>
-											<div class="card-body f-fira">
-												<p class="name f-16 text-center">Friends Forever Ibeh</p>
-												<p class="title f-14 light_grey text-center">WEB DEVELOPER</p>
-											</div>
-											<div class="card-footer bg-white border-0">
-												<div class="row">
-													<div class="col-md-6">
-														<p class="light_grey f-14 text-center">
-															Attendance
-														</p>
-														<p  class="f-24">95%</p>
-														<p class="f-14 light_grey">157 Days</p>
-													</div>
-													<div class="col-md-6">
-														<p class="light_grey text-center f-14">Punctuality</p>
-														<p class="light_grey text-center">
-
-														</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
-										<div class="card bd-b-red employee_card">
-											<div class="card-header"></div>
-											<div class="card-body f-fira">
-												<p class="name f-16 text-center">Okoye Chidi Barth</p>
-												<p class="title f-14 light_grey text-center">WEB DEVELOPER</p>
-											</div>
-											<div class="card-footer bg-white border-0">
-												<div class="row">
-													<div class="col-md-6">
-														<p class="light_grey f-14 text-center">
-															Attendance
-														</p>
-														<p  class="f-24">95%</p>
-														<p class="f-14 light_grey">157 Days</p>
-													</div>
-													<div class="col-md-6">
-														<p class="light_grey text-center f-14">Punctuality</p>
-														<p class="light_grey text-center">
-
-														</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 col-xl-3">
-										<div class="card bd-b-dark employee_card">
-											<div class="card-header"></div>
-											<div class="card-body f-fira">
-												<p class="name f-16 text-center">Felicity Frida Abu</p>
-												<p class="title f-14 light_grey text-center">CONTENT DEVELOPER</p>
-											</div>
-											<div class="card-footer bg-white border-0">
-												<div class="row">
-													<div class="col-md-6">
-														<p class="light_grey f-14 text-center">
-															Attendance
-														</p>
-														<p  class="f-24">95%</p>
-														<p class="f-14 light_grey">157 Days</p>
-													</div>
-													<div class="col-md-6">
-														<p class="light_grey text-center f-14">Punctuality</p>
-														<p class="light_grey text-center">
-
-														</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							
-							<div class="row mt-5">
-								<div class="col-md-12">
-									<div class="pagination pull-right pr-5">
-										<nav aria-label="dashboard employee pages">
-											<ul class="pagination">
-												<li class="page-item bd_blue">
-													<a class="page-link blue_color" href="#" aria-label="Previous">
-														<span aria-hidden="true">&laquo;</span>
-														<span class="sr-only">Previous</span>
-													</a>
-												</li>
-												<li class="page-item bd_blue"><a class="page-link blue_color" href="#">1</a></li>
-												<li class="page-item bd_blue"><a class="page-link blue_color" href="#">2</a></li>
-												<li class="page-item bd_blue"><a class="page-link blue_color" href="#">3</a></li>
-												<li class="page-item bd_blue"><a class="page-link blue_color" href="#">4</a></li>
-												<li class="page-item bd_blue"><a class="page-link blue_color" href="#">5</a></li>
-												<li class="page-item bd_blue"><a class="page-link blue_color" href="#">6</a></li>
-												<li class="page-item bd_blue"><a class="page-link blue_color" href="#">....</a></li>
-												<li class="page-item bd_blue">
-													<a class="page-link blue_color" href="#" aria-label="Next">
-														<span aria-hidden="true">&raquo;</span>
-														<span class="sr-only">Next</span>
-													</a>
-												</li>
-											</ul>
-										</nav>
-									</div>
-								</div>
-							</div>
-						</main>
-					</div>
-				</div>
-			</section>
-		</main>
-
-
-
-
-
-		<!--JS, Popper.js, and jQuery  -->
-		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
-
-		<!-- <script src="js/script.js"></script> -->
-		
-	</body>
-
+    <head>
+        <!-- meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>SAMS- Employee Dashboard</title>
+        <!-- favicon -->
+        <link rel="icon" href="img/logo-fav.png" sizes="16x16" type="image/png">
+        <!-- Bootstrap & Fontawesome CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="Assets/plugins/BigVideo/bower_components/BigVideo/css/bigvideo.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+        <!-- External CSS -->
+        <link rel="stylesheet" type="text/css" href="css/header.css">
+        <link rel="stylesheet" type="text/css" href="css/footer.css">
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
+        <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+    </head>
+    <body>
+        <main>
+            <div class="hide">
+                <div class="row justify-content-start">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-auto bg-linear">
+                        <header>
+                                <div class="logo ">
+                                    <nav class="navbar navbar-expand-lg bg-transparent">
+                                        <img src="img/Logo/sams-logo-sams-white-text-side copy.png" width="150px">
+                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation">
+                                            <span class="text-white fa fa-bars"></span>
+                                        </button>
+                                    </nav>
+                                    
+                                </div>
+                            </header>
+                            <div class=" navbar-collapse" id="navbarToggleExternalContent">
+                                <ul class=" navbar-nav list-group mt-4e">
+                                     <a href="#" class="list-group-item text-white border-0">
+                                        <img src="img/dashboard/file.svg" alt="" class="dashboard pr-3">Dashboard
+                                     </a>
+                                     <a href="#" class="list-group-item text-white border-0">
+                                        <img src="img/dashboard/vector.svg" alt="" class=" dashboard pr-3">Attendance
+                                     </a>
+                                     <a href="#" class="list-group-item text-white border-0">
+                                        <img src="img/dashboard/users.svg" alt="" class="dashboard pr-3">Employee
+                                     </a>
+                                     <a href="#" class="list-group-item text-white border-0">
+                                        <img src="img/dashboard/chart.svg" alt="" class="dashboard pr-3">Punctuality
+                                     </a>
+                                     <a href="#" class="list-group-item text-white border-0">
+                                        <img src="img/dashboard/analytics.svg" alt="" class="dashboard pr-3">Analytics
+                                     </a>
+                                     <a href="#" class="list-group-item text-white border-0">
+                                        <img src="img/dashboard/gears.svg" alt="" class="dashboard pr-3">Settings
+                                     </a>
+                                </ul>
+                            </div>
+                    </div>
+                    <div class="col-lg-9">
+                        <header>
+                            <nav class="navbar navbar-expand-lg bg-white">
+                                <a class="navbar-brand blue-color" href="#"><i class="fa fa-long-arrow-left"></i> Employees</a>
+                                <button class="navbar-toggler banner_bg-color" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="fa fa-bars text-white"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto">
+                                        <li class="nav-item">
+                                            <a class="btn btn-md add_btn" href="#">Add New Employee </a>
+                                        </li>
+                                        
+                                        
+                                    </ul>
+                                    <form class="form-inline my-2 my-lg-0 mr-3">
+                                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle bb_black f-16" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Chizoba Egeonu
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="#">View Profile</a>
+                                                <a class="dropdown-item" href="#">Go to Dashboard</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">View Notification</a>
+                                            </div>
+                                        </li>
+                                    </form>
+                                </div>
+                            </nav>
+                        </header>
+                        <main>
+                           
+                        </main>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+        <!--JS, Popper.js, and jQuery  -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+        <!-- <script src="js/script.js"></script> -->
+    </body>
 </html>
-
-
-

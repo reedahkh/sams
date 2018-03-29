@@ -8,18 +8,12 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Fira Sans','Karma', sans-serif , serif !important;
-	background-color: #BDBDBD !important;
+	background-color: #FAFAFA !important;
 	/* -webkit-font-smoothing: antialiased;
 	  	-moz-osx-font-smoothing: grayscale; */
 }
-.header {
-	position: absolute;
-	width: 19%;
-	z-index: 3;
-	height: 73px;
-	background-color: #fff;
-	border-bottom: 3px solid #fff;
-}
+
+
 .hide{
 	overflow: hidden;
 }
@@ -50,6 +44,9 @@ body {
 .h-73{
 	height: 73px;
 }
+.h-100{
+	height: 100vh !important;
+}
 .plr-5{
 	padding: 0 7px !important;
 }
@@ -71,7 +68,7 @@ body {
 
 .mlr-0{
 	margin-right: 0px;
-	margin-left: 0px;
+	margin-left: -4px;
 	padding-right: 0;
 	padding-left: 0;
 }
@@ -79,14 +76,20 @@ body {
 	width:80px;
 	display: inline;
 }
-
+.col-md-3#side-nav{
+	flex:0 0 20% !important;
+	max-width: 20% !important;
+}
+.col-md-9#main_content{
+	flex: 0 0 80%;
+	max-width: 80%;
+}
 .list-group-item{
 	background: transparent;
 	font-size: 20px;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	margin-left: 2em;
-	padding-left: 80px;
+	padding-left: 50px;
 }
 img.dashboard{
 	padding-top: 10px 15px !important;
@@ -127,6 +130,11 @@ img.dashboard{
 	margin-left: 5px;
 	text-transform: uppercase;
 }
+.side-navbar{
+	width:257px;
+	border:3px solid #FFF;
+	height: 100%;
+}
 .nav-trigger {
 	position: relative;
 	float: right;
@@ -155,18 +163,28 @@ img.dashboard{
 }
 /* side navigation styles */
 
-/* set element styles to fit tablet and higher(desktop) */
-@media(max-width: 1200px){
+@media( min-width:1210px){
+	.navbar.navbar-expand-lg{
+		width:113%;
+		margin-left: -15px;
+	}
+}
+@media( max-width: 1200px ){
 	.employee_card{
 		margin-bottom: 20px;
 	}
 	.search-input{
 		float: left;
-		width: 150px;
+		width: 140px;
 		margin:0 10px;
 	}
+	.navbar.navbar-expand-lg{
+		width:110%;
+		margin-left: -15px;
+		padding-right: 40px;
+	}
 }
-@media( max-width: 768px){
+@media( max-width: 768px ){
 	.list-group-item{
 		margin-left: 1em;
 		padding-left: 30px;
@@ -180,6 +198,11 @@ img.dashboard{
 	.employee_card{
 		margin-bottom: 20px;
 	}
+	.navbar.navbar-expand-lg{
+		width: 100%;
+	    margin-left: 0;
+
+	}
 
 }
 
@@ -190,15 +213,23 @@ img.dashboard{
 	}
 	.search-input{
 		float: left;
-		width: 215px;
+		width: 180px;
 		margin:0 10px;
 	}
 	.employee_card{
 		margin-bottom: 20px;
 	}
 	.list-group-item{
-		margin-left: 1em;
-		padding-left: 60px;
+		
+		padding-left: 40px;
+	}
+	.col-9-auto{
+		overflow: hidden;
+	}
+	.navbar.navbar-expand-lg{
+		width: 100%;
+	    margin-left: 0;
+
 	}
 }
 
