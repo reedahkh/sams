@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Karma:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700,800,900');
+
+* {
+	box-sizing: border-box;
+}
+body {
+	color: #656565;
+	margin: 0;
+	padding: 0;
+	font-family: 'Fira Sans','Karma', sans-serif , serif !important;
+	background-color: #FAFAFA !important;
+	/* -webkit-font-smoothing: antialiased;
+	  	-moz-osx-font-smoothing: grayscale; */
+}
+
+
+.hide{
+	overflow: hidden;
+}
+/* logo in header(mobile version) and side-nav (tablet & desktop) 
+.logo {
+	height: 73px;
+	padding: 10px;
+	font-weight: 700;
+}*/
+.bg-linear{
+	background: linear-gradient(180.02deg, #103148 -6.2%, rgba(74, 88, 153, 0.99) 130.46%) !important;
+	/*height: 700px;*/
+	min-height: 100vh;
+}
+.list-group-item{
+	background: transparent;
+	font-size: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 50px;
+}
+
+.list-group-item:focus{
+	border-left:  2px solid #fff!important;
+	background-color: transparent!important;
+}
+.list-group-item:active{
+	border-left:  2px solid #fff!important;
+	background-color: transparent!important;
+}
+.list-group-item:hover{
+	border-left:  2px solid #fff!important;
+	background-color: transparent!important;
+}
+.blue-color{
+	color:#4368A5;
+}
+.nav-drp{
+	border-radius: 0;
+}
+.nav-drp:focus{
+	box-shadow: none;
+}
+.card-shdw{
+	box-shadow: 0px 0px 6px #c4c4c4;
+}
+.text-sm{
+	font-size: 90%;
+	color: #828282;
+}
+.w-7{
+	width: 70%;
+}
+.w-8{
+	width: 80%;
+}
+.btn-view:focus{
+	box-shadow: none;
+	cursor: pointer;
+}
+.text-xs-light{
+	font-size: 70%;
+	opacity: 0.7;
+}
+.fa-xxs{
+	font-size: .35em;
+}
+.card-name{
+
+}
+.qual{
+	opacity: 0.7;
+	font-size: 90%;
+}
+.btn-deep-blue{
+	background-color: #13334d;
+	color: #fff;
+}
+a{
+	text-decoration: none!important;
+}
+.profile-card:hover{
+	border-left: 2px solid #13334d;
+}
+.profile-card:focus{
+	border-left: 2px solid #13334d;
+}
+.card-header{
+	border-bottom: 1px solid #c4c4c4; 
+	border-right: 3px solid #2b95c9!important;
+}
+.card-header-green{
+	border-bottom:  1px solid #c4c4c4;
+	border-right: 3px solid #1ba052!important;
+}
+.card-header-brown{
+	border-bottom:  1px solid #c4c4c4;
+	border-right: 3px solid #b07156!important;
+}
+.text-brown{
+	color: #b07156;
+}
+.text-red{
+	color: #eb5757;
+}
+.text-blue{
+	color: #4564a2;
+}
+.text-avg{
+	font-size: 90%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media( min-width:1210px){
+	
+}
+@media( max-width: 1200px ){
+	
+}
+@media( max-width: 768px ){
+	
+}
+
+
+@media(max-width: 575px){
+	
+}
+
+
+
+
+
