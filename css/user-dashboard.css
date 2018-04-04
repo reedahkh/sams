@@ -126,7 +126,15 @@ a{
 .text-avg{
 	font-size: 90%;
 }
-
+.ldBar-label {
+    color: red;
+    font-family: tahoma;
+    font-size: 2em;
+    font-weight: 900;
+    /*position: relative;*/
+    text-align: center;
+    margin-top: -84%;
+}
 
 
 

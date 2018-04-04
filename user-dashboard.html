@@ -9,16 +9,12 @@
   <link rel="icon" href="img/logo-fav.png" sizes="16x16" type="image/png">
   <!-- Bootstrap & Fontawesome CDN -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css">
-  <!-- <link rel="stylesheet" href="Assets/plugins/BigVideo/bower_components/BigVideo/css/bigvideo.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" /> -->
-  <!-- Latest compiled and minified CSS -->
-  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css"> -->
+  <link rel="stylesheet" type="text/css" href="loading-bar.css"/>
+  
   <!-- External CSS -->
   <link rel="stylesheet" type="text/css" href="css/user-dashboard.css">
-</head>
+</head>    
 <body class="">
 
   <div class="hide">
@@ -118,11 +114,12 @@
                 <div class="card rounded-0 profile-card card-shdw">
                   <div class="card-body p-3 m-0">
                     <canvas id="myChart" width="400" height="150" class="p-0 m-0"></canvas>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class=" mt-5">
+            <div class=" mt-5 px-5">
               <div class="card-deck">
                 <div class="card rounded-0 card-shdw">
                   <ul class="list-group list-group-flush rounded-0 px-0">
@@ -187,47 +184,22 @@
               </div>
             </div>
 
-            <div class="d-flex justify-content-end mt-5 p-0">
-              <button class="btn btn-deep-blue px-4 btn-lg m-0">Apply for OoS</button>
+            <div class="d-flex justify-content-end my-5 px-5">
+              <button class="btn btn-deep-blue px-4 btn-lg">Apply for OoS</button>
             </div>
           </div>
 
-          <div class="tab-pane fade px-5" id="list-report" role="tabpanel" aria-labelledby="list-report-list">
+          <div class="tab-pane fade" id="list-report" role="tabpanel" aria-labelledby="list-report-list">
             
-            <header class="bg-white py-2">
+            <header class="bg-white py-1 pl-2 pr-5">
               <div class="row">
-                <div class="col-12 col-md-6">
-                  <p class="blue-color h3 ">SAMS Admin</p>
+                <div class="col-12 col-md-6 d-flex pt-0">
+                  <i class="fas fa-arrow-left blue-color mt-2 pt-1 mr-3"></i>
+                  <p class="h5 mr-3 mt-2">Dike, Thelma Kelechi</p>
+                  <button class="btn bg-transparent btn-view blue-color">Make an Admin</button>
                 </div>
                 <div class="col-12 col-md-3">
-                  <input type="" name="" placeholder="Search &hellip;" class="form-control">
-                </div>
-                <div class="col-12 col-md-3 text-right">
-                  <div class="dropdown">
-                    <button class="btn bg-transparent dropdown-toggle nav-drp" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Chizoba Egeonu
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                  </div>
-                </div>                                    
-              </div>
-            </header>    
-
-          </div>
-
-          <div class="tab-pane fade px-5" id="list-employee" role="tabpanel" aria-labelledby="list-employee-list">
-            
-            <header class="bg-white py-2">
-              <div class="row">
-                <div class="col-12 col-md-6">
-                  <p class="blue-color h3 ">SAMS Admin</p>
-                </div>
-                <div class="col-12 col-md-3">
-                  <input type="" name="" placeholder="Search &hellip;" class="form-control">
+                  <!-- <input type="" name="" placeholder="Search &hellip;" class="form-control"> -->
                 </div>
                 <div class="col-12 col-md-3 text-right">
                   <div class="dropdown">
@@ -246,15 +218,17 @@
 
           </div>
 
-          <div class="tab-pane fade px-5" id="list-punctuality" role="tabpanel" aria-labelledby="list-punctuality-list">
+          <div class="tab-pane fade" id="list-employee" role="tabpanel" aria-labelledby="list-employee-list">
             
-            <header class="bg-white py-2">
+            <header class="bg-white py-1 pl-2 pr-5">
               <div class="row">
-                <div class="col-12 col-md-6">
-                  <p class="blue-color h3 ">SAMS Admin</p>
+                <div class="col-12 col-md-6 d-flex pt-0">
+                  <i class="fas fa-arrow-left blue-color mt-2 pt-1 mr-3"></i>
+                  <p class="h5 mr-3 mt-2">Dike, Thelma Kelechi</p>
+                  <button class="btn bg-transparent btn-view blue-color">Make an Admin</button>
                 </div>
                 <div class="col-12 col-md-3">
-                  <input type="" name="" placeholder="Search &hellip;" class="form-control">
+                  <!-- <input type="" name="" placeholder="Search &hellip;" class="form-control"> -->
                 </div>
                 <div class="col-12 col-md-3 text-right">
                   <div class="dropdown">
@@ -273,9 +247,67 @@
 
           </div>
 
-          <div class="tab-pane fade px-5" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+          <div class="tab-pane fade" id="list-punctuality" role="tabpanel" aria-labelledby="list-punctuality-list">
             
-            <header class="bg-white py-2">
+            <header class="bg-white py-1 pl-2 pr-5">
+              <div class="row">
+                <div class="col-12 col-md-6 d-flex pt-0">
+                  <i class="fas fa-arrow-left blue-color mt-2 pt-1 mr-3"></i>
+                  <p class="h5 mr-3 mt-2">Dike, Thelma Kelechi</p>
+                  <button class="btn bg-transparent btn-view blue-color">Make an Admin</button>
+                </div>
+                <div class="col-12 col-md-3">
+                  <!-- <input type="" name="" placeholder="Search &hellip;" class="form-control"> -->
+                </div>
+                <div class="col-12 col-md-3 text-right">
+                  <div class="dropdown">
+                    <button class="btn bg-transparent dropdown-toggle nav-drp" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Chizoba Egeonu
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </div>
+                </div>                                    
+              </div>
+            </header>
+
+            <div class="px-5 m-5">
+              <p class="h2">March</p>
+            </div>
+
+            <div class="px-5">
+              <div class="mx-5 p-5 bg-white">
+                <div class="d-flex justify-content-end px-5">
+                  <button class="btn btn-deep-blue px-4 ">March</button>
+                </div>
+
+                <div class="d-flex p-5 m-5">
+                  <div
+                    class="ldBar label-center"
+                    style="width:30%;height:30%;margin:auto"
+                    data-value="0"
+                    data-preset="circle"
+                  >
+                    <p class=" ldBar-label"></p>
+                  </div>
+                  <!-- <div
+                    class="ldBar label-center ldBar-label"
+                    style="width:30%;height:30%;margin:auto"
+                    data-value="0"
+                    data-preset="circle"
+                  ></div> -->
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+            
+            <header class="bg-white ">
               <div class="row">
                 <div class="col-12 col-md-6">
                   <p class="blue-color h3 ">SAMS Admin</p>
@@ -313,6 +345,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script src="js/loading-bar.js"></script>
 <!-- <script src="js/script.js"></script> -->
 
 <script>
@@ -320,38 +353,31 @@
   var myChart = new Chart(ctx, {
       type: 'bar',
       data: {
-          labels: ["Pres", "Abs", "LM", "OoS", "ED"],
-          datasets: [{
-              label: '# of Votes',
-              data: [12, 19, 3, 5, 3],
-              backgroundColor: [
-                  'rgba(255, 99, 132, 0.2)',
-                  'rgba(54, 162, 235, 0.2)',
-                  'rgba(255, 206, 86, 0.2)',
-                  'rgba(75, 192, 192, 0.2)',
-                  'rgba(153, 102, 255, 0.2)',
-                  'rgba(255, 159, 64, 0.2)'
-              ],
-              // borderColor: [
-              //     'rgba(255,99,132,1)',
-              //     'rgba(54, 162, 235, 1)',
-              //     'rgba(255, 206, 86, 1)',
-              //     'rgba(75, 192, 192, 1)',
-              //     'rgba(153, 102, 255, 1)',
-              //     'rgba(255, 159, 64, 1)'
-              // ],
-              borderWidth: 0,
+      	labels: ["Pres", "Abs", "Oos", "LM", "ED", "TN"],
+          datasets: [
+          // gracie each dataset starts here
+          	{
+              label: 'gracie' ,
+              data: [65, 59, 75, 81, 56, 55, 40],
+              backgroundColor: ["#9B51E0", "#1BA052", "#FED766", "#4663A2", "#EB5757", "#2A97CA"]
+          	},
+              //here is the next one
+              {
+              	label: 'nedy',        
+              backgroundColor: ["#2A97CA"]
 
-          }]
+          	  },
+          	  //and the next one
+          	  {
+              	label: 'okoye',  
+              backgroundColor: ["#EB5757"]
+
+              }
+          ],
+
       },
       options: {
-          // scales: {
-          //     yAxes: [{
-          //         ticks: {
-          //             beginAtZero:true
-          //         }
-          //     }]
-          // },
+          legend: { display: true },
           events: ["mousemove", "mouseout", "click", "touchstart", "touchmove", "touchend"],
           layout: {
             padding: {
@@ -361,8 +387,39 @@
                 bottom: 0
                       }
                   }
+                  
       }
   });
+
+  // new Chart(document.getElementById("myChart");
+  // 	var myChart = new Chart(ctx, {
+  //     type: 'bar',
+  //     data: {
+  //       labels: ["Pres", "Abs", "Oos", "LM", "ED", "TN"],
+  //       datasets: 
+  //         [
+  //             {
+  //                 label: 'Present',
+  //                 backgroundColor: ["#9B51E0", "#1BA052", "#FED766", "#4663A2", "#EB5757", "#2A97CA"],
+  //                 // borderColor: ["#9B51E0", "#1BA052", "#FED766", "#4663A2", "#EB5757", "#2A97CA"],
+  //                 data: [65, 59, 75, 81, 56, 55, 40]
+  //             }
+  //             // {
+  //             //     label:'Present',
+  //             // },
+  //             // {
+  //             //     label:'Absent',
+  //             // }
+  //         ]
+  //     },
+      
+  //     options: {
+  //         legend: { display: true },
+  //         // title: {
+  //         //     display: true,
+  //         //     text: 'March 2018'
+  //         // }
+	 //          }
 </script>
 
 </html>
