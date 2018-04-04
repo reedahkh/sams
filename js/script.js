@@ -12,15 +12,6 @@ $(document).ready(function() {
         nextArrow: $(".testimonial-carousel-controls .next")
     });
 
-    // big video background
-   /* $(function() {
-        var BV = new $.BigVideo({container: $('#video_bg')});
-
-        BV.init();
-        BV.getPlayer().pause();
-
-        BV.show('../video/SAMS_Advert.mp4', {doLoop:true}, {autoplay:true})
-    });*/
         
     // features card toggle
     $(".card_container").mouseover(function(){
@@ -31,3 +22,68 @@ $(document).ready(function() {
     });
 
 });
+// calendar
+if ($("#fullCalendar").length) {
+    var calendar, d, date, m, y;
+
+    date = new Date();
+
+    d = date.getDate();
+
+    m = date.getMonth();
+
+    y = date.getFullYear();
+
+    calendar = $("#fullCalendar").fullCalendar({
+       
+        header: {
+            left: "prev,next today",
+            center: "title",
+            right: "month,agendaWeek,agendaDay"
+        },
+      height:420,
+      selectable: true,
+      showNonCurrentDates :false,
+      selectHelper: true,
+      select: function select(start, end, allDay) {
+        var title;
+        title = prompt("Event Title:");
+        if (title) {
+          calendar.fullCalendar("renderEvent", {
+            title: title,
+            start: start,
+            end: end,
+            allDay: allDay
+          }, true);
+        }
+        return calendar.fullCalendar("unselect");
+      },
+      editable: true,
+      events: [ {
+        title: "Company Lunch",
+        start: new Date(y, m, d, 12, 0),
+        end: new Date(y, m, d + 2, 14, 0),
+        allDay: false
+      }]
+    });
+  }
+
+// select table
+
+$(".status_select").click(function(e){
+    console.log(e.target.value);
+
+    if( (e.target.value) == 'pending') {
+
+        $(".status_select").addClass('text-danger')
+    }
+    if( (e.target.value) == 'approved') {
+
+        $(".status_select").removeClass('text-danger')
+        
+        $(".status_select").addClass('text-success');
+    }
+})
+            
+
+           

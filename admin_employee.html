@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>SAMS- Admin Employee Dashboard</title>
+        <!-- favicon -->
+        <link rel="icon" href="img/logo-fav.png" sizes="16x16" type="image/png">
+        <!-- Bootstrap & Fontawesome CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+        
+        <!-- External CSS -->
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
+        <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+    </head>
+    <body>
+        <main>
+            <div class="hide">
+                <div class="row justify-content-start">
+                    <!-- Start side menu -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-auto bg-linear">
+                        <header>
+                            <div class="logo ">
+                                <nav class="navbar navbar-expand-lg bg-transparent">
+                                    <img src="img/Logo/sams-logo-sams-white-text-side copy.png" width="150px">
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation">
+                                        <span class="text-white fa fa-bars"></span>
+                                    </button>
+                                </nav>
+                                
+                            </div>
+                        </header>
+                        <div >
+                            <ul class=" navbar-nav list-group mt-4e">
+                                <a href="dashboard.html" class="list-group-item side-menu-item text-white border-0">
+                                    <img src="img/dashboard/file.svg" alt="" class="dashboard pr-3">Dashboard
+                                </a>
+                                <a href="#" class="list-group-item side-menu-item text-white border-0">
+                                    <img src="img/dashboard/vector.svg" alt="" class=" dashboard pr-3">Attendance
+                                </a>
+                                <!-- <a href="#" class="list-group-item side-menu-item text-white border-0">
+                                    <img src="img/dashboard/vector.svg" alt="" class=" dashboard pr-3">Reports
+                                </a> -->
+                                    
+                                <li class="dropdown list-none side-menu-item">
+                                    <a class="nav-link dropdown-toggle reports text-white" href="reports.html" id="reportsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                        <img src="img/dashboard/vector.svg" alt="" class=" dashboard pr-3">
+                                        Reports
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="reportsDropdown">
+                                        <a class="dropdown-item f-16" href="reports.html">General Attendance Reports</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item f-16" href="#">Work Time Report</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item f-16" href="#">Work Time Report in (%)</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item f-16" href="#">Late Comer Report</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item f-16" href="#">Attendance Summary Report </a>
+                                    </div>
+                                </li>
+                                 
+                                 <a href="admin_employee.html" class="list-group-item text-white side-menu-item active border-0">
+                                    <img src="img/dashboard/users.svg" alt="" class="dashboard pr-3">Employee
+                                 </a>
+                                 <a href="punctuality.html" class="list-group-item text-white side-menu-item border-0">
+                                    <img src="img/dashboard/chart.svg" alt="" class="dashboard pr-3">Punctuality
+                                 </a>
+                                 <a href="#" class="list-group-item side-menu-item text-white border-0">
+                                    <img src="img/dashboard/analytics.svg" alt="" class="dashboard pr-3">Analytics
+                                 </a>
+                                 <a href="settings.html" class="list-group-item side-menu-item text-white border-0">
+                                    <img src="img/dashboard/gears.svg" alt="" class="dashboard pr-3">Settings
+                                 </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end side menu -->
+                    <!-- start side content -->
+                    <div class="col-lg-9">
+                        <header>
+                            <nav class="navbar navbar-expand-lg wide-navbar bg-white">
+                                <a class="navbar-brand blue-color" href="#"><i class="fa fa-long-arrow-left"></i> Employee</a>
+                                <button class="navbar-toggler banner_bg-color" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="fa fa-bars text-white"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto">
+                                        <button class="btn add-employee banner_bg-color text-white">Add New Employee</button>
+                                        
+                                        
+                                    </ul>
+                                    <form class="form-inline my-2 my-lg-0 mr-3">
+                                        <input type="search" class="form-control" placeholder="Search...">
+                                        
+                                        <li class="nav-item dropdown list-none">
+                                            <a class="nav-link dropdown-toggle logged-user bb_black f-16" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                                Chizoba Egeonu
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="#">View Profile</a>
+                                                <a class="dropdown-item" href="#">Go to Dashboard</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">View Notification</a>
+                                            </div>
+                                        </li>
+                                    </form>
+                                </div>
+                            </nav>
+                        </header>
+                        <main class="element-wrapper width-110">
+                           <div class="element-container mt-75">
+                               <div class="row">
+                                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                                        <input type="date" id="startDate" class="form-control">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                                        <input type="date" id="endDate" class="form-control">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                                        <select name="location" id="location" class="form-control">
+                                            <option value="">Location</option>
+                                            <option value="">Abuja</option>
+                                            <option value="">Lagos</option>
+                                            <option value="">Enugu</option>
+                                            <option value="">Kano</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                                        <select name="employee" id="employee-select" class="form-control">
+                                            <option value="">Employee</option>
+                                            <option value="">Full Time</option>
+                                            <option value="">Part Time</option>
+                                            <option value="">Intern</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                                        <select name="worktime" id="worktime" class="form-control">
+                                            <option value="" class="py-1">Work Time</option>
+                                            <option value="">8hrs</option>
+                                            <option value="">2hrs</option>
+                                            <option value="">4hrs</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                                        <input type="search" class="form-control search-input" name="search" placeholder="Search">
+                                        <button class="search-btn"><i class="fa fa-tachometer"></i></button>
+                                    </div>
+                                   
+
+                               </div>
+                           </div>
+                            <div class="employees-components mt-75">
+                                <div class="row ">
+                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                        <a href="employee.html" class="dis-block employee-card-wrapper">
+                                            <div class="card employee-card text-center bd-b-blue">
+                                                <div class="card-header">
+                                                    <div class="employee_thumbnail">
+                                                        <img src="img/image 4.1.png" class="width-80 img-circle" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="text-center employee-name font_color f-fira">Dike Thelma Kelechi</p>
+                                                    <p class="job-title">
+                                                        <div class="row">
+                                                            <div class="col-md-7 mlr-adj">
+                                                                <p class="f-14 light_grey">LEAD DESIGNER</p>
+                                                            </div>
+                                                            <div class="col-md-1 text-center">
+                                                                <span class="dot"></span>
+                                                            </div>
+                                                            <div class="col-md-4"><p class="f-14 light_grey">ABUJA</p></div>
+                                                        </div>
+                                                    </p>
+                                                </div>
+                                                <div class="card-footer bg-white border-0 f-fira">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <p class="light_grey f-14 mb-0">Attendance</p>
+                                                            <p class="font_color f-18 mb-0">95%</p>
+                                                            <p class="light_grey f-14">157 Days</p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p class="light_grey f-14">Punctuality</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           <!--  <a class="btn btn-primary" data-toggle="modal" href='#modal-id'>Trigger modal</a>
+                                            <div class="modal fade" id="modal-id">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                                            <h4 class="modal-title">Modal title</h4>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                                        </a>
+
+                                       
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                        <a href="" class="dis-block employee-card-wrapper">
+                                            <div class="card employee-card bd-b-green text-center">
+                                                <div class="card-header">
+                                                    <div class="employee_thumbnail">
+                                                        <img src="img/image 5.1.png" class="width-80" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="text-center employee-name font_color f-fira">Friends Forever Ibeh</p>
+                                                    <p class="job-title f-14 f-fira">
+                                                        <div class="row">
+                                                            <div class="col-md-7 mlr-adj">
+                                                                <p class="f-14 light_grey"> WEB DEVELOPER</p>
+                                                            </div>
+                                                            <div class="col-md-1 text-center">
+                                                                <span class="dot"></span>
+                                                            </div>
+                                                            <div class="col-md-4"><p class="f-14 light_grey">ABUJA</p></div>
+                                                        </div>
+                                                    </p>
+                                                </div>
+                                                <div class="card-footer bg-white border-0">
+                                                    <div class="row">
+                                                        <div class="col-md-6 ">
+                                                            <p class="mb-0 f-14 light_grey">Attendance</p>
+                                                            <p class="mb-0 f-18 font_color">95%</p>
+                                                            <p class="f-14 light_grey">157 Days</p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p class="light_grey f-14">Punctuality</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                        <a href="" class="dis-block employee-card-wrapper">
+                                            <div class="card employee-card bd-b-red text-center">
+                                                <div class="card-header">
+                                                    <div class="employee_thumbnail">
+                                                        <img src="img/image 6.1.png" class="width-80" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body f-fira">
+                                                    <p class="employee-name text-center font_color">Okoye Chidi Barth</p>
+                                                    <p class="job-title f-14 ">
+                                                        <div class="row">
+                                                            <div class="col-md-7 mlr-adj">
+                                                                <p class="f-14 light_grey">WEB DEVELOPER</p>
+                                                            </div>
+                                                            <div class="col-md-1 text-center">
+                                                                <span class="dot"></span>
+                                                            </div>
+                                                            <div class="col-md-4"><p class="f-14 light_grey">ABUJA</p></div>
+                                                        </div>
+                                                    </p>
+                                                </div>
+                                                <div class="card-footer bg-white border-0 f-fira">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <p class="f-14 light_grey mb-0">Attendance</p>
+                                                            <p class="f-18 font_color mb-0">95%</p>
+                                                            <p class="f-14 light_grey">157 Days</p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p class="light_grey f-14">Punctuality</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                        <a href="" class="dis-block employee-card-wrapper ">
+                                            <div class="card employee-card bd-b-dark text-center">
+                                                <div class="card-header">
+                                                    <div class="employee_thumbnail">
+                                                        <img src="img/image 3.1.png" alt="" class="img-circle width-80"></div>
+                                                    
+                                                </div>
+                                                <div class="card-body font_color">
+                                                    <p class="employee-name text-center ">Felicia Frida Abu</p>
+                                                    <p class="job-title f-14">
+                                                        <div class="row">
+                                                            <div class="col-md-7 mlr-adj">
+                                                                <p class="f-14 light_grey">CONTENT DEVELOPER</p>
+                                                            </div>
+                                                            <div class="col-md-1 text-center pr-0">
+                                                                <span class="dot"></span>
+                                                            </div>
+                                                            <div class="col-md-4"><p class="f-14 light_grey">ABUJA</p></div>
+                                                        </div>
+                                                    </p>
+                                                </div>
+                                                <div class="card-footer bg-white border-0 f-fira mt--15">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <p class="light_grey f-14 mb-0">Attendance</p>
+                                                            <p class="f-18 mb-0 font_color">95%</p>
+                                                            <p class="f-14 light_grey">157 Days</p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p class="f-14 light_grey">Punctuality</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="row mt-5">
+                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                        <a href="" class="dis-block employee-card-wrapper">
+                                            <div class="card employee-card text-center bd-b-blue">
+                                                <div class="card-header">
+                                                    <div class="employee_thumbnail">
+                                                        <img src="img/image 4.1.png" class="width-80 img-circle" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="text-center employee-name font_color f-fira">Dike Thelma Kelechi</p>
+                                                    <p class="job-title">
+                                                        <div class="row">
+                                                            <div class="col-md-7 mlr-adj">
+                                                                <p class="f-14 light_grey">LEAD DESIGNER</p>
+                                                            </div>
+                                                            <div class="col-md-1 text-center">
+                                                                <span class="dot"></span>
+                                                            </div>
+                                                            <div class="col-md-4"><p class="f-14 light_grey">ABUJA</p></div>
+                                                        </div>
+                                                    </p>
+                                                </div>
+                                                <div class="card-footer bg-white border-0 f-fira">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <p class="light_grey f-14 mb-0">Attendance</p>
+                                                            <p class="font_color f-18 mb-0">95%</p>
+                                                            <p class="light_grey f-14">157 Days</p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p class="light_grey f-14">Punctuality</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                       
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                        <a href="" class="dis-block employee-card-wrapper">
+                                            <div class="card employee-card bd-b-green text-center">
+                                                <div class="card-header">
+                                                    <div class="employee_thumbnail">
+                                                        <img src="img/image 5.1.png" class="width-80" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="text-center employee-name font_color f-fira">Friends Forever Ibeh</p>
+                                                    <p class="job-title f-14 f-fira">
+                                                        <div class="row">
+                                                            <div class="col-md-7 mlr-adj">
+                                                                <p class="f-14 light_grey"> WEB DEVELOPER</p>
+                                                            </div>
+                                                            <div class="col-md-1 text-center">
+                                                                <span class="dot"></span>
+                                                            </div>
+                                                            <div class="col-md-4"><p class="f-14 light_grey">ABUJA</p></div>
+                                                        </div>
+                                                    </p>
+                                                </div>
+                                                <div class="card-footer bg-white border-0">
+                                                    <div class="row">
+                                                        <div class="col-md-6 ">
+                                                            <p class="mb-0 f-14 light_grey">Attendance</p>
+                                                            <p class="mb-0 f-18 font_color">95%</p>
+                                                            <p class="f-14 light_grey">157 Days</p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p class="light_grey f-14">Punctuality</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                        <a href="" class="dis-block employee-card-wrapper">
+                                            <div class="card employee-card bd-b-red text-center">
+                                                <div class="card-header">
+                                                    <div class="employee_thumbnail">
+                                                        <img src="img/image 6.1.png" class="width-80" alt="">
+                                                    </div>
+                                                </div>
+                                                <div class="card-body f-fira">
+                                                    <p class="employee-name text-center font_color">Okoye Chidi Barth</p>
+                                                    <p class="job-title f-14 ">
+                                                        <div class="row">
+                                                            <div class="col-md-7 mlr-adj">
+                                                                <p class="f-14 light_grey">WEB DEVELOPER</p>
+                                                            </div>
+                                                            <div class="col-md-1 text-center">
+                                                                <span class="dot"></span>
+                                                            </div>
+                                                            <div class="col-md-4"><p class="f-14 light_grey">ABUJA</p></div>
+                                                        </div>
+                                                    </p>
+                                                </div>
+                                                <div class="card-footer bg-white border-0 f-fira">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <p class="f-14 light_grey mb-0">Attendance</p>
+                                                            <p class="f-18 font_color mb-0">95%</p>
+                                                            <p class="f-14 light_grey">157 Days</p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p class="light_grey f-14">Punctuality</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                                        <a href="" class="dis-block employee-card-wrapper ">
+                                            <div class="card employee-card bd-b-dark text-center">
+                                                <div class="card-header">
+                                                    <div class="employee_thumbnail">
+                                                        <img src="img/image 3.1.png" alt="" class="img-circle width-80"></div>
+                                                    
+                                                </div>
+                                                <div class="card-body font_color">
+                                                    <p class="employee-name text-center ">Felicia Frida Abu</p>
+                                                    <p class="job-title f-14">
+                                                        <div class="row">
+                                                            <div class="col-md-7 mlr-adj">
+                                                                <p class="f-14 light_grey">CONTENT DEVELOPER</p>
+                                                            </div>
+                                                            <div class="col-md-1 text-center">
+                                                                <span class="dot"></span>
+                                                            </div>
+                                                            <div class="col-md-4"><p class="f-14 light_grey">ABUJA</p></div>
+                                                        </div>
+                                                    </p>
+                                                </div>
+                                                <div class="card-footer bg-white border-0 f-fira mt--15">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <p class="light_grey f-14 mb-0">Attendance</p>
+                                                            <p class="f-18 mb-0 font_color">95%</p>
+                                                            <p class="f-14 light_grey">157 Days</p>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <p class="f-14 light_grey">Punctuality</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+
+                            <div class="element-container mt-112">
+
+                                <div class="row mt-5">
+                                    <div class="col-md-12">
+                                        <div class="element-container">
+                                            <nav aria-label="list of employees">
+                                                <ul class="pagination pull-right">
+                                                    <li class="page-item bd_blue">
+                                                        <a class="page-link blue_color" href="#" aria-label="Previous">
+                                                            <span aria-hidden="true">Previous</span>
+                                                            <span class="sr-only">Previous</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">1</a></li>
+                                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">2</a></li>
+                                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">3</a></li>
+                                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">4</a></li>
+                                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">4</a></li>
+                                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">6</a></li>
+                                                    <li class="page-item bd_blue">
+                                                        <a class="page-link blue_color  border-0" href="#" aria-label="Next">
+                                                            <span aria-hidden="true">Next</span>
+                                                            <span class="sr-only">Next</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </nav>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+        <!--JS, Popper.js, and jQuery  -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+        
+        <script src="js/script.js"></script>
+    </body>
+</html>

@@ -129,12 +129,29 @@ a{
 .ldBar-label {
     color: red;
     font-family: tahoma;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 900;
     /*position: relative;*/
     text-align: center;
-    margin-top: -84%;
+    margin-top: -70%;
 }
+.ldBar-label:after{
+	content:"%";
+	display:inline;
+}
+.pr-10{
+	padding-right: 30%;
+}
+.fw-btn{
+	width: 100%;
+}
+.width-120{
+	width:120px;
+}
+
+
+
+
 
 
 

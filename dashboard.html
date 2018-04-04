@@ -4,20 +4,18 @@
         <!-- meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>SAMS- Employee Dashboard</title>
+        <title>SAMS- Admin Dashboard</title>
         <!-- favicon -->
         <link rel="icon" href="img/logo-fav.png" sizes="16x16" type="image/png">
         <!-- Bootstrap & Fontawesome CDN -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="Assets/plugins/BigVideo/bower_components/BigVideo/css/bigvideo.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+        
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+        <link href="Assets/plugins/Calendar/calendar.css" rel="stylesheet">
+        
         <!-- External CSS -->
-        <link rel="stylesheet" type="text/css" href="css/header.css">
-        <link rel="stylesheet" type="text/css" href="css/footer.css">
         <link rel="stylesheet" type="text/css" href="css/custom.css">
         <link rel="stylesheet" type="text/css" href="css/dashboard.css">
     </head>
@@ -25,60 +23,64 @@
         <main>
             <div class="hide">
                 <div class="row justify-content-start">
+                    <!-- Start side menu -->
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-auto bg-linear">
                         <header>
-                                <div class="logo ">
-                                    <nav class="navbar navbar-expand-lg bg-transparent">
-                                        <img src="img/Logo/sams-logo-sams-white-text-side copy.png" width="150px">
-                                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation">
-                                            <span class="text-white fa fa-bars"></span>
-                                        </button>
-                                    </nav>
-                                    
-                                </div>
-                            </header>
-                            <div class=" navbar-collapse" id="navbarToggleExternalContent">
-                                <ul class=" navbar-nav list-group mt-4e">
-                                     <a href="#" class="list-group-item text-white border-0">
-                                        <img src="img/dashboard/file.svg" alt="" class="dashboard pr-3">Dashboard
-                                     </a>
-                                     <a href="#" class="list-group-item text-white border-0">
-                                        <img src="img/dashboard/vector.svg" alt="" class=" dashboard pr-3">Attendance
-                                     </a>
-                                     <a href="#" class="list-group-item text-white border-0">
-                                        <img src="img/dashboard/users.svg" alt="" class="dashboard pr-3">Employee
-                                     </a>
-                                     <a href="#" class="list-group-item text-white border-0">
-                                        <img src="img/dashboard/chart.svg" alt="" class="dashboard pr-3">Punctuality
-                                     </a>
-                                     <a href="#" class="list-group-item text-white border-0">
-                                        <img src="img/dashboard/analytics.svg" alt="" class="dashboard pr-3">Analytics
-                                     </a>
-                                     <a href="#" class="list-group-item text-white border-0">
-                                        <img src="img/dashboard/gears.svg" alt="" class="dashboard pr-3">Settings
-                                     </a>
-                                </ul>
+                            <div class="logo ">
+                                <nav class="navbar navbar-expand-lg bg-transparent">
+                                    <img src="img/Logo/sams-logo-sams-white-text-side copy.png" width="150px">
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation">
+                                        <span class="text-white fa fa-bars"></span>
+                                    </button>
+                                </nav>
+                                
                             </div>
+                        </header>
+                        <div >
+                            <ul class=" navbar-nav list-group mt-4e">
+                                 <a href="dashboard.html" class="list-group-item side-menu-item active text-white border-0">
+                                    <img src="img/dashboard/file.svg" alt="" class="dashboard pr-3">Dashboard
+                                 </a>
+                                 <a href="#" class="list-group-item side-menu-item text-white border-0">
+                                    <img src="img/dashboard/vector.svg" alt="" class=" dashboard pr-3">Attendance
+                                 </a>
+                                 <a href="reports.html" class="list-group-item side-menu-item text-white border-0">
+                                    <img src="img/dashboard/vector.svg" alt="" class=" dashboard pr-3">Reports
+                                 </a>
+                                 <a href="admin_employee.html" class="list-group-item text-white side-menu-item border-0">
+                                    <img src="img/dashboard/users.svg" alt="" class="dashboard pr-3">Employee
+                                 </a>
+                                 <a href="punctuality.html" class="list-group-item text-white side-menu-item border-0">
+                                    <img src="img/dashboard/chart.svg" alt="" class="dashboard pr-3">Punctuality
+                                 </a>
+                                 <a href="#" class="list-group-item side-menu-item text-white border-0">
+                                    <img src="img/dashboard/analytics.svg" alt="" class="dashboard pr-3">Analytics
+                                 </a>
+                                 <a href="settings.html" class="list-group-item side-menu-item text-white border-0">
+                                    <img src="img/dashboard/gears.svg" alt="" class="dashboard pr-3">Settings
+                                 </a>
+                            </ul>
+                        </div>
                     </div>
+                    <!-- end side menu -->
+                    <!-- start side content -->
                     <div class="col-lg-9">
                         <header>
-                            <nav class="navbar navbar-expand-lg bg-white">
-                                <a class="navbar-brand blue-color" href="#"><i class="fa fa-long-arrow-left"></i> Employees</a>
+                            <nav class="navbar navbar-expand-lg wide-navbar bg-white">
+                                <a class="navbar-brand blue-color" href="#"><i class="fa fa-long-arrow-left"></i> Admin</a>
                                 <button class="navbar-toggler banner_bg-color" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="fa fa-bars text-white"></span>
                                 </button>
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav mr-auto">
-                                        <li class="nav-item">
-                                            <a class="btn btn-md add_btn" href="#">Add New Employee </a>
-                                        </li>
+                                        
                                         
                                         
                                     </ul>
                                     <form class="form-inline my-2 my-lg-0 mr-3">
-                                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                                        <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle bb_black f-16" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        
+                                        <li class="nav-item dropdown list-none">
+                                            <a class="nav-link dropdown-toggle logged-user bb_black f-16" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
                                                 Chizoba Egeonu
                                             </a>
                                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -92,8 +94,633 @@
                                 </div>
                             </nav>
                         </header>
-                        <main>
-                           
+                        <main class="element-wrapper width-110">
+                           <div class="greeting">
+                               <div class="row">
+                                   <div class="col-md-12">
+                                        <p class="f-48">
+                                            <span class="username blue-color f-24 pt-4">Hello Zoba!</span>
+                                            <span class="time pull-right blue-color f-24">The time is <span class="f-48 pl-3">8:23:48 AM</span></span>
+                                        </p>
+                                        <hr>
+                                        
+                                   </div>
+
+                               </div>
+                           </div>
+                            <div class="admin-components mt-4">
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-2">
+                                        <a href="#" type="button" class="cardBox_wrapper dis-block" data-toggle="modal" data-target="#staffPresent">
+                                            <div class="card card-box text-center bd-l-light_blue">
+                                                <div class="value f-34">14</div>
+                                                <div class="label f-18">Staff Present</div>
+                                            </div>
+                                            
+                                        </a>
+                                        
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="staffPresent" tabindex="-1" role="dialog" aria-labelledby="viewEmployeeAttendanceLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title bb_black f-18" id="exampleModalLabel"><a href="employee.html" class="blue-color f-24">Staff Present</a></h5>
+                                                        <button type="button" class="close red_color" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true"><i class="fa fa-close"></i></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="table-responsive px-4">
+                                                                    <table class="table">
+                                                                        <thead class="blue_color fw-700">
+                                                                            
+                                                                            <tr>
+                                                                                <td>Name</td>
+                                                                                <td>Location</td>
+                                                                                <td>Arrival Time</td>
+                                                                                <td>Status</td>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody class="blue_color">
+                                                                            <tr>
+                                                                                <td>
+                                                                                   Chidi Okoye
+                                                                                </td>
+                                                                                <td>STeTis office, Uyo,Akwa Ibom</td>
+                                                                                <td>07:06 <br> Mon, 18th March 2018</td>
+                                                                                <td>Early</td>
+                                                                                
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                   Chidi Okoye
+                                                                                </td>
+                                                                                <td>STeTis office, Uyo,Akwa Ibom</td>
+                                                                                <td>07:06 <br> Mon, 18th March 2018</td>
+                                                                                <td>Early</td>
+                                                                                
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td>
+                                                                                   Chidi Okoye
+                                                                                </td>
+                                                                                <td>STeTis office, Uyo,Akwa Ibom</td>
+                                                                                <td>07:06 <br> Mon, 18th March 2018</td>
+                                                                                <td>Early</td>
+                                                                                
+                                                                            </tr>
+                                                                            
+                                                                            <tr>
+                                                                                <td>
+                                                                                   Chidi Okoye
+                                                                                </td>
+                                                                                <td>STeTis office, Uyo,Akwa Ibom</td>
+                                                                                <td>07:06 <br> Mon, 18th March 2018</td>
+                                                                                <td>Early</td>
+                                                                                
+                                                                            </tr>
+                                                                            
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="col-md-12 mt-75 mb-5">
+                                                                <div class="table-controls pull-right">
+                                                                    <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 mr-3 border-0"><i class="fa fa-share pr-3"></i>Share</button>
+                                                                    <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 border-0 mr-3"><i class="fa fa-print pr-3"></i>Print</button>
+                                                                    <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 border-0"><i class="fa fa-download pr-3"></i>Download</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-2 col-xl-2">
+                                        <a href="#" class="cardBox_wrapper dis-block" data-toggle="modal" data-target="#staffAbsent">
+                                            <div class="card card-box text-center bd-l-red">
+                                                <div class="value f-34">34</div>
+                                                <div class="label f-18">Staff Absent</div>
+                                            </div>
+                                            
+                                        </a>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="staffAbsent" tabindex="-1" role="dialog" aria-labelledby="viewEmployeeAttendanceLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title bb_black f-18" id="exampleModalLabel"><a href="employee.html" class="blue-color f-24">Staff Absent</a></h5>
+                                                        <button type="button" class="close red_color" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true"><i class="fa fa-close"></i></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="table-responsive">
+                                                                    <table class="table">
+                                                                        <thead class="blue_color fw-700">
+                                                                            
+                                                                            <tr>
+                                                                                <td class="text-center">Name</td>
+                                                                                <td class="text-center">Location</td>
+                                                                                <td class="text-center">Arrival Time</td>
+                                                                                <td colspan="2"></td>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody class="blue_color">
+                                                                            <tr>
+                                                                                <td class="text-center">
+                                                                                   Chidi Okoye
+                                                                                </td>
+                                                                                <td class="text-center">STeTis office, Uyo,Akwa Ibom</td>
+                                                                                
+                                                                                <td><input type="text" class=" arrival_time form-control border-0 border-bottom"></td>
+                                                                                <td ></td>
+                                                                                
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-center">
+                                                                                   Chidi Okoye
+                                                                                </td>
+                                                                                <td class="text-center">STeTis office, Uyo,Akwa Ibom</td>
+                                                                                
+                                                                                <td><input type="text" class=" arrival_time form-control border-0 border-bottom"></td>
+                                                                                <td></td>
+                                                                                
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-center">
+                                                                                   Chidi Okoye
+                                                                                </td>
+                                                                                <td class="text-center">STeTis office, Uyo,Akwa Ibom</td>
+                                                                                
+                                                                                <td><input type="text" class=" arrival_time form-control border-0 border-bottom"></td>
+                                                                                <td></td>
+                                                                                
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-center">
+                                                                                   Chidi Okoye
+                                                                                </td>
+                                                                                <td class="text-center">STeTis office, Uyo,Akwa Ibom</td>
+                                                                                
+                                                                                <td><input type="text" class=" arrival_time form-control border-0 border-bottom"></td>
+                                                                                <td></td>
+                                                                                
+                                                                            </tr>
+                                                                            
+                                                                            
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="col-md-12 mt-75 mb-5">
+                                                                <div class="table-controls pull-right">
+                                                                    <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 mr-3 border-0"><i class="fa fa-share pr-3"></i>Share</button>
+                                                                    <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 border-0 mr-3"><i class="fa fa-print pr-3"></i>Print</button>
+                                                                    <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 border-0"><i class="fa fa-download pr-3"></i>Download</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-2">
+                                        <a href="#" class="cardBox_wrapper" data-toggle="modal" data-target="#OoS">
+                                            <div class="card card-box text-center bd-l-blue">
+                                                <div class="value f-34">14</div>
+                                                <div class="label f-18">Out of Station</div>
+                                            </div>
+                                        </a>
+                                         <!-- Modal -->
+                                        <div class="modal fade" id="OoS" tabindex="-1" role="dialog" aria-labelledby="viewEmployeeAttendanceLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title bb_black f-18" id="exampleModalLabel"><a href="employee.html" class="blue-color f-24">Out of Station</a></h5>
+                                                        <button type="button" class="close red_color" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true"><i class="fa fa-close"></i></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="table-responsive">
+                                                                    <table class="table">
+                                                                        <thead class="blue_color fw-700">
+                                                                            
+                                                                            <tr>
+                                                                                <td class="text-center">Name</td>
+                                                                                <td class="text-center">Location</td>
+                                                                                <td class="">Date Started</td>
+                                                                                <td class="text-center">Return Date</td>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody class="blue_color">
+                                                                            
+                                                                            <tr>
+                                                                                <td class="text-center">
+                                                                                   Chidi Okoye
+                                                                                </td>
+                                                                                <td class="text-center">STeTis office, Uyo,Akwa Ibom</td>
+                                                                                <td class="">07:06 <br> Mon, 18th March 2018</td>
+                                                                                
+                                                                                <td class="text-center">18th April, 2018</td>
+                                                                                
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-center">
+                                                                                   Chidi Okoye
+                                                                                </td>
+                                                                                <td class="text-center">STeTis office, Uyo,Akwa Ibom</td>
+                                                                                <td class="">07:06 <br> Mon, 18th March 2018</td>
+                                                                                
+                                                                                <td class="text-center">18th April, 2018</td>
+                                                                                
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-center">
+                                                                                   Chidi Okoye
+                                                                                </td>
+                                                                                <td class="text-center">STeTis office, Uyo,Akwa Ibom</td>
+                                                                                <td class="">07:06 <br> Mon, 18th March 2018</td>
+                                                                                
+                                                                                <td class="text-center">18th April, 2018</td>
+                                                                                
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-center">
+                                                                                   Chidi Okoye
+                                                                                </td>
+                                                                                <td class="text-center">STeTis office, Uyo,Akwa Ibom</td>
+                                                                                <td class="">07:06 <br> Mon, 18th March 2018</td>
+                                                                                
+                                                                                <td class="text-center">18th April, 2018</td>
+                                                                                
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="col-md-12 mt-75 mb-5">
+                                                                <div class="table-controls pull-right">
+                                                                    <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 mr-3 border-0"><i class="fa fa-share pr-3"></i>Share</button>
+                                                                    <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 border-0 mr-3"><i class="fa fa-print pr-3"></i>Print</button>
+                                                                    <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 border-0"><i class="fa fa-download pr-3"></i>Download</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-2">
+                                        <a href="#" class="cardBox_wrapper" data-toggle="modal" data-target="#lateMarks">
+                                            <div class="card card-box text-center bd-l-yellow">
+                                                <div class="value f-34">24</div>
+                                                <div class="label f-18">Late Marks</div>
+                                            </div>
+                                        </a>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="lateMarks" tabindex="-1" role="dialog" aria-labelledby="viewEmployeeAttendanceLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title bb_black f-18" id="exampleModalLabel"><a href="employee.html" class="blue-color f-24">Late Marks</a></h5>
+                                                        <button type="button" class="close red_color" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true"><i class="fa fa-close"></i></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="table-responsive">
+                                                                    <table class="table">
+                                                                        <thead class="blue_color fw-700">
+                                                                            
+                                                                            <tr>
+                                                                                <td class="text-center">Name</td>
+                                                                                <td class="text-center">Location</td>
+                                                                                <td class="">Late Mark</td>
+                                                                                <td class="" colspan="2"></td>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody class="blue_color">
+                                                                            
+                                                                            <tr>
+                                                                                <td class="text-center">
+                                                                                   Chidi Okoye
+                                                                                </td>
+                                                                                <td class="text-center">STeTis office, Uyo,Akwa Ibom</td>
+                                                                                <td class=""> Missed 5 working days 
+                                                                                 <br>penalty: 10% deduction</td>
+                                                                                
+                                                                                <td class=""></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-center">
+                                                                                   Chidi Okoye
+                                                                                </td>
+                                                                                <td class="text-center">STeTis office, Uyo,Akwa Ibom</td>
+                                                                                <td class=""> Missed 5 working days 
+                                                                                 <br>penalty: 10% deduction</td>
+                                                                                
+                                                                                <td class=""></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-center">
+                                                                                   Chidi Okoye
+                                                                                </td>
+                                                                                <td class="text-center">STeTis office, Uyo,Akwa Ibom</td>
+                                                                                <td class=""> Missed 5 working days 
+                                                                                 <br>penalty: 10% deduction</td>
+                                                                                
+                                                                                <td class=""></td>
+                                                                            </tr>
+                                                                            <tr>
+                                                                                <td class="text-center">
+                                                                                   Chidi Okoye
+                                                                                </td>
+                                                                                <td class="text-center">STeTis office, Uyo,Akwa Ibom</td>
+                                                                                <td class=""> Missed 5 working days 
+                                                                                 <br>penalty: 10% deduction</td>
+                                                                                
+                                                                                <td class=""></td>
+                                                                            </tr>
+                                                                           
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="col-md-12 mt-75 mb-5">
+                                                                <div class="table-controls pull-right">
+                                                                    <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 mr-3 border-0"><i class="fa fa-share pr-3"></i>Share</button>
+                                                                    <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 border-0 mr-3"><i class="fa fa-print pr-3"></i>Print</button>
+                                                                    <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 border-0"><i class="fa fa-download pr-3"></i>Download</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-2">
+                                        <a href="#" class="cardBox_wrapper" data-toggle="modal" data-target="#dayOfYear">
+                                            <div class="card card-box text-center bd-l-green">
+                                                <div class="value f-34">74</div>
+                                                <div class="label f-18">Early Daparture</div>
+                                            </div>
+                                        </a>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="dayOfYear" tabindex="-1" role="dialog" aria-labelledby="viewEmployeeAttendanceLabel" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title blue_color f-30 text-center" id="exampleModalLabel">74th Day of the Year</h5>
+                                                        <button type="button" class="close red_color" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true"><i class="fa fa-close"></i></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="row">
+                                                            <div class="col-md-2"></div>
+                                                            <div class="col-md-8">
+                                                               <div class="calendar">Calendar here</div>
+                                                            </div>
+                                                            <div class="col-md-2"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-2">
+                                        <a href="#" class="cardBox_wrapper" data-toggle="modal" data-target="#staffLate">
+                                            <div  class="card card-box text-center bd-l-purple">
+                                                <div class="value f-34">13</div>
+                                                <div class="label f-18">Total No. of Employee(s)</div>
+                                            </div>
+                                        </a>
+                                         <!-- Modal -->
+                                        <div class="modal fade" id="staffLate" tabindex="-1" role="dialog" aria-labelledby="staffAttendance" aria-hidden="true">
+                                            <div class="modal-dialog modal-lg" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title blue-color f-30" id="exampleModalLabel">Staff Late</h5>
+                                                        <button type="button" class="close red_color" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true"><i class="fa fa-close"></i></span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="table-responsive">
+                                                                    <table class="table">
+                                                                        <thead class="blue_color fw-700">
+                                                                            
+                                                                            <tr>
+                                                                                <td class="text-center">Name</td>
+                                                                                <td class="text-center">Location</td>
+                                                                                <td class="text-center">Arrival Time</td>
+                                                                                <td class="">Time Difference</td>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody class="blue_color">
+                                                                            
+                                                                            <tr>
+                                                                                <td class="text-center">
+                                                                                   Chidi Okoye
+                                                                                </td>
+                                                                                <td >STeTis office, Uyo,Akwa Ibom</td>
+                                                                                <td class="text-right"> 08:46 <br> Mon, 18th March 2018</td>
+                                                                                
+                                                                                <td class="text-left">Late <br> 30 Minutes 7 Seconds</td>
+                                                                            </tr>
+                                                                             <tr>
+                                                                                <td class="text-center">
+                                                                                   Chidi Okoye
+                                                                                </td>
+                                                                                <td >STeTis office, Uyo,Akwa Ibom</td>
+                                                                                <td class="text-right"> 08:46 <br> Mon, 18th March 2018</td>
+                                                                                
+                                                                                <td class="text-left">Late <br> 30 Minutes 7 Seconds</td>
+                                                                            </tr>
+                                                                             <tr>
+                                                                                <td class="text-center">
+                                                                                   Chidi Okoye
+                                                                                </td>
+                                                                                <td >STeTis office, Uyo,Akwa Ibom</td>
+                                                                                <td class="text-right"> 08:46 <br> Mon, 18th March 2018</td>
+                                                                                
+                                                                                <td class="text-left">Late <br> 30 Minutes 7 Seconds</td>
+                                                                            </tr>                                                                           
+                                                                             <tr>
+                                                                                <td class="text-center">
+                                                                                   Chidi Okoye
+                                                                                </td>
+                                                                                <td >STeTis office, Uyo,Akwa Ibom</td>
+                                                                                <td class="text-right"> 08:46 <br> Mon, 18th March 2018</td>
+                                                                                
+                                                                                <td class="text-left">Late <br> 30 Minutes 7 Seconds</td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            <div class="col-md-12 mt-75 mb-5">
+                                                                <div class="table-controls pull-right">
+                                                                    <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 mr-3 border-0"><i class="fa fa-share pr-3"></i>Share</button>
+                                                                    <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 border-0 mr-3"><i class="fa fa-print pr-3"></i>Print</button>
+                                                                    <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 border-0"><i class="fa fa-download pr-3"></i>Download</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="element-container mt-75">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <div id="calendar">
+                                                <div id="calendar_header">
+                                                    <i class="fa fa-chevron-left text-white chevron-left"></i>
+                                                    <h1></h1>
+                                                    <i class="fa fa-chevron-right text-white pt-2"></i>
+                                                </div>
+                                                <div id="calendar_weekdays"></div>
+                                                <div id="calendar_content"></div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card" style="height: 420px">
+                                            <div class="chart"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="element-container mt-112">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="f-24 blue-color">Awaiting Approval</p>
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-hover">
+                                                <thead>
+                                                    <td class="fw-700">STAFF ID</td>
+                                                    <td class="fw-700">APPROVAL FOR</td>
+                                                    <td class="fw-700">REASON</td>
+                                                    <td class="fw-700">APPROVAL FROM</td>
+                                                    <td class="fw-700">STATUS</td>
+                                                </thead>
+                                                    <tbody>
+                                                        <tr class="bb_black f-18">
+                                                            <td>ST0123</td>
+                                                            <td>Leave</td>
+                                                            <td>Maternity Leave</td>
+                                                            <td>HOD ICT</td>
+                                                            <td class="text-success">Approved</td>
+                                                        </tr>
+                                                        <tr class="bb_black f-18">
+                                                            <td>ST0123</td>
+                                                            <td>Report</td>
+                                                            <td>Weekly Report</td>
+                                                            <td>HRM</td>
+                                                            <td class="">
+                                                                 <select name="" id="" class="status_select border-0 bg-transparent">
+                                                                    <option value="pending" class="text-danger">Pending <i class="fa fa-caret-down"></i></option>
+                                                                    <option value="approved" class="text-success">Approved</option>
+
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="bb_black f-18">
+                                                            <td>ST0123</td>
+                                                            <td>Leave</td>
+                                                            <td>Compulsory Yearly Leave</td>
+                                                            <td>CEO</td>
+                                                            <td class="">
+                                                                <select name="" id="" class="status_select border-0 bg-transparent">
+                                                                    <option value="pending" class="text-danger">Pending</option>
+                                                                    <option value="approved" class="text-success">Approved</option>
+
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="bb_black f-18">
+                                                            <td>ST0123</td>
+                                                            <td>Report</td>
+                                                            <td>Monthly Report</td>
+                                                            <td>HOD Finance</td>
+                                                            <td class="text-success">Approved</td>
+                                                        </tr>
+                                                        <tr class="bb_black f-18">
+                                                            <td>ST0123</td>
+                                                            <td>Leave</td>
+                                                            <td>Maternity Leave</td>
+                                                            <td>HOD ICT</td>
+                                                            <td class="text-success">Approved</td>
+                                                        </tr>
+                                                        <tr class="bb_black f-18">
+                                                            <td>ST0123</td>
+                                                            <td>Report</td>
+                                                            <td>Weekly Report</td>
+                                                            <td>HRM</td>
+                                                            <td class="">
+                                                                 <select name="" id="" class="status_select border-0 bg-transparent">
+                                                                    <option value="" class="text-danger">Pending <i class="fa fa-caret-down"></i></option>
+                                                                    <option value="" class="text-success">Approved</option>
+
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="bb_black f-18">
+                                                            <td>ST0123</td>
+                                                            <td>Leave</td>
+                                                            <td>Compulsory Yearly Leave</td>
+                                                            <td>CEO</td>
+                                                            <td class="">
+                                                                <select name="" id="" class="status_select border-0 bg-transparent">
+                                                                    <option value="" class="text-danger">Pending <i class="fa fa-caret-down"></i></option>
+                                                                    <option value="" class="text-success">Approved</option>
+
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="bb_black f-18">
+                                                            <td>ST0123</td>
+                                                            <td>Report</td>
+                                                            <td>Monthly Report</td>
+                                                            <td>HOD Finance</td>
+                                                            <td class="text-success">Approved</td>
+                                                        </tr>
+                                                        
+                                                    </tbody>
+                                                </thead>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </main>
                     </div>
                 </div>
@@ -107,6 +734,50 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
-        <!-- <script src="js/script.js"></script> -->
+        <script src="Assets/plugins/moment/moment.js"></script>
+        <script src="js/jquery/jquery-1.9.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+        <script src="js/script.js"></script>
+        <script src="Assets/plugins/Calendar/calendar.js"></script>
+        <script>
+             new Chart(document.getElementById("myChart"), {
+                type: 'bar',
+                data: {
+                  labels: ["Pres", "Abs", "Oos", "LM", "ED", "TN"],
+                  datasets: 
+                    [
+                        {
+                            label: ["Present"],
+                            backgroundColor: ["#9B51E0", "#1BA052", "#FED766", "#4663A2", "#EB5757", "#2A97CA"],
+                            borderColor: ["#9B51E0", "#1BA052", "#FED766", "#4663A2", "#EB5757", "#2A97CA"],
+                            data: [65, 59, 75, 81, 56, 55, 40]
+                        }
+                        
+                    ]
+                },
+                
+                options: {
+                    legend: { display: false },
+                    title: {
+                        display: true,
+                        text: 'March 2018'
+                    },
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }],
+                       
+                        xAxes: [{
+                            // Change here
+                            barPercentage: 0.2
+                        }]
+                    }
+                }
+            });
+                        
+        </script>
+        
     </body>
 </html>

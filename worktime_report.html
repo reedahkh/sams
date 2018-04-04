@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>SAMS- Admin Employee Dashboard</title>
+        <!-- favicon -->
+        <link rel="icon" href="img/logo-fav.png" sizes="16x16" type="image/png">
+        <!-- Bootstrap & Fontawesome CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+        
+        <!-- External CSS -->
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
+        <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+    </head>
+    <body>
+        <main>
+            <div class="hide">
+                <div class="row justify-content-start">
+                    <!-- Start side menu -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-auto bg-linear">
+                        <header>
+                            <div class="logo ">
+                                <nav class="navbar navbar-expand-lg bg-transparent">
+                                    <img src="img/Logo/sams-logo-sams-white-text-side copy.png" width="150px">
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation">
+                                        <span class="text-white fa fa-bars"></span>
+                                    </button>
+                                </nav>
+                                
+                            </div>
+                        </header>
+                        <div >
+                            <ul class=" navbar-nav list-group mt-4e">
+                                <a href="dashboard.html" class="list-group-item side-menu-item text-white border-0">
+                                    <img src="img/dashboard/file.svg" alt="" class="dashboard pr-3">Dashboard
+                                </a>
+                                <a href="#" class="list-group-item side-menu-item text-white border-0">
+                                    <img src="img/dashboard/vector.svg" alt="" class=" dashboard pr-3">Attendance
+                                </a>
+                                <!-- <a href="#" class="list-group-item side-menu-item text-white border-0">
+                                    <img src="img/dashboard/vector.svg" alt="" class=" dashboard pr-3">Reports
+                                </a> -->
+                                    
+                                <li class="dropdown list-none side-menu-item active">
+                                    <a class="nav-link dropdown-toggle reports text-white" href="reports.html" id="reportsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                        <img src="img/dashboard/vector.svg" alt="" class=" dashboard pr-3">
+                                        Reports
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="reportsDropdown">
+                                        <a class="dropdown-item f-16" href="reports.html">General Attendance Reports</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item f-16" href="worktime_report.html">Work Time Report</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item f-16" href="work_time_report.html">Work Time Report in (%)</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item f-16" href="latecomer_report.html">Late Comer Report</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item f-16" href="attendance_summary.html">Attendance Summary Report </a>
+                                    </div>
+                                </li>
+                                 
+                                 <a href="admin_employee.html" class="list-group-item text-white side-menu-item border-0">
+                                    <img src="img/dashboard/users.svg" alt="" class="dashboard pr-3">Employee
+                                 </a>
+                                 <a href="punctuality.html" class="list-group-item text-white side-menu-item border-0">
+                                    <img src="img/dashboard/chart.svg" alt="" class="dashboard pr-3">Punctuality
+                                 </a>
+                                 <a href="#" class="list-group-item side-menu-item text-white border-0">
+                                    <img src="img/dashboard/analytics.svg" alt="" class="dashboard pr-3">Analytics
+                                 </a>
+                                 <a href="settings.html" class="list-group-item side-menu-item text-white border-0">
+                                    <img src="img/dashboard/gears.svg" alt="" class="dashboard pr-3">Settings
+                                 </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end side menu -->
+                    <!-- start side content -->
+                    <div class="col-lg-9">
+                        <header>
+                            <nav class="navbar navbar-expand-lg wide-navbar bg-white">
+                                <a class="navbar-brand blue_color" href="#"><i class="fa fa-long-arrow-left"></i>Admin</a>
+                                <button class="navbar-toggler banner_bg-color" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="fa fa-bars text-white"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto">
+                                        
+                                    </ul>
+                                    <form class="form-inline my-2 my-lg-0 mr-3">
+                                        
+                                        
+                                        <li class="nav-item dropdown list-none">
+                                            <a class="nav-link dropdown-toggle logged-user bb_black f-16" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                                Chizoba Egeonu
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="#">View Profile</a>
+                                                <a class="dropdown-item" href="#">Go to Dashboard</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">View Notification</a>
+                                            </div>
+                                        </li>
+                                    </form>
+                                </div>
+                            </nav>
+                        </header>
+                        <main class="element-wrapper width-110">
+                            <div class="element-container mt-75">
+                                <h3 class="blue-color">Work Time Report</h3>
+                                
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                                        <input type="date" id="startDate" class="form-control">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                                        <input type="date" id="endDate" class="form-control">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                                        <select name="location" id="location" class="form-control">
+                                            <option value="">Location</option>
+                                            <option value="">Abuja</option>
+                                            <option value="">Lagos</option>
+                                            <option value="">Enugu</option>
+                                            <option value="">Kano</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                                        <select name="employee" id="employee-select" class="form-control">
+                                            <option value="">Employee</option>
+                                            <option value="">Full Time</option>
+                                            <option value="">Part Time</option>
+                                            <option value="">Intern</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                                        <select name="worktime" id="worktime" class="form-control">
+                                            <option value="" class="py-1">Work Time</option>
+                                            <option value="">8hrs</option>
+                                            <option value="">2hrs</option>
+                                            <option value="">4hrs</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                                        <input type="search" class="form-control search-input" name="search" placeholder="Search">
+                                        <button class="search-btn"><i class="fa fa-tachometer"></i></button>
+                                    </div>
+                                </div>
+                                <p class="mt-3 f-14">DNI: Did Not Clock In, DNO: Did Not Clock Out. ABS: Absent</p>
+                            </div>
+                            <div class="element-container mt-75">
+
+                               <div class="card mb-5">
+                                   <div class="table-responsive">
+                                       <table class="table table-lightborder table-bordered">
+                                           <thead class="fw-700">
+                                               
+                                               <td>Staff ID</td>
+                                               <td>Wed, 28 Feb 2018</td>
+                                               <td>Thur, 29 Feb 2018</td>
+                                               <td>Fri, 2 Mar 2018</td>
+                                               <td>Mon, 5 Mar 2018</td>
+                                               <td>Tue, 6 Mar 2018</td>
+                                               <td>Wed, 7 Mar 2018</td>
+                                               
+                                           </thead>
+                                           <tbody class="f-12">
+                                               <tr>
+                                                   <td colspan="8" rowspan=""></td>
+                                                   
+                                               </tr>
+                                               
+                                               <tr>
+                                                   <td>Salisu Salisu (STO28)</td>
+                                                   <td>0 Min</td>
+                                                   <td>203.9 Min</td>
+                                                   <td>551 Min</td>
+                                                   <td>DNI</td>
+                                                   <td>551 Min</td>
+                                                   <td>DNO</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>Salisu Salisu (STO28)</td>
+                                                   <td>0 Min</td>
+                                                   <td>203.9 Min</td>
+                                                   <td>551 Min</td>
+                                                   <td>DNI</td>
+                                                   <td>551 Min</td>
+                                                   <td>DNO</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>Salisu Salisu (STO28)</td>
+                                                   <td>0 Min</td>
+                                                   <td>203.9 Min</td>
+                                                   <td>551 Min</td>
+                                                   <td>DNI</td>
+                                                   <td>551 Min</td>
+                                                   <td>DNO</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>Salisu Salisu (STO28)</td>
+                                                   <td>0 Min</td>
+                                                   <td>203.9 Min</td>
+                                                   <td>551 Min</td>
+                                                   <td>DNI</td>
+                                                   <td>551 Min</td>
+                                                   <td>DNO</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>Salisu Salisu (STO28)</td>
+                                                   <td>0 Min</td>
+                                                   <td>203.9 Min</td>
+                                                   <td>551 Min</td>
+                                                   <td>DNI</td>
+                                                   <td>551 Min</td>
+                                                   <td>DNO</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>Salisu Salisu (STO28)</td>
+                                                   <td>0 Min</td>
+                                                   <td>203.9 Min</td>
+                                                   <td>551 Min</td>
+                                                   <td>DNI</td>
+                                                   <td>551 Min</td>
+                                                   <td>DNO</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>Salisu Salisu (STO28)</td>
+                                                   <td>0 Min</td>
+                                                   <td>203.9 Min</td>
+                                                   <td>551 Min</td>
+                                                   <td>DNI</td>
+                                                   <td>551 Min</td>
+                                                   <td>DNO</td>
+                                               </tr>
+
+                                           </tbody>
+                                       </table>
+                                   </div>
+                               </div>
+                               <div class="col-md-12">
+                                   <nav aria-label="work time report">
+                                      <ul class="pagination pull-right">
+                                          <li class="page-item bd_blue">
+                                              <a class="page-link blue_color" href="#" aria-label="Previous">
+                                                  <span aria-hidden="true">Previous</span>
+                                                  <span class="sr-only">Previous</span>
+                                              </a>
+                                          </li>
+                                          <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">6</a></li>
+                                          <li class="page-item px-2">
+                                            <a class="page-link blue_color border-0" href="#">of 60 Pages</a>
+                                          </li>
+                                          
+                                          <li class="page-item bd_blue pl-2">
+                                              <a class="page-link blue_color  border-0" href="#" aria-label="Next">
+                                                  <span aria-hidden="true">Next</span>
+                                                  <span class="sr-only">Next</span>
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </nav>
+                               </div>
+                            </div>
+                            <div class="element-container mt-75 mb-5">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="table-controls pull-right">
+                                            <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 mr-3 border-0"><i class="fa fa-share pr-3"></i>Share</button>
+                                            <button class="btn-sm f-16 banner_bg-color text-white px-5 py-2 border-0 mr-3"><i class="fa fa-print pr-3"></i>Print</button>
+                                            <button class="btn-sm f-16 banner_bg-color text-white px-5 py-2 border-0"><i class="fa fa-download pr-3"></i>Download</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+        <!--JS, Popper.js, and jQuery  -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+        
+        <script src="js/script.js"></script>
+    </body>
+</html>

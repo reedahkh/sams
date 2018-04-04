@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>SAMS- Admin Employee Dashboard</title>
+        <!-- favicon -->
+        <link rel="icon" href="img/logo-fav.png" sizes="16x16" type="image/png">
+        <!-- Bootstrap & Fontawesome CDN -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+        
+        <!-- External CSS -->
+        <link rel="stylesheet" type="text/css" href="css/custom.css">
+        <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+    </head>
+    <body>
+        <main>
+            <div class="hide">
+                <div class="row justify-content-start">
+                    <!-- Start side menu -->
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-auto bg-linear">
+                        <header>
+                            <div class="logo ">
+                                <nav class="navbar navbar-expand-lg bg-transparent">
+                                    <img src="img/Logo/sams-logo-sams-white-text-side copy.png" width="150px">
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation">
+                                        <span class="text-white fa fa-bars"></span>
+                                    </button>
+                                </nav>
+                                
+                            </div>
+                        </header>
+                        <div >
+                            <ul class=" navbar-nav list-group mt-4e">
+                                <a href="dashboard.html" class="list-group-item side-menu-item text-white border-0">
+                                    <img src="img/dashboard/file.svg" alt="" class="dashboard pr-3">Dashboard
+                                </a>
+                                <a href="#" class="list-group-item side-menu-item text-white border-0">
+                                    <img src="img/dashboard/vector.svg" alt="" class=" dashboard pr-3">Attendance
+                                </a>
+                                <!-- <a href="#" class="list-group-item side-menu-item text-white border-0">
+                                    <img src="img/dashboard/vector.svg" alt="" class=" dashboard pr-3">Reports
+                                </a> -->
+                                    
+                                <li class="dropdown list-none side-menu-item">
+                                    <a class="nav-link dropdown-toggle reports text-white" href="reports.html" id="reportsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                        <img src="img/dashboard/vector.svg" alt="" class=" dashboard pr-3">
+                                        Reports
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="reportsDropdown">
+                                        <a class="dropdown-item f-16" href="reports.html">General Attendance Reports</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item f-16" href="worktime_report.html">Work Time Report</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item f-16" href="work_time_report.html">Work Time Report in (%)</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item f-16" href="latecomer_report.html">Late Comer Report</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item f-16" href="attendance_summary.html">Attendance Summary Report </a>
+                                    </div>
+                                </li>
+                                 
+                                 <a href="employee.html" class="list-group-item text-white side-menu-item active border-0">
+                                    <img src="img/dashboard/users.svg" alt="" class="dashboard pr-3">Employee
+                                 </a>
+                                 <a href="punctuality.html" class="list-group-item text-white side-menu-item border-0">
+                                    <img src="img/dashboard/chart.svg" alt="" class="dashboard pr-3">Punctuality
+                                 </a>
+                                 <a href="#" class="list-group-item side-menu-item text-white border-0">
+                                    <img src="img/dashboard/analytics.svg" alt="" class="dashboard pr-3">Analytics
+                                 </a>
+                                 <a href="settings.html" class="list-group-item side-menu-item text-white border-0">
+                                    <img src="img/dashboard/gears.svg" alt="" class="dashboard pr-3">Settings
+                                 </a>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end side menu -->
+                    <!-- start side content -->
+                    <div class="col-lg-9">
+                        <header>
+                            <nav class="navbar navbar-expand-lg wide-navbar bg-white">
+                                <a class="navbar-brand blue_color" href="admin_employee.html"><i class="fa fa-long-arrow-left"></i> Dike Thelma Kelechi</a>
+                                <button class="navbar-toggler banner_bg-color" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="fa fa-bars text-white"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav mr-auto">
+                                        <p class="blue-color pt-3">Make An Admin</p>
+                                    </ul>
+                                    <form class="form-inline my-2 my-lg-0 mr-3">
+                                        
+                                        
+                                        <li class="nav-item dropdown list-none">
+                                            <a class="nav-link dropdown-toggle logged-user bb_black f-16" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                                Chizoba Egeonu
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <a class="dropdown-item" href="#">View Profile</a>
+                                                <a class="dropdown-item" href="#">Go to Dashboard</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="#">View Notification</a>
+                                            </div>
+                                        </li>
+                                    </form>
+                                </div>
+                            </nav>
+                        </header>
+                        <main class="element-wrapper width-110">
+                           <div class="element-container mt-75">
+                               <div class="row">
+                                    <div class="col-md-7">
+                                        <div class="card">
+                                            <div class="row">
+                                                <div class="col-md-5">
+                                                    <div class="card-header bd-l-dark">
+                                                        <div class="user-image text-center pt-3">
+                                                            <img src="img/image 3.1.png" class="width-120" alt="">
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-body mt-5 p-0">
+                                                         <p class="blue_color ml-4 f-16 f-karma">
+                                                            <i class="fa fa-envelope grey_text pr-2"></i>dikethelmak@gmail.com
+                                                        </p>
+                                                        <p class="bb_black pl-4"><i class="fa fa-phone pr-2"></i>+(234)-8138-790-480</p>
+                                                    </div>
+                                                    
+                                                   
+                                                </div>
+                                                <div class="col-md-7 text-center pt-4">
+                                                    <h4 class="bb_black">Dike Thelma Kelechi</h4>
+                                                    <p class="light_grey">Lead Designer STO24 Abuja</p>
+                                                    <button class="btn btn-md banner_bg-color text-white width-120 f-14" data-toggle="modal" data-target="#editModal">Edit</button>
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-lg" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title bb_black f-24" id="exampleModalLabel">Edit Employee</h5>
+                                                                    <button type="button" class="close red_color" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true"><i class="fa fa-close"></i></span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="row">
+                                                                        <div class="col-md-2"></div>
+                                                                        <div class="col-md-8">
+                                                                            <form action="" class="mt-5 pb-5">
+                                                                                <div class="form-group">
+                                                                                    <input type="text" class="form-control bb_black f-18 pl-4" placeholder="Dike Thelma Kelechi">
+                                                                                </div>
+                                                                                <div class="form-group row mt-3">
+                                                                                    <div class="col-md-6">
+                                                                                        <input type="text" class="form-control text-center bb_black f-18" placeholder="ICT">
+                                                                                    </div>
+                                                                                    <div class="col-md-6">
+                                                                                        <input type="text" class="form-control text-center bb_black f-18" placeholder="Lead Designer">
+                                                                                    </div>
+                                                                                </div>
+                                                                               
+                                                                                <div class="form-group row mt-75">
+                                                                                    <button class="btn btn-block f-18 banner_bg-color text-white">Update Employee Profile</button>
+                                                                                </div>
+                                                                            </form>
+                                                                        </div>
+                                                                        <div class="col-md-2"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class="card">
+                                            <div class="chart">
+                                                <canvas id="myChart" style="height: 420px"></canvas>
+                                            </div>
+                                        </div>
+                                    </div>
+                               </div>
+                           </div>
+                            <div class="employees-components mt-75">
+                                <div class="row ">
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            
+                                            <div class="card-header bd-r-light_blue pt-2">
+                                                <p class="clearfix">
+                                                    <span class="pull-left f-24 bb_black">Attendance</span>
+                                                    <a href="#" data-toggle="modal" data-target="#editAttendance">
+                                                        <span class="fa fa-ellipsis pull-right blue-color">some</span>
+                                                    </a>
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="editAttendance" tabindex="-1" role="dialog" aria-labelledby="viewEmployeeAttendanceLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-lg" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title bb_black f-18" id="exampleModalLabel"><a href="employee.html" class="bb_black f-24">Dike Thelma Kelechi</a> <i class="fa fa-chevron-right f-18"></i>Attendance</h5>
+                                                                    <button type="button" class="close red_color" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true"><i class="fa fa-close"></i></span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <div class="table-responsive px-4">
+                                                                                <table class="table table-bordered">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <td>125 Days Present</td>
+                                                                                            <td>5 Days Absent</td>
+                                                                                            <td colspan="5">08 Late Mark</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>Date</td>
+                                                                                            <td>Sign In</td>
+                                                                                            <td>Break On</td>
+                                                                                            <td>Break Out</td>
+                                                                                            <td>Sign Out</td>
+                                                                                            <td>Late Marks</td>
+                                                                                            <td>Other</td>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                Thurs, 7 Jan.,2018
+                                                                                            </td>
+                                                                                            <td>08:30AM</td>
+                                                                                            <td>12:00PM</td>
+                                                                                            <td>12:45PM</td>
+                                                                                            <td>5:00PM</td>
+                                                                                            <td></td>
+                                                                                            <td>2:00PM <br>Office Duty</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                Thurs, 7 Jan.,2018
+                                                                                            </td>
+                                                                                            <td>08:30AM</td>
+                                                                                            <td>12:00PM</td>
+                                                                                            <td>12:45PM</td>
+                                                                                            <td>5:00PM</td>
+                                                                                            <td></td>
+                                                                                            <td>2:00PM <br>Office Duty</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                Thurs, 7 Jan.,2018
+                                                                                            </td>
+                                                                                            <td>08:30AM</td>
+                                                                                            <td>12:00PM</td>
+                                                                                            <td>12:45PM</td>
+                                                                                            <td>5:00PM</td>
+                                                                                            <td></td>
+                                                                                            <td>2:00PM <br>Office Duty</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                Thurs, 7 Jan.,2018
+                                                                                            </td>
+                                                                                            <td>08:30AM</td>
+                                                                                            <td>12:00PM</td>
+                                                                                            <td>12:45PM</td>
+                                                                                            <td>5:00PM</td>
+                                                                                            <td></td>
+                                                                                            <td>2:00PM <br>Office Duty</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                Thurs, 7 Jan.,2018
+                                                                                            </td>
+                                                                                            <td>08:30AM</td>
+                                                                                            <td>12:00PM</td>
+                                                                                            <td>12:45PM</td>
+                                                                                            <td>5:00PM</td>
+                                                                                            <td></td>
+                                                                                            <td>2:00PM <br>Office Duty</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                Thurs, 7 Jan.,2018
+                                                                                            </td>
+                                                                                            <td>08:30AM</td>
+                                                                                            <td>12:00PM</td>
+                                                                                            <td>12:45PM</td>
+                                                                                            <td>5:00PM</td>
+                                                                                            <td></td>
+                                                                                            <td>2:00PM <br>Office Duty</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                Thurs, 7 Jan.,2018
+                                                                                            </td>
+                                                                                            <td>08:30AM</td>
+                                                                                            <td>12:00PM</td>
+                                                                                            <td>12:45PM</td>
+                                                                                            <td>5:00PM</td>
+                                                                                            <td></td>
+                                                                                            <td>2:00PM <br>Office Duty</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>
+                                                                                                Thurs, 7 Jan.,2018
+                                                                                            </td>
+                                                                                            <td>08:30AM</td>
+                                                                                            <td>12:00PM</td>
+                                                                                            <td>12:45PM</td>
+                                                                                            <td>5:00PM</td>
+                                                                                            <td></td>
+                                                                                            <td>2:00PM <br>Office Duty</td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                        <div class="col-md-12 mt-5">
+                                                                            <nav aria-label="work time report">
+                                                                                <ul class="pagination pull-right">
+                                                                                    <li class="page-item bd_blue">
+                                                                                        <a class="page-link blue_color" href="#" aria-label="Previous">
+                                                                                            <span aria-hidden="true">Previous</span>
+                                                                                            <span class="sr-only">Previous</span>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">1</a></li>
+                                                                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">2</a></li>
+                                                                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">3</a></li>
+                                                                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">4</a></li>
+                                                                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">4</a></li>
+                                                                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">6</a></li>
+                                                                                    <li class="page-item bd_blue">
+                                                                                        <a class="page-link blue_color  border-0" href="#" aria-label="Next">
+                                                                                            <span aria-hidden="true">Next</span>
+                                                                                            <span class="sr-only">Next</span>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </nav>
+                                                                       </div>
+                                                                        <div class="col-md-12 mt-75 mb-5">
+                                                                            <div class="table-controls pull-right">
+                                                                                <button class="btn btn-sm banner_bg-color text-white px-5 py-2 mr-3 border-0"><i class="fa fa-share pr-3"></i>Share</button>
+                                                                                <button class="btn-sm banner_bg-color text-white px-5 py-2 border-0 mr-3"><i class="fa fa-print pr-3"></i>Print</button>
+                                                                                <button class="btn-sm banner_bg-color text-white px-5 py-2 border-0"><i class="fa fa-download pr-3"></i>Download</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </p>
+                                                <hr>
+                                            </div>
+                                            <div class="card-body f-fira bb_black">
+                                                <div class="present">
+                                                    <p class="f-16">Total Number of Days Present</p>
+                                                    <p class="f-16"><span class="red_color f-36 dark_red mr-3">125</span>Days</p>
+                                                </div>
+                                                <div class="absent mt-5">
+                                                    <p class="f-16">Total Number of Days Absent</p>
+                                                    <p class="f-16"><span class="red_color f-36 mr-3">04</span>Days</p>
+                                                </div>
+                                                <div class="late-marks mt-5">
+                                                    <p class="f-16">Total Number of Late Mark</p>
+                                                    <p class="f-16"><span class="blue-color f-36 mr-3">08</span>Days</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <div class="card-header bd-r-green pt-2">
+                                                <div class="clearfix">
+                                                    <span class="pull-left f-16">Out of Station</span>
+                                                    <a href="#" data-toggle="modal" data-target="#editOOS">
+                                                        <span class="fa fa-ellipsis pull-right blue-color">some</span>
+                                                    </a>
+
+                                                    <!-- Modal -->
+                                                    <div class="modal fade" id="editOOS" tabindex="-1" role="dialog" aria-labelledby="viewEmployeeAttendanceLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-lg" role="document">
+                                                            <div class="modal-content">
+                                                                <div class="modal-header">
+                                                                    <h5 class="modal-title bb_black f-18" id="exampleModalLabel"><a href="employee.html" class="bb_black f-24">Leave</a></h5>
+                                                                    <button type="button" class="close red_color" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true"><i class="fa fa-close"></i></span>
+                                                                    </button>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="row">
+                                                                        <div class="col-md-12">
+                                                                            <div class="table-responsive px-4">
+                                                                                <table class="table table-bordered">
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <td class="blue-color">12 Out of Station Days</td>
+                                                                                            <td class="red_color">04 Out of Station Days Taken</td>
+                                                                                            <td colspan="3" class="bb_black">08 Out of Station Available</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>Applied Date</td>
+                                                                                            <td>Approved Date</td>
+                                                                                            <td>Reason</td>
+                                                                                            <td>Expected Resume Date</td>
+                                                                                            <td>Date Resumed</td>
+                                                                                            
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <td colspan="5"></td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>                                                  Thurs, 7 Jan.,2018
+                                                                                            </td>
+                                                                                            <td>Thurs, 7 Jan.,2018</td>
+                                                                                            <td>Maternity Leave</td>
+                                                                                            <td>Fri.,4th Mar.,2018</td>
+                                                                                            <td>Fri.,4th Mar.,2018</td>
+                                                                                            
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>                                                  Thurs, 7 Jan.,2018
+                                                                                            </td>
+                                                                                            <td>Thurs, 7 Jan.,2018</td>
+                                                                                            <td>Maternity Leave</td>
+                                                                                            <td>Fri.,4th Mar.,2018</td>
+                                                                                            <td>Fri.,4th Mar.,2018</td>
+                                                                                            
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>                                                  Thurs, 7 Jan.,2018
+                                                                                            </td>
+                                                                                            <td>Thurs, 7 Jan.,2018</td>
+                                                                                            <td>Maternity Leave</td>
+                                                                                            <td>Fri.,4th Mar.,2018</td>
+                                                                                            <td>Fri.,4th Mar.,2018</td>
+                                                                                            
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>                                                  Thurs, 7 Jan.,2018
+                                                                                            </td>
+                                                                                            <td>Thurs, 7 Jan.,2018</td>
+                                                                                            <td>Maternity Leave</td>
+                                                                                            <td>Fri.,4th Mar.,2018</td>
+                                                                                            <td>Fri.,4th Mar.,2018</td>
+                                                                                            
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <td>                                                  Thurs, 7 Jan.,2018
+                                                                                            </td>
+                                                                                            <td>Thurs, 7 Jan.,2018</td>
+                                                                                            <td>Maternity Leave</td>
+                                                                                            <td>Fri.,4th Mar.,2018</td>
+                                                                                            <td>Fri.,4th Mar.,2018</td>
+                                                                                            
+                                                                                        </tr>
+                                                                                     
+                                                                                        <tr>
+                                                                                            <td>                                                  Thurs, 7 Jan.,2018
+                                                                                            </td>
+                                                                                            <td>Thurs, 7 Jan.,2018</td>
+                                                                                            <td>Maternity Leave</td>
+                                                                                            <td>Fri.,4th Mar.,2018</td>
+                                                                                            <td>Fri.,4th Mar.,2018</td>
+                                                                                            
+                                                                                        </tr>
+                                                                                        
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                        <div class="col-md-12 mt-5">
+                                                                            <nav aria-label="work time report">
+                                                                                <ul class="pagination pull-right">
+                                                                                    <li class="page-item bd_blue">
+                                                                                        <a class="page-link blue_color" href="#" aria-label="Previous">
+                                                                                            <span aria-hidden="true">Previous</span>
+                                                                                            <span class="sr-only">Previous</span>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">1</a></li>
+                                                                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">2</a></li>
+                                                                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">3</a></li>
+                                                                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">4</a></li>
+                                                                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">4</a></li>
+                                                                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">6</a></li>
+                                                                                    <li class="page-item bd_blue">
+                                                                                        <a class="page-link blue_color  border-0" href="#" aria-label="Next">
+                                                                                            <span aria-hidden="true">Next</span>
+                                                                                            <span class="sr-only">Next</span>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </nav>
+                                                                       </div>
+                                                                        <div class="col-md-12 mt-75 mb-5">
+                                                                            <div class="table-controls pull-right">
+                                                                                <button class="btn btn-sm banner_bg-color text-white px-5 py-2 mr-3 border-0"><i class="fa fa-share pr-3"></i>Share</button>
+                                                                                <button class="btn-sm banner_bg-color text-white px-5 py-2 border-0 mr-3"><i class="fa fa-print pr-3"></i>Print</button>
+                                                                                <button class="btn-sm banner_bg-color text-white px-5 py-2 border-0"><i class="fa fa-download pr-3"></i>Download</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                
+                                            </div>
+                                            <div class="card-body f-fira bb_black">
+                                                <div class="present">
+                                                    <p class="f-16">Total Number of Out of Station</p>
+                                                    <p><span class="dark_red f-36 mr-3">12</span>Out of Station</p>
+                                                </div>
+                                                <div class="absent mt-5">
+                                                    <p class="f-16">Total Number of Out of Station Taken</p>
+                                                    <p><span class="red_color f-36 mr-3">04</span>Out of Station</p>
+                                                </div>
+                                                <div class="late-marks mt-5">
+                                                    <p class="f-16">Total Number of Out of Station Available</p>
+                                                    <p><span class="blue-color f-36 mr-3">08</span>Out of Station</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card">
+                                            <div class="card-header bd-r-red">
+                                                <div class="clearfix">
+                                                    <span class="pull-left f-16">Punctuality</span>
+                                                    <span class="fa fa-ellipsis pull-right blue-color">some</span>
+                                                </div>
+                                                <hr>
+                                                
+                                            </div>
+                                            <div class="card-body f-fira bb_black">
+                                                <div class="present">
+                                                    <p class="f-16">This Week</p>
+                                                    <p><span class="dark_red f-36 mr-3">2</span>Days Punctual</p>
+                                                </div>
+                                                <div class="absent mt-5">
+                                                    <p class="f-16">Previous Week</p>
+                                                    <p><span class="red_color f-36 mr-3">3</span>Days Punctual <i class="fa fa-long-arrow-down red_color ml-3 f-34"></i></p>
+                                                </div>
+                                                <div class="late-marks mt-5">
+                                                    <p class="f-16">Previous Month</p>
+                                                    <p><span class="blue-color f-36 mr-3">28</span>Days Punctual <i class="fa fa-long-arrow-up blue-arrow ml-3 f-34"></i></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
+                            </div>
+                            
+
+                            <div class="element-container mt-112">
+
+                                <div class="row mt-5">
+                                    <div class="col-md-12">
+                                        <div class="element-container mb-75">
+                                            <button class="btn-lg btn-delete border-0 text-white pull-right f-18">Delete Employee</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+        <!--JS, Popper.js, and jQuery  -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+        
+        <script src="js/script.js"></script>
+        <script>
+            new Chart(document.getElementById("myChart"), {
+                type: 'bar',
+                data: {
+                  labels: ["Pres", "Abs", "Oos", "LM", "ED", "TN"],
+                  datasets: 
+                    [
+                        {
+                            label: ["Present"],
+                            backgroundColor: ["#9B51E0", "#1BA052", "#FED766", "#4663A2", "#EB5757", "#2A97CA"],
+                            borderColor: ["#9B51E0", "#1BA052", "#FED766", "#4663A2", "#EB5757", "#2A97CA"],
+                            data: [65, 59, 75, 81, 56, 55, 40]
+                        }
+                        
+                    ]
+                },
+                
+                options: {
+                    legend: { display: false },
+                    title: {
+                        display: true,
+                        text: 'March 2018'
+                    },
+                    scales: {
+                        yAxes: [{
+                            ticks: {
+                                beginAtZero: true
+                            }
+                        }],
+                       
+                        xAxes: [{
+                            // Change here
+                            barPercentage: 0.2
+                        }]
+                    }
+                }
+            });
+                        
+        </script>
+    </body>
+</html>
