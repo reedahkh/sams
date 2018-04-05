@@ -24,7 +24,7 @@
             <div class="hide">
                 <div class="row justify-content-start">
                     <!-- Start side menu -->
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-auto bg-linear">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-auto bg-linear" style="height: 100vh;">
                         <header>
                             <div class="logo ">
                                 <nav class="navbar navbar-expand-lg bg-transparent">
@@ -41,13 +41,7 @@
                                 <a href="dashboard.html" class="list-group-item side-menu-item text-white border-0">
                                     <img src="img/dashboard/file.svg" alt="" class="dashboard pr-3">Dashboard
                                 </a>
-                                <a href="#" class="list-group-item side-menu-item text-white border-0">
-                                    <img src="img/dashboard/vector.svg" alt="" class=" dashboard pr-3">Attendance
-                                </a>
-                                <!-- <a href="#" class="list-group-item side-menu-item text-white border-0">
-                                    <img src="img/dashboard/vector.svg" alt="" class=" dashboard pr-3">Reports
-                                </a> -->
-                                    
+                                
                                 <li class="dropdown list-none side-menu-item">
                                     <a class="nav-link dropdown-toggle reports text-white" href="reports.html" id="reportsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
                                         <img src="img/dashboard/vector.svg" alt="" class=" dashboard pr-3">
@@ -72,9 +66,7 @@
                                  <a href="punctuality.html" class="list-group-item text-white side-menu-item active border-0">
                                     <img src="img/dashboard/chart.svg" alt="" class="dashboard pr-3">Punctuality
                                  </a>
-                                 <a href="#" class="list-group-item side-menu-item text-white border-0">
-                                    <img src="img/dashboard/analytics.svg" alt="" class="dashboard pr-3">Analytics
-                                 </a>
+                                 
                                  <a href="settings.html" class="list-group-item side-menu-item text-white border-0">
                                     <img src="img/dashboard/gears.svg" alt="" class="dashboard pr-3">Settings
                                  </a>
@@ -121,8 +113,9 @@
                                             <div class="card">
                                                 <div class="col-md-6">
                                                     <div class="pie">
-                                                        <canvas></canvas>
+                                                        <canvas id="pieChart" height="400" width="200"></canvas>
                                                     </div>
+                                                   
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div class="pie">
@@ -187,42 +180,28 @@
         
         <script src="js/script.js"></script>
         <script>
-            new Chart(document.getElementById("myChart"), {
-                type: 'bar',
+            new Chart(document.getElementById("pieChart"), {
+                type: 'doughnut',
                 data: {
                   labels: ["Pres", "Abs", "Oos", "LM", "ED", "TN"],
                   datasets: 
                     [
                         {
-                            label: ["Present"],
+                            
                             backgroundColor: ["#9B51E0", "#1BA052", "#FED766", "#4663A2", "#EB5757", "#2A97CA"],
                             borderColor: ["#9B51E0", "#1BA052", "#FED766", "#4663A2", "#EB5757", "#2A97CA"],
-                            data: [65, 59, 75, 81, 56, 55, 40]
+                            data: [65]
                         }
                         
                     ]
                 },
-                
-                options: {
-                    legend: { display: false },
-                    title: {
-                        display: true,
-                        text: 'March 2018'
-                    },
-                    scales: {
-                        yAxes: [{
-                            ticks: {
-                                beginAtZero: true
-                            }
-                        }],
-                       
-                        xAxes: [{
-                            // Change here
-                            barPercentage: 0.2
-                        }]
-                    }
+                option:{
+                    cutoutPercentage: 80
                 }
+                
+               
             });
+           
                         
         </script>
     </body>

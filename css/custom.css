@@ -43,8 +43,14 @@ html, body{
 .red_color{
 	color: #EB5757;
 }
+.bg_red_color{
+	background: #EB5757;
+}
 .bg_dark-grey{
 	background: #696773;
+}
+.bg_green{
+	background: #1ba052;
 }
 .green_color{
 	color:#219653;

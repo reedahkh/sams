@@ -34,7 +34,7 @@ body {
 }
 
 .bg-linear{
-	background: linear-gradient(180deg, #0B2D40 -6.2%, rgba(74, 88, 153, 0.99) 115.14%); !important;
+	background: linear-gradient(180deg, #0B2D40 -6.2%, rgba(74, 88, 153, 0.99) 115.14%);
 	
 }
 .bg-transparent{
@@ -51,6 +51,9 @@ body {
 }
 .mt-5e{
 	margin-top: 5em;
+}
+.mt-6e{
+	margin-top: 6em;
 }
 .width-60{
 	width:60px;
@@ -198,14 +201,16 @@ img.dashboard{
 }
 /*Admin employee*/
 .dot{
-	float: left;
+	position: absolute;
     margin-top: 3px;
-    
 	background: #219653;
     width: 7px;
     height: 7px;
     border-radius: 50%;
     border: 1px solid #219653;
+}
+.bd-white{
+	border-top: 3px solid #fff;
 }
 .search-input{
 	width: 100px;
@@ -252,6 +257,39 @@ img.dashboard{
 input.arrival_time{
 	border-bottom:  1px solid #BDBDBD !important;
 }
+
+button.close:hover{
+	color: #EB5757;
+}
+.employee_thumbnail{
+	width: 100px;
+	margin:auto;
+	margin-top: -3em;
+}
+.img_dot{
+	width: 7px;
+    height: 7px;
+    /*background: #219653;*/
+    position: absolute;
+    border-radius: 50%;
+    top: 1.3em;
+    left: 9.1em;
+}
+.mt--3e{
+	margin-top: -3.6em;
+}
+.mt--2e{
+	margin-top: -1.5em;
+}
+.append-btn{
+	border: 1px solid #ced4da;
+    border-left-color: #fff;
+    margin-left: -2px;
+}
+.bd-l-white{
+	border-right-color: #fff;
+}
+
 .ldBar-label {
     color: red;
     font-family: tahoma;
@@ -271,10 +309,6 @@ input.arrival_time{
 }
 
 
-
-
-
-
 @media( min-width:1210px){
 	.wide-navbar{
 		width:113%;
@@ -292,9 +326,21 @@ input.arrival_time{
 		width:100%;
 		padding: 0 1em;
 	}
+	#startDate, #endDate, #location, #employee-select, #worktime{
+		margin-bottom: 20px;
+	}
 	.card-box{
 		margin-bottom: 1em;
+		height: 190px;
 	}
+	.img_dot{
+		left: 6.4em;
+	}
+	#arrowDown, #arrowUp{
+		float: right;
+		margin-top: -1em;
+	}
+
 }
 @media( max-width: 768px ){
 	.side-menu-item{
@@ -319,7 +365,7 @@ input.arrival_time{
 		width:160px;
 	}
 	.employee-card{
-		margin-bottom: 20px;
+		margin-bottom: 4em;
 	}
 	.password-settings{
 		padding:0 2em;
@@ -327,6 +373,20 @@ input.arrival_time{
 	.chart{
 		margin-top: 20px;
 	}
+	.img_dot{
+		left: 8em;
+	}
+	.table-controls button{
+		margin-bottom: 10px;
+	}
+	.employee-card{
+		margin-bottom: 20px;
+	}
+	#arrowDown, #arrowUp{
+		float: right;
+		margin-top: -1em;
+	}
+	
 
 }
 
@@ -348,23 +408,40 @@ input.arrival_time{
 	.card-box{
 		margin-bottom: 1em;
 	}
-	#startDate, #endDate, #location, #employee-select, #worktime{
+	#startDate, #endDate, #location, #employee-select, #worktime, #cardMonth{
 		margin-bottom: 20px;
 	}
 	.search-input{
 		width:200px;
 	}
 	.employee-card{
-		margin-bottom: 20px;
+		margin-bottom: 4em;
 	}
 	.dot{
-	    margin-left: 6em;
     	margin-bottom: 15px;
 	}
 	.password-settings{
 		padding:0 2em;
 	}
 	.chart{
+		margin-top: 20px;
+	}
+	.img_dot{
+		left: 9.5em;
+	}
+	.table-controls button{
+		margin-bottom: 10px;
+	}
+	.chart-card{
+		margin-top: 20px;
+	}
+	#editBtn{
+		margin-bottom: 20px;
+	}
+	.attendance-card{
+		margin-bottom: 20px;
+	}
+	#renewBtn{
 		margin-top: 20px;
 	}
 }

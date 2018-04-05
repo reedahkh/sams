@@ -40,7 +40,7 @@
             <img src="img/dashboard/users.svg" alt="" class="pr-1">
             Organizations
           </a>
-          <a class="list-group-item border-0 rounded-0 text-white pl-2" id="list-dealers-list" data-toggle="list" href="#list-dealers" role="tab" aria-controls="dealers">
+         <!--  <a class="list-group-item border-0 rounded-0 text-white pl-2" id="list-dealers-list" data-toggle="list" href="#list-dealers" role="tab" aria-controls="dealers">
             <img src="img/dashboard/users.svg" alt="" class="pr-1">
             Dealers
           </a>
@@ -51,11 +51,11 @@
           <a class="list-group-item border-0 rounded-0 text-white pl-2" id="list-clients-list" data-toggle="list" href="#list-clients" role="tab" aria-controls="clients">
             <img src="img/dashboard/users.svg" alt="" class="pr-1">
             Clients
-          </a>
-          <a class="list-group-item border-0 rounded-0 text-white pl-2" id="list-CT-list" data-toggle="list" href="#list-CT" role="tab" aria-controls="CT">
+          </a> -->
+          <!-- <a class="list-group-item border-0 rounded-0 text-white pl-2" id="list-CT-list" data-toggle="list" href="#list-CT" role="tab" aria-controls="CT">
             <img src="img/dashboard/users.svg" alt="" class="pr-1">
             Company <br> Transaction
-          </a>
+          </a> -->
           <a class="list-group-item border-0 rounded-0 text-white pl-2" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">
             <img src="img/dashboard/gears.svg" alt="" class="pr-1">
             Settings
@@ -68,234 +68,243 @@
 
           <div class="tab-pane fade show active px-5 bg-white" id="list-dashboard" role="tabpanel" aria-labelledby="list-dashboard-list">
 
-            <header class="bg-white py-2">
-              <div class="row">
-                <div class="col-12 col-md-4">
-                  <p class="blue-color h3 ">SAMS Admin</p>
+            
+
+            <div class="m-0 p-0 switch">
+
+              <header class="bg-white py-2">
+                <div class="row">
+                  <div class="col-12 col-md-4">
+                    <p class="blue-color h3 ">SAMS Admin</p>
+                  </div>
+                  <div class="col-12 col-md-5">
+                    <!-- <input type="" name="" placeholder="Search &hellip;" class="form-control"> -->
+                  </div>
+                  <div class="col-12 col-md-3 text-right">
+                    <div class="dropdown">
+                      <button class="btn bg-transparent dropdown-toggle nav-drp" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Chizoba Egeonu
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </div>
+                  </div>                                    
                 </div>
-                <div class="col-12 col-md-5">
-                  <!-- <input type="" name="" placeholder="Search &hellip;" class="form-control"> -->
+              </header>
+
+              <div class="d-flex my-4">
+                <div class="d-flex mr-5">
+                  <p class="blue-color h5 mr-5 mt-1 pt-1">Actual Monthly Income</p>
+                  <p class="amount blue-color h2 text-right">N 54,780.00</p>
                 </div>
-                <div class="col-12 col-md-3 text-right">
-                  <div class="dropdown">
-                    <button class="btn bg-transparent dropdown-toggle nav-drp" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Chizoba Egeonu
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                
+                <div class="d-flex ml-5 pl-5 ">
+                  <p class="blue-color h5 mr-5 mt-1 pt-1">Total Monthly Income</p>
+                  <p class="amount blue-color h2 text-right">N 50,000.00</p>
+                </div>
+              </div>
+
+              <div class="card-deck mt-3 mb-0">
+
+                <div class="card rounded-0 card-shdw p-0">
+                  <div class="card-body d-flex m-0 p-3">
+                    <img class="mr-auto" src="img/polygon-red.png" alt="Card cap">
+                    <div class="d-block">
+                      <p class="card-text text-sm py-0 my-0  ">Total Subscribers</p>
+                      <h5 class="card-title text-center h1">00</h5>
                     </div>
                   </div>
-                </div>                                    
-              </div>
-            </header>
-
-            <div class="d-flex my-4">
-              <div class="d-flex mr-5">
-                <p class="blue-color h5 mr-5 mt-1 pt-1">Actual Monthly Income</p>
-                <p class="amount blue-color h2 text-right">N 54,780.00</p>
-              </div>
+                </div>
+                <div class="card rounded-0 card-shdw p-0">
+                  <div class="card-body d-flex m-0 p-3">
+                    <img class="mr-auto" src="img/polygon-yellow.png" alt="Card cap">
+                    <div class="d-block ">
+                      <p class="card-text text-sm py-0 my-0">Paid Subscribers</p>
+                      <h5 class="card-title text-center h1">00</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="card rounded-0 card-shdw p-0">
+                  <div class="card-body d-flex m-0 p-3">
+                    <img class="mr-auto" src="img/polygon-blue.png" alt="Card cap">
+                    <div class="d-block">
+                      <p class="card-text text-sm py-0 my-0  ">Free Subscribers</p>
+                      <h5 class="card-title text-center h1">00</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="card rounded-0 card-shdw p-0">
+                  <div class="card-body d-flex m-0 p-3">
+                    <img class="mr-auto" src="img/polygon-green.png" alt="Card cap">
+                    <div class="d-block ">
+                      <p class="card-text text-sm py-0 my-0">Expired Subscribers</p>
+                      <h5 class="card-title text-center h1">00</h5>
+                    </div>
+                  </div>
+                </div>
               
-              <div class="d-flex ml-5 pl-5 ">
-                <p class="blue-color h5 mr-5 mt-1 pt-1">Total Monthly Income</p>
-                <p class="amount blue-color h2 text-right">N 50,000.00</p>
               </div>
-            </div>
+              <!-- end of first card deck -->
+              <div class="card-deck mt-0 mb-5">
+                
+                <div class="card bg-white rounded-0 mt-5 card-shdw">
+                  <div class="card-header d-flex bg-white py-0">
+                    <img src="img/terminal.svg" class="mr-5">
+                    <p class="mr-auto h4 mt-3">Total Organizations(s)</p>
+                    <p class="h1 blue-color mt-1">00</p>
+                  </div>
+                  <div class="card-body p-1">
+                    <ul class="list-group">
+                      <li class="list-group-item d-flex justify-content-between align-items-center border-0 py-2 org-nav org-man-nav" >
+                        Manufacturer(s)
+                        <span class="badge badge-transparent badge-pill">00</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center border-0 py-2 org-nav org-dealers-nav">
+                        Dealer(s)
+                        <span class="badge badge-transparent badge-pill">00</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center border-0 py-2 org-nav org-clients-nav">
+                        Client(s)
+                        <span class="badge badge-transparent badge-pill">00</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center border-0 py-2 org-nav org-ct-nav">
+                        Company Transaction (s)
+                        <span class="badge badge-transparent badge-pill">00</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
 
-            <div class="card-deck mt-3 mb-0">
+                <div class="card bg-white rounded-0 mt-5 card-shdw">
+                  <div class="card-header d-flex bg-white py-0">
+                    <img src="img/org.svg" class="mr-5">
+                    <p class="mr-auto h4 mt-3">Total Terminal(s)</p>
+                    <p class="h1 blue-color mt-1">00</p>
+                  </div>
+                  <div class="card-body p-1">
+                    <ul class="list-group">
+                      <li class="list-group-item d-flex justify-content-between align-items-center border-0 py-2">
+                          Assigned Terminal(s)
+                          <span class="badge badge-transparent badge-pill">00</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 py-2">
+                          Allocated Termianl(s)
+                          <span class="badge badge-transparent badge-pill">00</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 py-2">
+                          Subscribed Termianl(s)
+                          <span class="badge badge-transparent badge-pill">00</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 py-2">
+                          Unsubscribed Terminal(s)
+                          <span class="badge badge-transparent badge-pill">00</span>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
 
-              <div class="card rounded-0 card-shdw p-0">
-                <div class="card-body d-flex m-0 p-3">
-                  <img class="mr-auto" src="img/polygon-red.png" alt="Card cap">
-                  <div class="d-block">
-                    <p class="card-text text-sm py-0 my-0  ">Total Subscribers</p>
-                    <h5 class="card-title text-center h1">00</h5>
-                  </div>
-                </div>
               </div>
-              <div class="card rounded-0 card-shdw p-0">
-                <div class="card-body d-flex m-0 p-3">
-                  <img class="mr-auto" src="img/polygon-yellow.png" alt="Card cap">
-                  <div class="d-block ">
-                    <p class="card-text text-sm py-0 my-0">Paid Subscribers</p>
-                    <h5 class="card-title text-center h1">00</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="card rounded-0 card-shdw p-0">
-                <div class="card-body d-flex m-0 p-3">
-                  <img class="mr-auto" src="img/polygon-blue.png" alt="Card cap">
-                  <div class="d-block">
-                    <p class="card-text text-sm py-0 my-0  ">Free Subscribers</p>
-                    <h5 class="card-title text-center h1">00</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="card rounded-0 card-shdw p-0">
-                <div class="card-body d-flex m-0 p-3">
-                  <img class="mr-auto" src="img/polygon-green.png" alt="Card cap">
-                  <div class="d-block ">
-                    <p class="card-text text-sm py-0 my-0">Expired Subscribers</p>
-                    <h5 class="card-title text-center h1">00</h5>
-                  </div>
-                </div>
-              </div>
-            
-            </div>
-            <!-- end of first card deck -->
-            <div class="card-deck mt-0 mb-5">
+              <!-- end of second card deck -->
               
-              <div class="card bg-white rounded-0 mt-5 card-shdw">
-                <div class="card-header d-flex bg-white py-0">
-                  <img src="img/terminal.svg" class="mr-5">
-                  <p class="mr-auto h4 mt-3">Total Organizations(s)</p>
-                  <p class="h1 blue-color mt-1">00</p>
-                </div>
-                <div class="card-body p-1">
-                  <ul class="list-group">
-                    <li class="list-group-item d-flex justify-content-between align-items-center border-0 py-2">
-                      Manufacturer(s)
-                      <span class="badge badge-transparent badge-pill">00</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center border-0 py-2">
-                      Dealer(s)
-                      <span class="badge badge-transparent badge-pill">00</span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center border-0 py-2">
-                      Client(s)
-                      <span class="badge badge-transparent badge-pill">00</span>
-                    </li>
-                  </ul>
-                </div>
+              <div class="table-responsive card-shdw mb-5 pm-0">
+                <table class="table table-hover table-bordered mb-0 border-0 text-center">
+                  <thead>
+                    <tr>
+                      <th scope="row" colspan="2" class="border-0">
+                         <!-- <div class="d-flex"> -->
+                          <p class="h4 blue-color mt-2 ml-2">Pending Dealership Request</p>
+                          <!-- <input type="search" name="" class="form-control bg-light" placeholder="search"> -->
+                        <!-- </div> -->
+                      </th>
+                      <th scope="row" colspan="2" class="border-0">
+                         <!-- <div class="d-flex"> -->
+                          <!-- <p class="h4 blue-color">Pending Dealership Request</p> -->
+                          <input type="search" name="" class="form-control py-2 border-0 bg-light" placeholder="search">
+                        <!-- </div> -->
+                      </th>
+                      <th colspan="2" class="border-0"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="h4">
+                      <td>Name</td>
+                      <td>Phone Number</td>
+                      <td>Country</td>
+                      <td>State</td>
+                      <td>Email</td>
+                      <td>Website</td>
+                    </tr>
+                    <tr>
+                      <td>Ladeesh Group</td>
+                      <td>+23480348274924</td>
+                      <td>Nigeria</td>
+                      <td>Abuja</td>
+                      <td>ladeeshgroup@gmail.com</td>
+                      <td>ladeeshgroup.com.ng</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>             
+                </table>
               </div>
+              <!-- end of table 1 -->
 
-              <div class="card bg-white rounded-0 mt-5 card-shdw">
-                <div class="card-header d-flex bg-white py-0">
-                  <img src="img/org.svg" class="mr-5">
-                  <p class="mr-auto h4 mt-3">Total Terminal(s)</p>
-                  <p class="h1 blue-color mt-1">00</p>
-                </div>
-                <div class="card-body p-1">
-                  <ul class="list-group">
-                    <li class="list-group-item d-flex justify-content-between align-items-center border-0 py-2">
-                        Assigned Terminal(s)
-                        <span class="badge badge-transparent badge-pill">00</span>
-                      </li>
-                      <li class="list-group-item d-flex justify-content-between align-items-center border-0 py-2">
-                        Allocated Termianl(s)
-                        <span class="badge badge-transparent badge-pill">00</span>
-                      </li>
-                      <li class="list-group-item d-flex justify-content-between align-items-center border-0 py-2">
-                        Subscribed Termianl(s)
-                        <span class="badge badge-transparent badge-pill">00</span>
-                      </li>
-                      <li class="list-group-item d-flex justify-content-between align-items-center border-0 py-2">
-                        Unsubscribed Terminal(s)
-                        <span class="badge badge-transparent badge-pill">00</span>
-                      </li>
-                  </ul>
-                </div>
+              <div class="table-responsive card-shdw mb-5 pm-0">
+                <table class="table table-hover table-bordered mb-0 border-0 text-center">
+                  <thead>
+                    <tr>
+                      <th scope="row" colspan="2" class="border-0">
+                         <!-- <div class="d-flex"> -->
+                          <p class="h4 blue-color mt-2 ml-2">Registered Dealers</p>
+                          <!-- <input type="search" name="" class="form-control bg-light" placeholder="search"> -->
+                        <!-- </div> -->
+                      </th>
+                      <th scope="row" colspan="2" class="border-0">
+                         <!-- <div class="d-flex"> -->
+                          <!-- <p class="h4 blue-color">Pending Dealership Request</p> -->
+                          <input type="search" name="" class="form-control py-2 border-0 bg-light" placeholder="search">
+                        <!-- </div> -->
+                      </th>
+                      <th colspan="2" class="border-0"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="h4">
+                      <td>Name</td>
+                      <td>Phone Number</td>
+                      <td>Country</td>
+                      <td>State</td>
+                      <td>Email</td>
+                      <td>Website</td>
+                    </tr>
+                    <tr>
+                      <td>Ladeesh Group</td>
+                      <td>+23480348274924</td>
+                      <td>Nigeria</td>
+                      <td>Abuja</td>
+                      <td>ladeeshgroup@gmail.com</td>
+                      <td>ladeeshgroup.com.ng</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>             
+                </table>
               </div>
-
-            </div>
-            <!-- end of second card deck -->
-            
-            <div class="table-responsive card-shdw mb-5 pm-0">
-              <table class="table table-hover table-bordered mb-0 border-0 text-center">
-                <thead>
-                  <tr>
-                    <th scope="row" colspan="2" class="border-0">
-                       <!-- <div class="d-flex"> -->
-                        <p class="h4 blue-color mt-2 ml-2">Pending Dealership Request</p>
-                        <!-- <input type="search" name="" class="form-control bg-light" placeholder="search"> -->
-                      <!-- </div> -->
-                    </th>
-                    <th scope="row" colspan="2" class="border-0">
-                       <!-- <div class="d-flex"> -->
-                        <!-- <p class="h4 blue-color">Pending Dealership Request</p> -->
-                        <input type="search" name="" class="form-control py-2 border-0 bg-light" placeholder="search">
-                      <!-- </div> -->
-                    </th>
-                    <th colspan="2" class="border-0"></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="h4">
-                    <td>Name</td>
-                    <td>Phone Number</td>
-                    <td>Country</td>
-                    <td>State</td>
-                    <td>Email</td>
-                    <td>Website</td>
-                  </tr>
-                  <tr>
-                    <td>Ladeesh Group</td>
-                    <td>+23480348274924</td>
-                    <td>Nigeria</td>
-                    <td>Abuja</td>
-                    <td>ladeeshgroup@gmail.com</td>
-                    <td>ladeeshgroup.com.ng</td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                </tbody>             
-              </table>
-            </div>
-            <!-- end of table 1 -->
-
-            <div class="table-responsive card-shdw mb-5 pm-0">
-              <table class="table table-hover table-bordered mb-0 border-0 text-center">
-                <thead>
-                  <tr>
-                    <th scope="row" colspan="2" class="border-0">
-                       <!-- <div class="d-flex"> -->
-                        <p class="h4 blue-color mt-2 ml-2">Registered Dealers</p>
-                        <!-- <input type="search" name="" class="form-control bg-light" placeholder="search"> -->
-                      <!-- </div> -->
-                    </th>
-                    <th scope="row" colspan="2" class="border-0">
-                       <!-- <div class="d-flex"> -->
-                        <!-- <p class="h4 blue-color">Pending Dealership Request</p> -->
-                        <input type="search" name="" class="form-control py-2 border-0 bg-light" placeholder="search">
-                      <!-- </div> -->
-                    </th>
-                    <th colspan="2" class="border-0"></th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="h4">
-                    <td>Name</td>
-                    <td>Phone Number</td>
-                    <td>Country</td>
-                    <td>State</td>
-                    <td>Email</td>
-                    <td>Website</td>
-                  </tr>
-                  <tr>
-                    <td>Ladeesh Group</td>
-                    <td>+23480348274924</td>
-                    <td>Nigeria</td>
-                    <td>Abuja</td>
-                    <td>ladeeshgroup@gmail.com</td>
-                    <td>ladeeshgroup.com.ng</td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                </tbody>             
-              </table>
             </div>
             <!-- end of seconf table -->
 
@@ -432,279 +441,304 @@
 
           </div>
 
-          <div class="tab-pane fade px-5 bg-white" id="list-dealers" role="tabpanel" aria-labelledby="list-dealers-list">
+          <!-- <div class="tab-pane fade px-5 bg-white" id="list-dealers" role="tabpanel" aria-labelledby="list-dealers-list"> -->
             
-            <header class="bg-white py-2">
-              <div class="row">
-                <div class="col-12 col-md-4">
-                  <p class="blue-color h3 ">SAMS Admin</p>
-                </div>
-                <div class="col-12 col-md-5">
-                  <!-- <input type="" name="" placeholder="Search &hellip;" class="form-control"> -->
-                </div>
-                <div class="col-12 col-md-3 text-right">
-                  <div class="dropdown">
-                    <button class="btn bg-transparent dropdown-toggle nav-drp" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Chizoba Egeonu
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
+            <div class="dealer-switch bg-white"  style="display: none; min-height: 100vh">
+             <header class="bg-white py-2 p-3 ">
+               <div class="row">
+                 <div class="col-12 col-md-4 d-flex">
+                   <i class="fas fa-arrow-left blue-color mt-2 pt-1 mr-3 switch-back-1" style="cursor: pointer;"></i>
+                   <p class="blue-color h3 ml-2">SAMS Admin</p>
+                 </div>
+                 <div class="col-12 col-md-5">
+                   <!-- <input type="" name="" placeholder="Search &hellip;" class="form-control"> -->
+                 </div>
+                 <div class="col-12 col-md-3 text-right">
+                   <div class="dropdown">
+                     <button class="btn bg-transparent dropdown-toggle nav-drp" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Chizoba Egeonu
+                     </button>
+                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                       <a class="dropdown-item" href="#">Action</a>
+                       <a class="dropdown-item" href="#">Another action</a>
+                       <a class="dropdown-item" href="#">Something else here</a>
+                     </div>
+                   </div>
+                 </div>                                    
+               </div>
+             </header>
+
+              <div class="px-5">
+                <div class="row my-5 pl-0 ml-0">
+                  <div class="col-12 col-md-2 pl-0"> 
+                    <p class="h4 blue-color mt-1 ">Dealer(s)</p>
                   </div>
-                </div>                                    
-              </div>
-            </header>
+                  <div class="col-12 col-md-3 pl-0">  
+                    <input type="search" name="" class="form-control ml-0 py-2 border-0 bg-light" placeholder="search">
+                  </div>
+                  <div class="col-md-7"></div>
+                </div>     
 
-            <div class="row my-5 pl-0 ml-0">
-              <div class="col-12 col-md-2 pl-0"> 
-                <p class="h4 blue-color mt-1 ">Dealer(s)</p>
-              </div>
-              <div class="col-12 col-md-3 pl-0">  
-                <input type="search" name="" class="form-control ml-0 py-2 border-0 bg-light" placeholder="search">
-              </div>
-              <div class="col-md-7"></div>
-            </div>     
-
-            <div class="table-responsive card-shdw px-5 pt-5 pb-0 w-7">
-              <table class="table table-bordered table-hover text-center mb-0">
-                <thead>
-                  <tr class="h4">
-                    <th scope="col">Name Of Dealer</th>
-                    <th scope="col">Field </th>
-                    
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Ladeesh Group</td>
-                    <td>Group of Company</td>
-                  </tr>
-                </tbody>
-              </table>
-              <div class="d-flex justify-content-end">                
-                <button class="btn bg-transparent border-0 text-danger btn-view my-2">View More</button>
+                <div class="table-responsive card-shdw px-5 pt-5 pb-0 w-7">
+                  <table class="table table-bordered table-hover text-center mb-0">
+                    <thead>
+                      <tr class="h4">
+                        <th scope="col">Name Of Dealer</th>
+                        <th scope="col">Field </th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Ladeesh Group</td>
+                        <td>Group of Company</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="d-flex justify-content-end">                
+                    <button class="btn bg-transparent border-0 text-danger btn-view my-2">View More</button>
+                  </div>
+                </div>
               </div>
             </div>
 
-          </div>
+          <!-- </div> -->
 
-          <div class="tab-pane fade px-5 bg-white" id="list-man" role="tabpanel" aria-labelledby="list-man-list">
+          <!-- <div class="tab-pane fade px-5 bg-white" id="list-man" role="tabpanel" aria-labelledby="list-man-list"> -->
             
-            <header class="bg-white py-2">
-              <div class="row">
-                <div class="col-12 col-md-4">
-                  <p class="blue-color h3 ">SAMS Admin</p>
-                </div>
-                <div class="col-12 col-md-5">
-                  <!-- <input type="" name="" placeholder="Search &hellip;" class="form-control"> -->
-                </div>
-                <div class="col-12 col-md-3 text-right">
-                  <div class="dropdown">
-                    <button class="btn bg-transparent dropdown-toggle nav-drp" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Chizoba Egeonu
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
+            <div class="man-switch bg-white" style="display: none; min-height: 100vh">
+              <header class="bg-white py-2 p-3 ">
+                <div class="row">
+                  <div class="col-12 col-md-4 d-flex">
+                    <i class="fas fa-arrow-left blue-color mt-2 pt-1 mr-3 switch-back" style="cursor: pointer;"></i>
+                    <p class="blue-color h3 ml-2">SAMS Admin</p>
                   </div>
-                </div>                                    
-              </div>
-            </header>
+                  <div class="col-12 col-md-5">
+                    <!-- <input type="" name="" placeholder="Search &hellip;" class="form-control"> -->
+                  </div>
+                  <div class="col-12 col-md-3 text-right">
+                    <div class="dropdown">
+                      <button class="btn bg-transparent dropdown-toggle nav-drp" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Chizoba Egeonu
+                      </button>
+                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                      </div>
+                    </div>
+                  </div>                                    
+                </div>
+              </header>
 
-            <div class="row my-5 pl-0 ml-0">
-              <div class="col-12 col-md-2 pl-0"> 
-                <p class="h4 blue-color mt-1 ">Manufacturer(s)</p>
-              </div>
-              <div class="col-12 col-md-3 pl-0">  
-                <input type="search" name="" class="form-control ml-0 py-2 border-0 bg-light" placeholder="search">
-              </div>
-              <div class="col-md-7"></div>
-            </div>     
+              <div class="px-5">
+                <div class="row my-5 pl-0 ml-0">
+                <div class="col-12 col-md-3 pl-0"> 
+                  <p class="h4 blue-color mt-1 ">Manufacturer(s)</p>
+                </div>
+                <div class="col-12 col-md-3 pl-0">  
+                  <input type="search" name="" class="form-control ml-0 py-2 border-0 bg-light" placeholder="search">
+                </div>
+                <div class="col-md-6"></div>
+              </div>     
 
-            <div class="table-responsive card-shdw px-5 pt-5 pb-0 w-7">
-              <table class="table table-bordered table-hover text-center mb-0">
-                <thead>
-                  <tr class="h4">
-                    <th scope="col">Name Of Manufacturer</th>
-                    <th scope="col">Field </th>
-                    
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Ladeesh Group</td>
-                    <td>Group of Company</td>
-                  </tr>
-                </tbody>
-              </table>
-              <div class="d-flex justify-content-end">                
-                <button class="btn bg-transparent border-0 text-danger btn-view my-2">View More</button>
+              <div class="table-responsive card-shdw px-5 pt-5 pb-0 w-7">
+                <table class="table table-bordered table-hover text-center mb-0">
+                  <thead>
+                    <tr class="h4">
+                      <th scope="col">Name Of Manufacturer</th>
+                      <th scope="col">Field </th>
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Ladeesh Group</td>
+                      <td>Group of Company</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="d-flex justify-content-end">                
+                  <button class="btn bg-transparent border-0 text-danger btn-view my-2">View More</button>
+                </div>
               </div>
+              </div>
+
             </div>
 
-          </div>
+          <!-- </div> -->
 
-          <div class="tab-pane fade px-5 bg-white" id="list-clients" role="tabpanel" aria-labelledby="list-clients-list">
+          <!-- <div class="tab-pane fade px-5 bg-white" id="list-clients" role="tabpanel" aria-labelledby="list-clients-list"> -->
             
-            <header class="bg-white py-2">
-              <div class="row">
-                <div class="col-12 col-md-4">
-                  <p class="blue-color h3 ">SAMS Admin</p>
-                </div>
-                <div class="col-12 col-md-5">
-                  <!-- <input type="" name="" placeholder="Search &hellip;" class="form-control"> -->
-                </div>
-                <div class="col-12 col-md-3 text-right">
-                  <div class="dropdown">
-                    <button class="btn bg-transparent dropdown-toggle nav-drp" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Chizoba Egeonu
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
+            <div class="client-switch bg-white" style="display: none; min-height: 100vh">
+              <header class="bg-white py-2 p-3 ">
+               <div class="row">
+                 <div class="col-12 col-md-4 d-flex">
+                   <i class="fas fa-arrow-left blue-color mt-2 pt-1 mr-3 switch-back-2" style="cursor: pointer;"></i>
+                   <p class="blue-color h3 ml-2">SAMS Admin</p>
+                 </div>
+                 <div class="col-12 col-md-5">
+                   <!-- <input type="" name="" placeholder="Search &hellip;" class="form-control"> -->
+                 </div>
+                 <div class="col-12 col-md-3 text-right">
+                   <div class="dropdown">
+                     <button class="btn bg-transparent dropdown-toggle nav-drp" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Chizoba Egeonu
+                     </button>
+                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                       <a class="dropdown-item" href="#">Action</a>
+                       <a class="dropdown-item" href="#">Another action</a>
+                       <a class="dropdown-item" href="#">Something else here</a>
+                     </div>
+                   </div>
+                 </div>                                    
+               </div>
+             </header>
+
+              <div class="px-5">
+                <div class="row my-5 pl-0 ml-0">
+                  <div class="col-12 col-md-2 pl-0"> 
+                    <p class="h4 blue-color mt-1 ">Client(s)</p>
                   </div>
-                </div>                                    
-              </div>
-            </header>
+                  <div class="col-12 col-md-3 pl-0">  
+                    <input type="search" name="" class="form-control ml-0 py-2 border-0 bg-light" placeholder="search">
+                  </div>
+                  <div class="col-md-7"></div>
+                </div>     
 
-            <div class="row my-5 pl-0 ml-0">
-              <div class="col-12 col-md-2 pl-0"> 
-                <p class="h4 blue-color mt-1 ">Client(s)</p>
+                <div class="table-responsive card-shdw px-5 pt-5 pb-0 w-7">
+                  <table class="table table-bordered table-hover text-center mb-0">
+                    <thead>
+                      <tr class="h4">
+                        <th scope="col">Name Of Client</th>
+                        <th scope="col">Field </th>
+                        
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Ladeesh Group</td>
+                        <td>Group of Company</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="d-flex justify-content-end">                
+                    <button class="btn bg-transparent border-0 text-danger btn-view my-2">View More</button>
+                  </div>
+                </div>
               </div>
-              <div class="col-12 col-md-3 pl-0">  
-                <input type="search" name="" class="form-control ml-0 py-2 border-0 bg-light" placeholder="search">
-              </div>
-              <div class="col-md-7"></div>
-            </div>     
 
-            <div class="table-responsive card-shdw px-5 pt-5 pb-0 w-7">
-              <table class="table table-bordered table-hover text-center mb-0">
-                <thead>
-                  <tr class="h4">
-                    <th scope="col">Name Of Client</th>
-                    <th scope="col">Field </th>
-                    
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Ladeesh Group</td>
-                    <td>Group of Company</td>
-                  </tr>
-                </tbody>
-              </table>
-              <div class="d-flex justify-content-end">                
-                <button class="btn bg-transparent border-0 text-danger btn-view my-2">View More</button>
-              </div>
             </div>
 
-          </div>
+          <!-- </div> -->
 
-          <div class="tab-pane fade px-5 bg-white" id="list-CT" role="tabpanel" aria-labelledby="list-CT-list">
+          <!-- <div class="tab-pane fade px-5 bg-white" id="list-CT" role="tabpanel" aria-labelledby="list-CT-list"> -->
             
-            <header class="bg-white py-2">
-              <div class="row">
-                <div class="col-12 col-md-4">
-                  <p class="blue-color h3 ">SAMS Admin</p>
-                </div>
-                <div class="col-12 col-md-5">
-                  <!-- <input type="" name="" placeholder="Search &hellip;" class="form-control"> -->
-                </div>
-                <div class="col-12 col-md-3 text-right">
-                  <div class="dropdown">
-                    <button class="btn bg-transparent dropdown-toggle nav-drp" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Chizoba Egeonu
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
+          <div class="ct-switch bg-white" style="display: none; min-height: 100vh">
+              <header class="bg-white py-2 p-3 ">
+               <div class="row">
+                 <div class="col-12 col-md-4 d-flex">
+                   <i class="fas fa-arrow-left blue-color mt-2 pt-1 mr-3 switch-back-3" style="cursor: pointer;"></i>
+                   <p class="blue-color h3 ml-2">SAMS Admin</p>
+                 </div>
+                 <div class="col-12 col-md-5">
+                   <!-- <input type="" name="" placeholder="Search &hellip;" class="form-control"> -->
+                 </div>
+                 <div class="col-12 col-md-3 text-right">
+                   <div class="dropdown">
+                     <button class="btn bg-transparent dropdown-toggle nav-drp" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       Chizoba Egeonu
+                     </button>
+                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                       <a class="dropdown-item" href="#">Action</a>
+                       <a class="dropdown-item" href="#">Another action</a>
+                       <a class="dropdown-item" href="#">Something else here</a>
+                     </div>
+                   </div>
+                 </div>                                    
+               </div>
+             </header>
+
+              <div class="px-5">
+              
+                <div class="row my-5 pl-0 ml-0">
+                  <div class="col-12 col-md-2 pl-0"> 
+                    <p class="h4 blue-color mt-1 ">Company Transaction (s)</p>
+                  </div>
+                  <div class="col-12 col-md-2 pl-0">
+                    <div class="d-block">
+                      <p class="text-xs-light my-0 py-0">Contact Number</p>
+                      <p>+234804829284</p>
                     </div>
                   </div>
-                </div>                                    
-              </div>
-            </header>
+                  <div class="col-12 col-md-1">
+                    <div class="d-block">
+                      <p class="text-xs-light my-0 py-0">Country</p>
+                      <p>Nigeria</p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-1">
+                    <div class="d-block">
+                      <p class="text-xs-light my-0 py-0">State</p>
+                      <p>Abuja</p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-3">
+                    <div class="d-block">
+                      <p class="text-xs-light my-0 py-0">Email Address</p>
+                      <p>Ladeeshgroup@gmail.com</p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-3">
+                    <div class="d-block">
+                      <p class="text-xs-light my-0 py-0">Website URL</p>
+                      <p>Ladeeshgroup.com.ng</p>
+                    </div>
+                  </div>
+              </div>     
 
-            <div class="row my-5 pl-0 ml-0">
-              <div class="col-12 col-md-2 pl-0"> 
-                <p class="h4 blue-color mt-1 ">Client(s)</p>
-              </div>
-              <div class="col-12 col-md-2 pl-0">
-                <div class="d-block">
-                  <p class="text-xs-light my-0 py-0">Contact Number</p>
-                  <p>+234804829284</p>
+              <div class="table-responsive card-shdw px-5 pt-5 pb-0 w-8">
+                <p class="h5 mb-4 ">Recent Transaction(s)</p>
+                <table class="table  table-hover text-center mb-0">
+                  <thead>
+                    <tr class="h4 border">
+                      <th scope="col" class="border">Amount Paid </th>
+                      <th scope="col" class="border">Date Subscribed</th>
+                      <th scope="col" class="border">Expiry Date</th>
+                      <th scope="col" class="border">Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-0">
+                      <td class="border-0"></td>
+                      <td class="border-0"></td>
+                      <td class="border-0"></td>
+                      <td class="border-0"></td>
+                    </tr>
+                    <tr class="border">
+                      <td class="border" class="border">30,000.00</td>
+                      <td class="border">30/2/2018</td>
+                      <td class="border">30/2/2020</td>
+                      <td class="text-danger border">Expired</td>
+                    </tr>
+                    <tr class="border">
+                      <td class="border">30,000.00</td>
+                      <td class="border">30/2/2018</td>
+                      <td class="border">30/2/2020</td>
+                      <td class="text-success border">Ongoing</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="d-flex justify-content-end">                
+                  <button class="btn bg-transparent border-0 text-danger btn-view my-2">View More</button>
                 </div>
-              </div>
-              <div class="col-12 col-md-1">
-                <div class="d-block">
-                  <p class="text-xs-light my-0 py-0">Country</p>
-                  <p>Nigeria</p>
-                </div>
-              </div>
-              <div class="col-12 col-md-1">
-                <div class="d-block">
-                  <p class="text-xs-light my-0 py-0">State</p>
-                  <p>Abuja</p>
-                </div>
-              </div>
-              <div class="col-12 col-md-3">
-                <div class="d-block">
-                  <p class="text-xs-light my-0 py-0">Email Address</p>
-                  <p>Ladeeshgroup@gmail.com</p>
-                </div>
-              </div>
-              <div class="col-12 col-md-3">
-                <div class="d-block">
-                  <p class="text-xs-light my-0 py-0">Website URL</p>
-                  <p>Ladeeshgroup.com.ng</p>
-                </div>
-              </div>
-            </div>     
+              </div> 
 
-            <div class="table-responsive card-shdw px-5 pt-5 pb-0 w-8">
-              <p class="h5 mb-4 ">Recent Transaction(s)</p>
-              <table class="table  table-hover text-center mb-0">
-                <thead>
-                  <tr class="h4 border">
-                    <th scope="col" class="border">Amount Paid </th>
-                    <th scope="col" class="border">Date Subscribed</th>
-                    <th scope="col" class="border">Expiry Date</th>
-                    <th scope="col" class="border">Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr class="border-0">
-                    <td class="border-0"></td>
-                    <td class="border-0"></td>
-                    <td class="border-0"></td>
-                    <td class="border-0"></td>
-                  </tr>
-                  <tr class="border">
-                    <td class="border" class="border">30,000.00</td>
-                    <td class="border">30/2/2018</td>
-                    <td class="border">30/2/2020</td>
-                    <td class="text-danger border">Expired</td>
-                  </tr>
-                  <tr class="border">
-                    <td class="border">30,000.00</td>
-                    <td class="border">30/2/2018</td>
-                    <td class="border">30/2/2020</td>
-                    <td class="text-success border">Ongoing</td>
-                  </tr>
-                </tbody>
-              </table>
-              <div class="d-flex justify-content-end">                
-                <button class="btn bg-transparent border-0 text-danger btn-view my-2">View More</button>
-              </div>
-            </div>      
+            </div> 
 
-          </div>
+           </div>    
+
+          <!-- </div> -->
 
           <div class="tab-pane fade bg-light" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
             
@@ -811,14 +845,14 @@
 
                   <div class="tab-pane fade  pt-0 mr-5 " id="nav-case" role="tabpanel" aria-labelledby="nav-case-tab">
                     
-                  <!--   <div>
+                    <div class="new" >
                       <div class="pt-0 bg-light my-2 d-flex">
                         <div class="mr-auto">
                           <input type="search" name="" class="form-control border rounded-0" placeholder="search">
                         </div>
 
                         <div>
-                          <button class="btn custom-blue-bg rounded-0 border-0 text-white">Renew Subscription</button>
+                          <button class="btn custom-blue-bg rounded-0 border-0 text-white xc">Renew Subscription</button>
                         </div>
 
                       </div>
@@ -852,9 +886,9 @@
                           </table>
                         </div>
 
-                    </div> -->
+                    </div>
 
-                    <div>
+                    <div class="old" style="display: none;">
                       
                       <div class="bg-white">
                         <div class="header-elements d-flex border px-5 pt-3 pb-1">
@@ -863,7 +897,7 @@
                           </div>
 
                           <div>
-                            <i class="far fa-times-circle text-danger"></i>
+                            <i class="far fa-times-circle text-danger xc" style="cursor: pointer;"></i>
                           </div>
                         </div>
                         
@@ -873,10 +907,10 @@
                               <input type="text" class="form-control rounded-0" id="inputAddress" placeholder="Card Number">
                             </div>
                             <div class="form-row mb-3">
-                              <div class="form-group col-md-4">
+                              <div class="form-group col-md-6">
                                 <input type="email" class="form-control rounded-0" id="inputEmail4" placeholder="MM">
                               </div>
-                              <div class="form-group col-md-4">
+                              <div class="form-group col-md-6">
                                 <input type="password" class="form-control rounded-0" id="inputPassword4" placeholder="YY">
                               </div>
                             </div>
@@ -933,6 +967,50 @@
       this.className += " active-tab";
     });
   }
+
+  $(document).ready(function(){
+
+      $(".org-man-nav").click(function(){
+          $(".switch").hide();
+          $(".man-switch").show();
+      });
+      $(".switch-back").click(function(){
+          $(".man-switch").hide();
+          $(".switch").show();
+      });
+
+      $(".org-dealers-nav").click(function(){
+          $(".switch").hide();
+          $(".dealer-switch").show();
+      });
+      $(".switch-back-1").click(function(){
+          $(".dealer-switch").hide();
+          $(".switch").show();
+      });
+
+      $(".org-clients-nav").click(function(){
+          $(".switch").hide();
+          $(".client-switch").show();
+      });
+      $(".switch-back-2").click(function(){
+          $(".client-switch").hide();
+          $(".switch").show();
+      });
+
+      $(".org-ct-nav").click(function(){
+          $(".switch").hide();
+          $(".ct-switch").show();
+      });
+      $(".switch-back-3").click(function(){
+          $(".ct-switch").hide();
+          $(".switch").show();
+      });
+
+      $(".xc").click(function(){
+          $(".old,.new").toggle()
+      });
+  });
+
 </script>
 
 </html>

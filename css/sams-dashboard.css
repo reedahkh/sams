@@ -100,7 +100,9 @@ body {
 .fa-times-circle{
 	cursor: pointer;
 }
-
+.org-nav{
+	cursor: pointer;
+}
 
 
 

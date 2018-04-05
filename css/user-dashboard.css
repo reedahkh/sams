@@ -148,7 +148,33 @@ a{
 .width-120{
 	width:120px;
 }
-
+.usecase_nav{
+	border:1px solid #f2f2f2;
+	height:60px;
+	color:#272727;
+	padding:10px;
+}
+.usecase_nav > a:hover{
+	color:#272727;
+}
+.active-tab, .usecase_nav:hover {
+    border-bottom: 3px solid #4368A5;
+}
+.custom-blue-bg{
+	background-color: #4368A5;
+}
+.fw-btn{
+	width: 100%;
+}
+.fa-times-circle{
+	cursor: pointer;
+}
+.org-nav{
+	cursor: pointer;
+}
+.banner_bg-color{
+	background:#0B2D40;
+}
 
 
 

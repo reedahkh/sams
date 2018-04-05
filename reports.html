@@ -40,12 +40,7 @@
                                 <a href="dashboard.html" class="list-group-item side-menu-item text-white border-0">
                                     <img src="img/dashboard/file.svg" alt="" class="dashboard pr-3">Dashboard
                                 </a>
-                                <a href="#" class="list-group-item side-menu-item text-white border-0">
-                                    <img src="img/dashboard/vector.svg" alt="" class=" dashboard pr-3">Attendance
-                                </a>
-                                <!-- <a href="#" class="list-group-item side-menu-item text-white border-0">
-                                    <img src="img/dashboard/vector.svg" alt="" class=" dashboard pr-3">Reports
-                                </a> -->
+                               
                                     
                                 <li class="dropdown list-none side-menu-item active">
                                     <a class="nav-link dropdown-toggle reports text-white" href="reports.html" id="reportsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
@@ -57,24 +52,22 @@
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item f-16" href="worktime_report.html">Work Time Report</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item f-16" href="#">Work Time Report in (%)</a>
+                                        <a class="dropdown-item f-16" href="work_time_report.html">Work Time Report in (%)</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item f-16" href="#">Late Comer Report</a>
+                                        <a class="dropdown-item f-16" href="latecomer_report.html">Late Comer Report</a>
                                         <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item f-16" href="#">Attendance Summary Report </a>
+                                        <a class="dropdown-item f-16" href="attendance_summary.html">Attendance Summary Report </a>
                                     </div>
                                 </li>
                                  
-                                 <a href="#" class="list-group-item text-white side-menu-item border-0">
+                                 <a href="employee.html" class="list-group-item text-white side-menu-item border-0">
                                     <img src="img/dashboard/users.svg" alt="" class="dashboard pr-3">Employee
                                  </a>
-                                 <a href="#" class="list-group-item text-white side-menu-item border-0">
+                                 <a href="punctuality.html" class="list-group-item text-white side-menu-item border-0">
                                     <img src="img/dashboard/chart.svg" alt="" class="dashboard pr-3">Punctuality
                                  </a>
-                                 <a href="#" class="list-group-item side-menu-item text-white border-0">
-                                    <img src="img/dashboard/analytics.svg" alt="" class="dashboard pr-3">Analytics
-                                 </a>
-                                 <a href="#" class="list-group-item side-menu-item text-white border-0">
+                               
+                                 <a href="settings.html" class="list-group-item side-menu-item text-white border-0">
                                     <img src="img/dashboard/gears.svg" alt="" class="dashboard pr-3">Settings
                                  </a>
                             </ul>
@@ -85,13 +78,12 @@
                     <div class="col-lg-9">
                         <header>
                             <nav class="navbar navbar-expand-lg wide-navbar bg-white">
-                                <a class="navbar-brand blue_color" href="#"><i class="fa fa-long-arrow-left"></i> Dike Thelma Kelechi</a>
+                                <a class="navbar-brand blue_color" href="#"><i class="fa fa-long-arrow-left"></i> Admin</a>
                                 <button class="navbar-toggler banner_bg-color" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="fa fa-bars text-white"></span>
                                 </button>
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav mr-auto">
-                                        <p class="blue-color pt-3">Make An Admin</p>
                                     </ul>
                                     <form class="form-inline my-2 my-lg-0 mr-3">
                                         
@@ -148,7 +140,7 @@
                                     </div>
                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
                                         <input type="search" class="form-control search-input" name="search" placeholder="Search">
-                                        <button class="search-btn"><i class="fa fa-tachometer"></i></button>
+                                        <button class="search-btn"><i class="fa fa-sliders"></i></button>
                                     </div>
                                </div>
                            </div>
@@ -246,6 +238,43 @@
                                        </table>
                                    </div>
                                </div>
+                               <div class="row mt-5">
+                                   <div class="col-md-12">
+                                     <nav aria-label="work time report">
+                                        <ul class="pagination pull-right">
+                                            <li class="page-item bd_blue bg-white">
+                                                <a class="page-link blue_color  border-0" href="#" aria-label="Previous">
+                                                    <span aria-hidden="true">Previous</span>
+                                                    <span class="sr-only">Previous</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item bd_blue bg-white">
+                                              <a class="page-link blue_color border-0 " href="#">6</a></li>
+                                            <li class="page-item px-2">
+                                              <a class="page-link blue_color border-0 bg-transparent" href="#">of 60 Pages</a>
+                                            </li>
+                                            
+                                            <li class="page-item bd_blue pl-2 bg-white">
+                                                <a class="page-link blue_color  border-0 " href="#" aria-label="Next">
+                                                    <span aria-hidden="true">Next</span>
+                                                    <span class="sr-only">Next</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                 </div>
+                               </div>
+                            </div>
+                            <div class="element-container mt-75 mb-5">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="table-controls pull-right">
+                                            <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 mr-3 border-0"><i class="fa fa-share pr-3"></i>Share</button>
+                                            <button class="btn-sm f-16 banner_bg-color text-white px-5 py-2 border-0 mr-3"><i class="fa fa-print pr-3"></i>Print</button>
+                                            <button class="btn-sm f-16 banner_bg-color text-white px-5 py-2 border-0"><i class="fa fa-download pr-3"></i>Download</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </main>
                     </div>
