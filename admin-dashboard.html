@@ -1,0 +1,2610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>SAMS- Admin Dashboard</title>
+  <!-- favicon -->
+  <link rel="icon" href="img/logo-fav.png" sizes="16x16" type="image/png">
+  <!-- Bootstrap & Fontawesome CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Latest compiled and minified CSS -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css"> -->
+  <!-- <link href="Assets/plugins/Calendar/calendar.css" rel="stylesheet"> -->
+
+  <!-- External CSS -->
+  <link rel="stylesheet" type="text/css" href="css/user-dashboard.css">
+  <link rel="stylesheet" type="text/css" href="css/admin-dashboard.css">
+
+</head>
+<body>
+
+  <div class="hide">
+    <div class="row">
+      <div class="col-12 col-sm-12 col-md-2 col-lg-2 bg-linear px-0">
+        <div class="list-group ml-1 mr-1 pl-3" id="list-tab" role="tablist">
+          <header class="my-3 ml-4">
+            <img src="img/Logo/sams-logo-sams-white-text-side copy.png" width="130px " class="ml-0 pl-0">
+          </header>
+          <a class="list-group-item border-0 rounded-0 text-white pl-2 side-menu-item" id="list-dashboard-list" data-toggle="list" href="#list-dashboard" role="tab" aria-controls="dashboard">
+            <img src="img/dashboard/file.svg" alt="" class="pr-1">
+          Dashboard
+          </a>
+          <!-- <a class="list-group-item border-0 rounded-0 text-white pl-2 side-menu-item dropdown-toggle" id="reportsDropdown" data-toggle="dropdown" href="#list-report" role="tab" aria-controls="report" aria-haspopup="true" aria-expanded="false"  >
+            <img src="img/dashboard/vector.svg" alt="" class="pr-1"> -->
+            <a class="list-group-item border-0 rounded-0 pl-2 side-menu-item dropdown-toggle reports text-white "  id="list-report-list" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                <img src="img/dashboard/vector.svg" alt="" class=" dashboard pr-3">
+                Reports
+            </a>
+            
+            <!-- Reports -->
+          <!-- </a> -->
+          <div class="dropdown-menu list-group my-0 py-0 rounded-0" aria-labelledby="reportsDropdown">
+                <a class="dropdown-item f-16 list-group-item p-3 rounded-0 side-menu-item" id="list-gen-report-list" data-toggle="list" href="#list-gen-report" role="tab" >General Attendance Reports</a>
+                <!-- <div class="dropdown-divider"></div> -->
+                <a class="dropdown-item f-16 list-group-item p-3 rounded-0 side-menu-item" id="list-wt-report-list" data-toggle="list" href="#list-wt-report" role="tab" >Work Time Report</a>
+                <!-- <div class="dropdown-divider"></div> -->
+                <a class="dropdown-item f-16 list-group-item p-3 rounded-0 side-menu-item" id="list-wtp-report-list" data-toggle="list" href="#list-wtp-report" role="tab" >Work Time Report in (%)</a>
+                <!-- <div class="dropdown-divider"></div> -->
+                <a class="dropdown-item f-16 list-group-item p-3 rounded-0 side-menu-item" id="list-lc-report-list" data-toggle="list" href="#list-lc-report" role="tab" >Late Comer Report</a>
+                <!-- <div class="dropdown-divider"></div> -->
+                <a class="dropdown-item f-16 list-group-item p-3 rounded-0 side-menu-item" id="list-as-report-list" data-toggle="list" href="#list-as-report" role="tab" >Attendance Summary Report </a>
+            </div>
+          <a class="list-group-item border-0 rounded-0 text-white pl-2 side-menu-item" id="list-employee-list" data-toggle="list" href="#list-employee" role="tab" aria-controls="employee">
+            <img src="img/dashboard/users.svg" alt="" class="pr-1">
+            Employee
+          </a>
+          <a class="list-group-item border-0 rounded-0 text-white pl-2 side-menu-item" id="list-punctuality-list" data-toggle="list" href="#list-punctuality" role="tab" aria-controls="punctuality">
+            <img src="img/dashboard/chart.svg" alt="" class="pr-1">
+            Punctuality
+          </a>
+          <a class="list-group-item border-0 rounded-0 text-white pl-2 side-menu-item" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">
+            <img src="img/dashboard/gears.svg" alt="" class="pr-1">
+            Settings
+          </a>
+        </div>
+      </div>
+      <!-- CONTENT -->
+      <div class="col-12  col-sm-12 col-lg-10 col-md-10 px-0">
+        <div class="tab-content" id="nav-tabContent">
+
+          <div class="tab-pane fade show active pr-2" id="list-dashboard" role="tabpanel" aria-labelledby="list-dashboard-list">
+            
+            <header>
+              <nav class="navbar navbar-expand-lg wide-navbar bg-white">
+                <a class="navbar-brand blue-color " href="#">Admin</a>
+                <button class="navbar-toggler banner_bg-color" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars text-white"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                      
+                      
+                      
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0 mr-3">
+                      
+                    <li class="nav-item dropdown list-none">
+                      <a class="nav-link dropdown-toggle logged-user bb_black f-16" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                        Chizoba Egeonu
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">View Profile</a>
+                        <a class="dropdown-item" href="#">Go to Dashboard</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">View Notification</a>
+                      </div>
+                    </li>
+                  </form>
+                </div>
+              </nav>
+            </header>
+
+            <main class="element-wrapper width-110">
+              <div class="greeting">
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="f-48">
+                      <span class="username blue-color f-24 pt-4">Hello Zoba!</span>
+                      <span class="time pull-right blue-color f-24">The time is <span class="f-48 pl-3 pt-3">8:23:48 AM</span></span>
+                    </p>
+                    <hr>  
+                   </div>
+                </div>
+              </div>
+              <div class="admin-components mt-4">
+                <div class="row blue-color">
+                  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                    <a href="#" type="button" class="cardBox_wrapper dis-block" data-toggle="modal" data-target="#staffPresent">
+                      <div class="card card-box text-center bd-l-light_blue blue-color">
+                        <div class="value f-34">14</div>
+                        <div class="label f-18">Staff Present</div>
+                      </div>                 
+                    </a>                      
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                    <a href="#" class="cardBox_wrapper dis-block" data-toggle="modal" data-target="#staffAbsent">
+                      <div class="card card-box text-center bd-l-red blue-color">
+                        <div class="value f-34">34</div>
+                        <div class="label f-18">Staff Absent</div>
+                      </div>                          
+                    </a>                        
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                    <a href="#" class="cardBox_wrapper" data-toggle="modal" data-target="#OoS">
+                      <div class="card card-box text-center bd-l-blue blue-color">
+                        <div class="value f-34">14</div>
+                        <div class="label f-18">Out of Station</div>
+                      </div>
+                    </a>                      
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                    <a href="#" class="cardBox_wrapper" data-toggle="modal" data-target="#lateMarks">
+                      <div class="card card-box text-center bd-l-yellow blue-color">
+                        <div class="value f-34">24</div>
+                        <div class="label f-18">Late Marks</div>
+                      </div>
+                    </a>                    
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                    <a href="#" class="cardBox_wrapper" data-toggle="modal" data-target="#dayOfYear">
+                      <div class="card card-box text-center bd-l-green blue-color">
+                        <div class="value f-34">74</div>
+                        <div class="label f-18">Early Daparture</div>
+                      </div>
+                    </a>                      
+                  </div>
+                  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                    <a href="#" class="cardBox_wrapper" data-toggle="modal" data-target="#staffLate">
+                      <div  class="card card-box text-center bd-l-purple blue-color">
+                        <div class="value f-34">13</div>
+                        <div class="label f-18">Total No. of Employee(s)</div>
+                      </div>
+                    </a>                      
+                  </div>
+                </div>
+              </div>
+
+              <div class="element-container mt-75">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="card">
+                      <div class="googleCalendar" ="calendar">
+                        <!-- <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=el4qfaq6qi7f8vg6l38sngb1gc%40group.calendar.google.com&amp;color=%23B1440E&amp;ctz=Africa%2FLagos" style="border-width:0" width="100%" height="250" frameborder="0" scrolling="no"></iframe> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="card chart-card">
+                      <canvas id="myChart"></canvas>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="element-container mt-112">
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="f-24 blue-color">Awaiting Approval</p>
+                    <div class="table-responsive tb-scroll">
+                      <table class="table table-bordered table-hover ">
+                        <thead>
+                            <td class="fw-700">STAFF ID</td>
+                            <td class="fw-700">APPROVAL FOR</td>
+                            <td class="fw-700">REASON</td>
+                            <td class="fw-700">APPROVAL FROM</td>
+                            <td class="fw-700">STATUS</td>
+                        </thead>
+                        <tbody>
+                          <tr class="bb_black f-18">
+                            <td>ST0123</td>
+                            <td>Leave</td>
+                            <td>Maternity Leave</td>
+                            <td>HOD ICT</td>
+                            <td class="text-success">Approved</td>
+                          </tr>
+                          <tr class="bb_black f-18">
+                            <td>ST0123</td>
+                            <td>Report</td>
+                            <td>Weekly Report</td>
+                            <td>HRM</td>
+                            <td class="">
+                              <select name="" id="" class="status_select border-0 bg-transparent">
+                                <option value="pending" class="text-danger">Pending <i class="fa fa-caret-down"></i></option>
+                                <option value="approved" class="text-success">Approved</option>
+                             </select>
+                            </td>
+                          </tr>
+                          <tr class="bb_black f-18">
+                            <td>ST0123</td>
+                            <td>Leave</td>
+                            <td>Compulsory Yearly Leave</td>
+                            <td>CEO</td>
+                            <td class="">
+                              <select name="" id="" class="status_select border-0 bg-transparent">
+                                <option value="pending" class="text-danger">Pending</option>
+                                <option value="approved" class="text-success">Approved</option>
+                              </select>
+                            </td>
+                          </tr>
+                          <tr class="bb_black f-18">
+                            <td>ST0123</td>
+                            <td>Report</td>
+                            <td>Monthly Report</td>
+                            <td>HOD Finance</td>
+                            <td class="text-success">Approved</td>
+                          </tr>
+                          <tr class="bb_black f-18">
+                            <td>ST0123</td>
+                            <td>Leave</td>
+                            <td>Maternity Leave</td>
+                            <td>HOD ICT</td>
+                            <td class="text-success">Approved</td>
+                          </tr>
+                          <tr class="bb_black f-18">
+                            <td>ST0123</td>
+                            <td>Report</td>
+                            <td>Weekly Report</td>
+                            <td>HRM</td>
+                            <td class="">
+                              <select name="" id="" class="status_select border-0 bg-transparent">
+                                <option value="" class="text-danger">Pending <i class="fa fa-caret-down"></i></option>
+                                <option value="" class="text-success">Approved</option>
+                              </select>
+                            </td>
+                          </tr>
+                          <tr class="bb_black f-18">
+                            <td>ST0123</td>
+                            <td>Leave</td>
+                            <td>Compulsory Yearly Leave</td>
+                            <td>CEO</td>
+                            <td class="">
+                              <select name="" id="" class="status_select border-0 bg-transparent">
+                                <option value="" class="text-danger">Pending <i class="fa fa-caret-down"></i></option>
+                                <option value="" class="text-success">Approved</option>
+                              </select>
+                            </td>
+                          </tr>
+                          <tr class="bb_black f-18">
+                            <td>ST0123</td>
+                            <td>Report</td>
+                            <td>Monthly Report</td>
+                            <td>HOD Finance</td>
+                            <td class="text-success">Approved</td>
+                          </tr>                            
+                        </tbody>
+                        <!-- </thead> -->
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+
+          </div>
+
+          <div class="tab-pane fade" id="list-gen-report" role="tabpanel" aria-labelledby="list-gen-report-list">
+            
+            <header>
+                <nav class="navbar navbar-expand-lg wide-navbar bg-white">
+                    <!-- <a class="navbar-brand blue_color" href="#"> Admin</a> -->
+                    <button class="navbar-toggler banner_bg-color" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars text-white"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0 mr-3">
+                            
+                            
+                            <li class="nav-item dropdown list-none">
+                                <a class="nav-link dropdown-toggle logged-user bb_black f-16" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                    Chizoba Egeonu
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">View Profile</a>
+                                    <a class="dropdown-item" href="#">Go to Dashboard</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">View Notification</a>
+                                </div>
+                            </li>
+                        </form>
+                    </div>
+                </nav>
+            </header>
+            <main class="element-wrapper width-110">
+               <div class="element-container mt-75">
+                <h3 class="blue-color">General Attendance Report</h3>
+                   <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                            <input type="date" id="startDate" class="form-control  card-shdw border-0 rounded filter">
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                            <input type="date" id="endDate" class="form-control  card-shdw border-0 rounded  filter">
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                            <select name="location" id="location" class="form-control  card-shdw border-0 rounded  filter">
+                                <option value="">Location</option>
+                                <option value="">Abuja</option>
+                                <option value="">Lagos</option>
+                                <option value="">Enugu</option>
+                                <option value="">Kano</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                            <select name="employee" id="employee-select" class="form-control card-shdw border-0 rounded  filter">
+                                <option value="">Employee</option>
+                                <option value="">Full Time</option>
+                                <option value="">Part Time</option>
+                                <option value="">Intern</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                            <select name="worktime" id="worktime" class="form-control  card-shdw border-0 rounded filter">
+                                <option value="" class="py-1">Work Time</option>
+                                <option value="">8hrs</option>
+                                <option value="">2hrs</option>
+                                <option value="">4hrs</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-1">
+                            <input type="search" class="form-control search-input border-0  card-shdw border-0 rounded filter" name="search" placeholder="Search">
+                            <!-- <button class="search-btn"><i class="fa fa-sliders"></i></button> -->
+                        </div>
+                       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-1">
+                            <!-- <input type="search" class="form-control search-input" name="search" placeholder="Search"> -->
+                            <button class=" btn search-btn border-0 bg-white slider  card-shdw border-0 rounded"><i class="fa fa-sliders"></i></button>
+                        </div>
+
+                   </div>
+               </div>
+                <div class="element-container mt-75">
+                   <div class="card">
+                       <div class="table-responsive tb-scroll">
+                           <table class="table table-lightborder table-bordered">
+                               <thead class="fw-700">
+                                   <td>Employee</td>
+                                   <td>Staff ID</td>
+                                   <td>Location</td>
+                                   <td>Work Time</td>
+                                   <td>Type</td>
+                                   <td>Time</td>
+                                   <td class="text-right">Terminal</td>
+                               </thead>
+                               <tbody class="f-12">
+                                    <tr>
+                                       <td>Salisu Salisu</td>
+                                       <td>STO201</td>
+                                       <td>Zamfara</td>
+                                       <td>Regular</td>
+                                       <td>Checkout</td>
+                                       <td>03-02-2018 07:30:25 PM</td>
+                                       <td class="text-right">0231118912910382</td>
+                                   </tr>
+                                   <tr>
+                                       <td>Salisu Salisu</td>
+                                       <td>STO201</td>
+                                       <td>Zamfara</td>
+                                       <td>Regular</td>
+                                       <td>Checkout</td>
+                                       <td>03-02-2018 07:30:25 PM</td>
+                                       <td class="text-right">0231118912910382</td>
+                                   </tr>
+                                   <tr>
+                                       <td>Salisu Salisu</td>
+                                       <td>STO201</td>
+                                       <td>Zamfara</td>
+                                       <td>Regular</td>
+                                       <td>Checkout</td>
+                                       <td>03-02-2018 07:30:25 PM</td>
+                                       <td class="text-right">0231118912910382</td>
+                                   </tr>
+                                   <tr>
+                                       <td>Salisu Salisu</td>
+                                       <td>STO201</td>
+                                       <td>Zamfara</td>
+                                       <td>Regular</td>
+                                       <td>Checkout</td>
+                                       <td>03-02-2018 07:30:25 PM</td>
+                                       <td class="text-right">0231118912910382</td>
+                                   </tr>
+                                   <tr>
+                                       <td>Salisu Salisu</td>
+                                       <td>STO201</td>
+                                       <td>Zamfara</td>
+                                       <td>Regular</td>
+                                       <td>Checkout</td>
+                                       <td>03-02-2018 07:30:25 PM</td>
+                                       <td class="text-right">0231118912910382</td>
+                                   </tr>
+                                   <tr>
+                                       <td>Salisu Salisu</td>
+                                       <td>STO201</td>
+                                       <td>Zamfara</td>
+                                       <td>Regular</td>
+                                       <td>Checkout</td>
+                                       <td>03-02-2018 07:30:25 PM</td>
+                                       <td class="text-right">0231118912910382</td>
+                                   </tr>
+                                   <tr>
+                                       <td>Salisu Salisu</td>
+                                       <td>STO201</td>
+                                       <td>Zamfara</td>
+                                       <td>Regular</td>
+                                       <td>Checkout</td>
+                                       <td>03-02-2018 07:30:25 PM</td>
+                                       <td class="text-right">0231118912910382</td>
+                                   </tr>
+                                   <tr>
+                                       <td>Salisu Salisu</td>
+                                       <td>STO201</td>
+                                       <td>Zamfara</td>
+                                       <td>Regular</td>
+                                       <td>Checkout</td>
+                                       <td>03-02-2018 07:30:25 PM</td>
+                                       <td class="text-right">0231118912910382</td>
+                                   </tr>
+                               </tbody>
+                           </table>
+                       </div>
+                   </div>
+                   <div class="row mt-5">
+                       <div class="col-md-12">
+                         <nav aria-label="work time report">
+                            <ul class="pagination pull-right">
+                                <li class="page-item bd_blue bg-white">
+                                    <a class="page-link blue_color  border-0" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">Previous</span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                </li>
+                                <li class="page-item bd_blue bg-white">
+                                  <a class="page-link blue_color border-0 " href="#">6</a></li>
+                                <li class="page-item px-2">
+                                  <a class="page-link blue_color border-0 bg-transparent" href="#">of 60 Pages</a>
+                                </li>
+                                
+                                <li class="page-item bd_blue pl-2 bg-white">
+                                    <a class="page-link blue_color  border-0 " href="#" aria-label="Next">
+                                        <span aria-hidden="true">Next</span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                     </div>
+                   </div>
+                </div>
+                <div class="element-container mt-75 mb-5">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="table-controls pull-right">
+                                <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 mr-3 border-0"><i class="fa fa-share pr-3"></i>Share</button>
+                                <button class="btn-sm f-16 banner_bg-color text-white px-5 py-2 border-0 mr-3"><i class="fa fa-print pr-3"></i>Print</button>
+                                <button class="btn-sm f-16 banner_bg-color text-white px-5 py-2 border-0"><i class="fa fa-download pr-3"></i>Download</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+          </div>
+
+          <div class="tab-pane fade" id="list-wt-report" role="tabpanel" aria-labelledby="list-wt-report-list">
+            
+            <header>
+              <nav class="navbar navbar-expand-lg wide-navbar bg-white">
+                  <!-- <a class="navbar-brand blue_color" href="#"><i class="fa fa-long-arrow-left"></i>Admin</a> -->
+                  <button class="navbar-toggler banner_bg-color" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="fa fa-bars text-white"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                          
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0 mr-3">
+                          
+                          
+                          <li class="nav-item dropdown list-none">
+                              <a class="nav-link dropdown-toggle logged-user bb_black f-16" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                  Chizoba Egeonu
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">View Profile</a>
+                                  <a class="dropdown-item" href="#">Go to Dashboard</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#">View Notification</a>
+                              </div>
+                          </li>
+                      </form>
+                  </div>
+              </nav>
+            </header>
+            <main class="element-wrapper width-110">
+                <div class="element-container mt-75">
+                    <h3 class="blue-color">Work Time Report</h3>
+                    
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                            <input type="date" id="startDate" class="form-control  card-shdw border-0 rounded filter">
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                            <input type="date" id="endDate" class="form-control  card-shdw border-0 rounded  filter">
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                            <select name="location" id="location" class="form-control  card-shdw border-0 rounded  filter">
+                                <option value="">Location</option>
+                                <option value="">Abuja</option>
+                                <option value="">Lagos</option>
+                                <option value="">Enugu</option>
+                                <option value="">Kano</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                            <select name="employee" id="employee-select" class="form-control card-shdw border-0 rounded  filter">
+                                <option value="">Employee</option>
+                                <option value="">Full Time</option>
+                                <option value="">Part Time</option>
+                                <option value="">Intern</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                            <select name="worktime" id="worktime" class="form-control  card-shdw border-0 rounded filter">
+                                <option value="" class="py-1">Work Time</option>
+                                <option value="">8hrs</option>
+                                <option value="">2hrs</option>
+                                <option value="">4hrs</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-1">
+                            <input type="search" class="form-control search-input border-0  card-shdw border-0 rounded filter" name="search" placeholder="Search">
+                            <!-- <button class="search-btn"><i class="fa fa-sliders"></i></button> -->
+                        </div>
+                       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-1">
+                            <!-- <input type="search" class="form-control search-input" name="search" placeholder="Search"> -->
+                            <button class=" btn search-btn border-0 bg-white slider  card-shdw border-0 rounded"><i class="fa fa-sliders"></i></button>
+                        </div>
+
+                   </div>
+                    <p class="mt-3 f-14">DNI: Did Not Clock In, DNO: Did Not Clock Out. ABS: Absent</p>
+                </div>
+                <div class="element-container mt-75">
+
+                   <div class="card mb-5">
+                       <div class="table-responsive tb-scroll">
+                           <table class="table table-lightborder table-bordered">
+                               <thead class="fw-700">
+                                   
+                                   <td>Staff ID</td>
+                                   <td>Wed, 28 Feb 2018</td>
+                                   <td>Thur, 29 Feb 2018</td>
+                                   <td>Fri, 2 Mar 2018</td>
+                                   <td>Mon, 5 Mar 2018</td>
+                                   <td>Tue, 6 Mar 2018</td>
+                                   <td>Wed, 7 Mar 2018</td>
+                                   
+                               </thead>
+                               <tbody class="f-12">
+                                    <tr>
+                                       <td>Salisu Salisu (STO28)</td>
+                                       <td>0 Min</td>
+                                       <td>203.9 Min</td>
+                                       <td>551 Min</td>
+                                       <td>DNI</td>
+                                       <td>551 Min</td>
+                                       <td>DNO</td>
+                                   </tr>
+                                   <tr>
+                                       <td>Salisu Salisu (STO28)</td>
+                                       <td>0 Min</td>
+                                       <td>203.9 Min</td>
+                                       <td>551 Min</td>
+                                       <td>DNI</td>
+                                       <td>551 Min</td>
+                                       <td>DNO</td>
+                                   </tr>
+                                   <tr>
+                                       <td>Salisu Salisu (STO28)</td>
+                                       <td>0 Min</td>
+                                       <td>203.9 Min</td>
+                                       <td>551 Min</td>
+                                       <td>DNI</td>
+                                       <td>551 Min</td>
+                                       <td>DNO</td>
+                                   </tr>
+                                   <tr>
+                                       <td>Salisu Salisu (STO28)</td>
+                                       <td>0 Min</td>
+                                       <td>203.9 Min</td>
+                                       <td>551 Min</td>
+                                       <td>DNI</td>
+                                       <td>551 Min</td>
+                                       <td>DNO</td>
+                                   </tr>
+                                   <tr>
+                                       <td>Salisu Salisu (STO28)</td>
+                                       <td>0 Min</td>
+                                       <td>203.9 Min</td>
+                                       <td>551 Min</td>
+                                       <td>DNI</td>
+                                       <td>551 Min</td>
+                                       <td>DNO</td>
+                                   </tr>
+                                   <tr>
+                                       <td>Salisu Salisu (STO28)</td>
+                                       <td>0 Min</td>
+                                       <td>203.9 Min</td>
+                                       <td>551 Min</td>
+                                       <td>DNI</td>
+                                       <td>551 Min</td>
+                                       <td>DNO</td>
+                                   </tr>
+                                   <tr>
+                                       <td>Salisu Salisu (STO28)</td>
+                                       <td>0 Min</td>
+                                       <td>203.9 Min</td>
+                                       <td>551 Min</td>
+                                       <td>DNI</td>
+                                       <td>551 Min</td>
+                                       <td>DNO</td>
+                                   </tr>
+
+                               </tbody>
+                           </table>
+                       </div>
+                   </div>
+                   <div class="col-md-12">
+                       <nav aria-label="work time report">
+                          <ul class="pagination pull-right">
+                              <li class="page-item bd_blue">
+                                  <a class="page-link blue_color" href="#" aria-label="Previous">
+                                      <span aria-hidden="true">Previous</span>
+                                      <span class="sr-only">Previous</span>
+                                  </a>
+                              </li>
+                              <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">6</a></li>
+                              <li class="page-item px-2">
+                                <a class="page-link blue_color border-0 bg-transparent" href="#">of 60 Pages</a>
+                              </li>
+                              
+                              <li class="page-item bd_blue pl-2">
+                                  <a class="page-link blue_color  border-0" href="#" aria-label="Next">
+                                      <span aria-hidden="true">Next</span>
+                                      <span class="sr-only">Next</span>
+                                  </a>
+                              </li>
+                          </ul>
+                      </nav>
+                   </div>
+                </div>
+                <div class="element-container mt-75 mb-5">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="table-controls pull-right">
+                                <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 mr-3 border-0"><i class="fa fa-share pr-3"></i>Share</button>
+                                <button class="btn-sm f-16 banner_bg-color text-white px-5 py-2 border-0 mr-3"><i class="fa fa-print pr-3"></i>Print</button>
+                                <button class="btn-sm f-16 banner_bg-color text-white px-5 py-2 border-0"><i class="fa fa-download pr-3"></i>Download</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+          </div>
+
+          <div class="tab-pane fade" id="list-wtp-report" role="tabpanel" aria-labelledby="list-wtp-report-list">
+            
+            <header>
+              <nav class="navbar navbar-expand-lg wide-navbar bg-white">
+                  <!-- <a class="navbar-brand blue_color" href="#"><i class="fa fa-long-arrow-left"></i>Admin</a> -->
+                  <button class="navbar-toggler banner_bg-color" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="fa fa-bars text-white"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                          
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0 mr-3">
+                          
+                          
+                          <li class="nav-item dropdown list-none">
+                              <a class="nav-link dropdown-toggle logged-user bb_black f-16" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                  Chizoba Egeonu
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">View Profile</a>
+                                  <a class="dropdown-item" href="#">Go to Dashboard</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#">View Notification</a>
+                              </div>
+                          </li>
+                      </form>
+                  </div>
+              </nav>
+            </header>
+
+              <main class="element-wrapper width-110">
+                <div class="element-container mt-75">
+                    <h3 class="blue-color">Work Time Report (%)</h3>
+                    
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                            <input type="date" id="startDate" class="form-control  card-shdw border-0 rounded filter">
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                            <input type="date" id="endDate" class="form-control  card-shdw border-0 rounded  filter">
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                            <select name="location" id="location" class="form-control  card-shdw border-0 rounded  filter">
+                                <option value="">Location</option>
+                                <option value="">Abuja</option>
+                                <option value="">Lagos</option>
+                                <option value="">Enugu</option>
+                                <option value="">Kano</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                            <select name="employee" id="employee-select" class="form-control card-shdw border-0 rounded  filter">
+                                <option value="">Employee</option>
+                                <option value="">Full Time</option>
+                                <option value="">Part Time</option>
+                                <option value="">Intern</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                            <select name="worktime" id="worktime" class="form-control  card-shdw border-0 rounded filter">
+                                <option value="" class="py-1">Work Time</option>
+                                <option value="">8hrs</option>
+                                <option value="">2hrs</option>
+                                <option value="">4hrs</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-1">
+                            <input type="search" class="form-control search-input border-0  card-shdw border-0 rounded filter" name="search" placeholder="Search">
+                            <!-- <button class="search-btn"><i class="fa fa-sliders"></i></button> -->
+                        </div>
+                       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-1">
+                            <!-- <input type="search" class="form-control search-input" name="search" placeholder="Search"> -->
+                            <button class=" btn search-btn border-0 bg-white slider  card-shdw border-0 rounded"><i class="fa fa-sliders"></i></button>
+                        </div>
+
+                   </div>
+                    <p class="mt-3 f-14">DNI: Did Not Clock In, DNO: Did Not Clock Out. ABS: Absent</p>
+                </div>
+                    <div class="element-container mt-75">
+                       <div class="card mb-5">
+                           <div class="table-responsive tb-scroll">
+                               <table class="table table-lightborder ">
+                                   <thead class="fw-700">
+                                       
+                                       <td>Staff ID</td>
+                                       <td>Wed, 28 Feb 2018</td>
+                                       <td>Thur, 29 Feb 2018</td>
+                                       <td>Fri, 2 Mar 2018</td>
+                                       <td>Mon, 5 Mar 2018</td>
+                                       <td>Tue, 6 Mar 2018</td>
+                                       <td>Wed, 7 Mar 2018</td>
+                                       
+                                   </thead>
+                                   <tbody class="f-12">
+                                      
+                                       <tr>
+                                           <td>Salisu Salisu (STO28)</td>
+                                           <td class="text-center">ABS</td>
+                                           <td class="text-center bg-sec_color text-white">50%</td>
+                                           <td class="text-center banner_bg-color text-white">100%</td>
+                                           <td class="text-center text-white bg-sec_color">59%</td>
+                                           <td class="text-center text-white banner_bg-color">100%</td>
+                                           <td class="text-center text-white banner_bg-color">100%</td>
+                                       </tr>
+                                       <tr>
+                                           <td>Salisu Salisu (STO28)</td>
+                                           <td class="text-center">ABS</td>
+                                           <td class="text-center">DNI</td>
+                                           <td class="text-center bg_pink bb_black">0.7%</td>
+                                           <td class="text-center">DNI</td>
+                                           <td class="text-center bg_pink bb_black">0.7%</td>
+                                           <td class="text-center bg_pink bb_black">0.7%</td>
+                                       </tr>
+                                       <tr>
+                                           <td>Salisu Salisu (STO28)</td>
+                                           <td class="text-center">ABS</td>
+                                           <td class="text-center bg_yellow">35%</td>
+                                           <td class="text-center">ABS</td>
+                                           <td class="text-center bg_yellow">35%</td>
+                                           <td class="text-center">ABS</td>
+                                           <td class="text-center">ABS</td>
+                                       </tr>
+                                       <tr>
+                                           <td>Salisu Salisu (STO28)</td>
+                                           <td class="text-center">ABS</td>
+                                           <td class="text-center bg_yellow">30%</td>
+                                           <td class="text-center bg_yellow">35%</td>
+                                           <td class="text-center bg_yellow">30%</td>
+                                           <td class="text-center bg_yellow">35%</td>
+                                           <td class="text-center bg_yellow">35%</td>
+
+                                       </tr>
+                                       <tr>
+                                           <td>Salisu Salisu (STO28)</td>
+                                           <td class="text-center">ABS</td>
+                                           <td class="text-center">ABS</0td>
+                                           <td class="text-center bg-sec_color">70%</td>
+                                           <td class="text-center">ABS</td>
+                                           <td class="text-center bg-sec_color">70%</td>
+                                           <td class="text-center bg-sec_color">70%</td>
+
+                                       </tr>
+                                       <tr>
+                                           <td>Salisu Salisu (STO28)</td>
+                                           <td class="text-center">ABS</td>
+                                           <td class="text-center bg_pink">0.07%</td>
+                                           <td class="text-center">DNI</td>
+                                           <td class="text-center bg_pink">0.07%</td>
+                                           <td class="text-center ">DNI</td>
+                                           <td class="text-center ">DNI</td>
+
+                                       </tr>
+                                       <tr>
+                                           <td>Salisu Salisu (STO28)</td>
+                                           <td class="text-center">ABS</td>
+                                           <td class="text-center bg-sec_color text-white">50%</td>
+                                           <td class="text-center banner_bg-color text-white">100%</td>
+                                           <td class="text-center text-white bg-sec_color">59%</td>
+                                           <td class="text-center text-white banner_bg-color">100%</td>
+                                           <td class="text-center text-white banner_bg-color">100%</td>
+                                       </tr>
+                                       <tr>
+                                           <td>Salisu Salisu (STO28)</td>
+                                           <td class="text-center">ABS</td>
+                                           <td class="text-center">DNI</td>
+                                           <td class="text-center bg_pink bb_black">0.7%</td>
+                                           <td class="text-center">DNI</td>
+                                           <td class="text-center bg_pink bb_black">0.7%</td>
+                                           <td class="text-center bg_pink bb_black">0.7%</td>
+                                       </tr>
+                                     
+                                   </tbody>
+                               </table>
+                           </div>
+                       </div>
+                       <div class="col-md-12">
+                           <nav aria-label="work time report">
+                              <ul class="pagination pull-right">
+                                  <li class="page-item bd_blue">
+                                      <a class="page-link blue_color" href="#" aria-label="Previous">
+                                          <span aria-hidden="true">Previous</span>
+                                          <span class="sr-only">Previous</span>
+                                      </a>
+                                  </li>
+                                  <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">6</a></li>
+                                  <li class="page-item px-2">
+                                    <a class="page-link blue_color border-0 bg-transparent" href="#">of 60 Pages</a>
+                                  </li>
+                                  
+                                  <li class="page-item bd_blue pl-2">
+                                      <a class="page-link blue_color  border-0" href="#" aria-label="Next">
+                                          <span aria-hidden="true">Next</span>
+                                          <span class="sr-only">Next</span>
+                                      </a>
+                                  </li>
+                              </ul>
+                          </nav>
+                       </div>
+                    </div>
+                    <div class="element-container mt-75 mb-5">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="table-controls pull-right">
+                                    <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 mr-3 border-0"><i class="fa fa-share pr-3"></i>Share</button>
+                                    <button class="btn-sm f-16 banner_bg-color text-white px-5 py-2 border-0 mr-3"><i class="fa fa-print pr-3"></i>Print</button>
+                                    <button class="btn-sm f-16 banner_bg-color text-white px-5 py-2 border-0"><i class="fa fa-download pr-3"></i>Download</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+              </main>
+
+          </div>
+
+          <div class="tab-pane fade" id="list-lc-report" role="tabpanel" aria-labelledby="list-lc-report-list">
+            
+            <header>
+              <nav class="navbar navbar-expand-lg wide-navbar bg-white">
+                  <!-- <a class="navbar-brand blue_color" href="#"><i class="fa fa-long-arrow-left"></i>Admin</a> -->
+                  <button class="navbar-toggler banner_bg-color" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="fa fa-bars text-white"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                          
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0 mr-3">
+                          
+                          
+                          <li class="nav-item dropdown list-none">
+                              <a class="nav-link dropdown-toggle logged-user bb_black f-16" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                  Chizoba Egeonu
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">View Profile</a>
+                                  <a class="dropdown-item" href="#">Go to Dashboard</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#">View Notification</a>
+                              </div>
+                          </li>
+                      </form>
+                  </div>
+              </nav>
+            </header>
+
+              <main class="element-wrapper width-110">
+                <div class="element-container mt-75">
+                    <h3 class="blue-color">Late Comer Report</h3>
+                    
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                            <input type="date" id="startDate" class="form-control  card-shdw border-0 rounded filter">
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                            <input type="date" id="endDate" class="form-control  card-shdw border-0 rounded  filter">
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                            <select name="location" id="location" class="form-control  card-shdw border-0 rounded  filter">
+                                <option value="">Location</option>
+                                <option value="">Abuja</option>
+                                <option value="">Lagos</option>
+                                <option value="">Enugu</option>
+                                <option value="">Kano</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                            <select name="employee" id="employee-select" class="form-control card-shdw border-0 rounded  filter">
+                                <option value="">Employee</option>
+                                <option value="">Full Time</option>
+                                <option value="">Part Time</option>
+                                <option value="">Intern</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                            <select name="worktime" id="worktime" class="form-control  card-shdw border-0 rounded filter">
+                                <option value="" class="py-1">Work Time</option>
+                                <option value="">8hrs</option>
+                                <option value="">2hrs</option>
+                                <option value="">4hrs</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-1">
+                            <input type="search" class="form-control search-input border-0  card-shdw border-0 rounded filter" name="search" placeholder="Search">
+                            <!-- <button class="search-btn"><i class="fa fa-sliders"></i></button> -->
+                        </div>
+                       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-1">
+                            <!-- <input type="search" class="form-control search-input" name="search" placeholder="Search"> -->
+                            <button class=" btn search-btn border-0 bg-white slider  card-shdw border-0 rounded"><i class="fa fa-sliders"></i></button>
+                        </div>
+
+                   </div>
+                   <div class="row mt-3 ml-3">
+                       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-3">
+                         <div class="checkbox f-18">
+                           <label class="control blue-checkbox control-checkbox">
+                               Early to Work 
+                               <input type="checkbox" />
+                               <div class="control_indicator"></div>
+                           </label>
+                           
+                         </div>
+                       </div>
+                     
+                       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-3">
+                           <div class="checkbox f-18">
+                             <label class="control blue-checkbox control-checkbox">
+                                 Late to Work 
+                                 <input type="checkbox" />
+                                 <div class="control_indicator"></div>
+                             </label>
+                             
+                           </div>
+                       </div>
+                       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-3">
+                           <div class="checkbox f-18">
+                             <label class="control blue-checkbox control-checkbox">
+                                 Closed Early
+                                 <input type="checkbox" />
+                                 <div class="control_indicator"></div>
+                             </label>
+                             
+                           </div>
+                       </div>
+                       
+                       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-3">
+                           <div class="checkbox">
+                             <label class="control blue-checkbox control-checkbox">
+                                 Closed Late
+                                 <input type="checkbox" />
+                                 <div class="control_indicator"></div>
+                             </label>
+                             
+                           </div>
+                       </div>
+                   </div>
+                    <!-- <p class="mt-3 f-14">DNI: Did Not Clock In, DNO: Did Not Clock Out. ABS: Absent</p> -->
+                </div>
+                    <div class="element-container mt-75">
+                               <div class="card mb-5">
+                                   <div class="table-responsive tb-scroll">
+                                       <table class="table table-lightborder table-bordered">
+                                           <thead class="fw-700">
+                                               <td class="text-center">Employee</td>
+                                               <td class="text-center">Staff ID</td>
+                                               <td class="text-center">Location</td>
+                                               <td class="text-center">Work Start</td>
+                                               <td class="text-center">Work End</td>
+                                               <td class="text-center">Clocked Time</td>
+                                               <td class="text-center">Time Difference</td>                                               
+                                           </thead>
+                                           <tbody class="f-12">
+                                               <tr>
+                                                   <td colspan="7" rowspan=""></td>
+                                                   
+                                               </tr>
+                                               
+                                               <tr>
+                                                   <td class="text-center">Salisu Salisu</td>
+                                                   <td class="text-right">STO28</td>
+                                                   <td class="">Zamfara</td>
+                                                   <td class="text-right">08:30AM</td>
+                                                   <td class="text-right">5:30PM</td>
+                                                   <td class="text-right">03-02-18 07:30:07PM</td>
+                                                   <td class="text-left">Late <br> 30 Minutes 7 Seconds</td>
+                                               </tr>
+                                               <tr>
+                                                   <td class="text-center">Salisu Salisu</td>
+                                                   <td class="text-right">STO28</td>
+                                                   <td class="">Zamfara</td>
+                                                   <td class="text-right">08:30AM</td>
+                                                   <td class="text-right">5:30PM</td>
+                                                   <td class="text-right">03-02-18 07:30:07PM</td>
+                                                   <td class="text-left">Late <br> 30 Minutes 7 Seconds</td>
+                                               </tr>
+                                               <tr>
+                                                   <td class="text-center">Salisu Salisu</td>
+                                                   <td class="text-right">STO28</td>
+                                                   <td class="">Zamfara</td>
+                                                   <td class="text-right">08:30AM</td>
+                                                   <td class="text-right">5:30PM</td>
+                                                   <td class="text-right">03-02-18 07:30:07PM</td>
+                                                   <td class="text-left">Late <br> 30 Minutes 7 Seconds</td>
+                                               </tr>
+                                               <tr>
+                                                   <td class="text-center">Salisu Salisu</td>
+                                                   <td class="text-right">STO28</td>
+                                                   <td class="">Zamfara</td>
+                                                   <td class="text-right">08:30AM</td>
+                                                   <td class="text-right">5:30PM</td>
+                                                   <td class="text-right">03-02-18 07:30:07PM</td>
+                                                   <td class="text-left">Late <br> 30 Minutes 7 Seconds</td>
+                                               </tr>
+                                               <tr>
+                                                   <td class="text-center">Salisu Salisu</td>
+                                                   <td class="text-right">STO28</td>
+                                                   <td class="">Zamfara</td>
+                                                   <td class="text-right">08:30AM</td>
+                                                   <td class="text-right">5:30PM</td>
+                                                   <td class="text-right">03-02-18 07:30:07PM</td>
+                                                   <td class="text-left">Late <br> 30 Minutes 7 Seconds</td>
+                                               </tr>
+                                               <tr>
+                                                   <td class="text-center">Salisu Salisu</td>
+                                                   <td class="text-right">STO28</td>
+                                                   <td class="">Zamfara</td>
+                                                   <td class="text-right">08:30AM</td>
+                                                   <td class="text-right">5:30PM</td>
+                                                   <td class="text-right">03-02-18 07:30:07PM</td>
+                                                   <td class="text-left">Late <br> 30 Minutes 7 Seconds</td>
+                                               </tr>
+                                               <tr>
+                                                   <td class="text-center">Salisu Salisu</td>
+                                                   <td class="text-right">STO28</td>
+                                                   <td class="">Zamfara</td>
+                                                   <td class="text-right">08:30AM</td>
+                                                   <td class="text-right">5:30PM</td>
+                                                   <td class="text-right">03-02-18 07:30:07PM</td>
+                                                   <td class="text-left">Late <br> 30 Minutes 7 Seconds</td>
+                                               </tr>
+                                               <tr>
+                                                   <td class="text-center">Salisu Salisu</td>
+                                                   <td class="text-right">STO28</td>
+                                                   <td class="">Zamfara</td>
+                                                   <td class="text-right">08:30AM</td>
+                                                   <td class="text-right">5:30PM</td>
+                                                   <td class="text-right">03-02-18 07:30:07PM</td>
+                                                   <td class="text-left">Late <br> 30 Minutes 7 Seconds</td>
+                                               </tr>
+
+
+
+                                               
+                                           </tbody>
+                                       </table>
+                                   </div>
+                               </div>
+                               <div class="col-md-12">
+                                   <nav aria-label="work time report">
+                                    <ul class="pagination pull-right">
+                                        <li class="page-item bd_blue">
+                                            <a class="page-link blue_color" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">Previous</span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">6</a></li>
+                                        <li class="page-item"><a class="page-link bg-transparent blue_color border-0" href="#">of 60 Pages</a></li>
+                                        <li class="page-item bd_blue pl-2">
+                                            <a class="page-link blue_color  border-0" href="#" aria-label="Next">
+                                                <span aria-hidden="true">Next</span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                               </div>
+                            </div>
+                            <div class="element-container mt-75 mb-5">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="table-controls pull-right">
+                                            <button class="btn btn-sm banner_bg-color text-white px-5 py-2 mr-3 border-0"><i class="fa fa-share pr-3"></i>Share</button>
+                                            <button class="btn-sm banner_bg-color text-white px-5 py-2 border-0 mr-3"><i class="fa fa-print pr-3"></i>Print</button>
+                                            <button class="btn-sm banner_bg-color text-white px-5 py-2 border-0"><i class="fa fa-download pr-3"></i>Download</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+              </main>
+
+          </div>
+
+          <div class="tab-pane fade" id="list-as-report" role="tabpanel" aria-labelledby="list-as-report-list">
+            
+            <header>
+              <nav class="navbar navbar-expand-lg wide-navbar bg-white">
+                  <!-- <a class="navbar-brand blue_color" href="#"><i class="fa fa-long-arrow-left"></i>Admin</a> -->
+                  <button class="navbar-toggler banner_bg-color" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="fa fa-bars text-white"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+                          
+                      </ul>
+                      <form class="form-inline my-2 my-lg-0 mr-3">
+                          
+                          
+                          <li class="nav-item dropdown list-none">
+                              <a class="nav-link dropdown-toggle logged-user bb_black f-16" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                  Chizoba Egeonu
+                              </a>
+                              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">View Profile</a>
+                                  <a class="dropdown-item" href="#">Go to Dashboard</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#">View Notification</a>
+                              </div>
+                          </li>
+                      </form>
+                  </div>
+              </nav>
+            </header>
+
+              <main class="element-wrapper width-110">
+                <div class="element-container mt-75">
+                    <h3 class="blue-color">Attendance Summary Report</h3>
+                    
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                            <input type="date" id="startDate" class="form-control  card-shdw border-0 rounded filter">
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                            <input type="date" id="endDate" class="form-control  card-shdw border-0 rounded  filter">
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                            <select name="location" id="location" class="form-control  card-shdw border-0 rounded  filter">
+                                <option value="">Location</option>
+                                <option value="">Abuja</option>
+                                <option value="">Lagos</option>
+                                <option value="">Enugu</option>
+                                <option value="">Kano</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                            <select name="employee" id="employee-select" class="form-control card-shdw border-0 rounded  filter">
+                                <option value="">Employee</option>
+                                <option value="">Full Time</option>
+                                <option value="">Part Time</option>
+                                <option value="">Intern</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                            <select name="worktime" id="worktime" class="form-control  card-shdw border-0 rounded filter">
+                                <option value="" class="py-1">Work Time</option>
+                                <option value="">8hrs</option>
+                                <option value="">2hrs</option>
+                                <option value="">4hrs</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-1">
+                            <input type="search" class="form-control search-input border-0  card-shdw border-0 rounded filter" name="search" placeholder="Search">
+                            <!-- <button class="search-btn"><i class="fa fa-sliders"></i></button> -->
+                        </div>
+                       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-1">
+                            <!-- <input type="search" class="form-control search-input" name="search" placeholder="Search"> -->
+                            <button class=" btn search-btn border-0 bg-white slider  card-shdw border-0 rounded"><i class="fa fa-sliders"></i></button>
+                        </div>
+
+                   </div>
+                    <p class="mt-3 f-14">DNI: Did Not Clock In, DNO: Did Not Clock Out. ABS: Absent</p>
+                </div>
+                     <div class="element-container mt-5">
+                               <div class="card mb-5">
+                                   <div class="table-responsive tb-scroll">
+                                       <table class="table table-lightborder table-bordered">
+                                           <thead class="fw-700">
+                                               
+                                               <td>Staff ID</td>
+                                               <td>Wed, 28 Feb 2018</td>
+                                               <td>Thur, 29 Feb 2018</td>
+                                               <td>Fri, 2 Mar 2018</td>
+                                               <td>Mon, 5 Mar 2018</td>
+                                               <td>Tue, 6 Mar 2018</td>
+                                               <td>Wed, 7 Mar 2018</td>
+                                               
+                                           </thead>
+                                           <tbody class="f-12">
+                                               <tr>
+                                                   <td colspan="8" class="text-center f-16">WORKTIME: 08:30:00 - 17:00:00</td>
+                                                   
+                                               </tr>
+                                               
+                                              
+                                               <tr>
+                                                   <td>Salisu Salisu (STO28)</td>
+                                                   <td>ABS</td>
+                                                   <td>[IN:08:37:41 - OUT:17:25:25]</td>
+                                                   <td>ABS</td>
+                                                   <td>[IN:08:37:41 - OUT:DNO]</td>
+                                                   <td>ABS</td>
+                                                   <td>[IN:08:37:41 - OUT:DNO]</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>Salisu Salisu (STO28)</td>
+                                                   <td>ABS</td>
+                                                   <td>ABS</td>
+                                                   <td>[IN:08:37:41 - OUT:DNO]</td>
+                                                   <td>[IN:08:37:41 - OUT:DNO]</td>
+                                                   <td>[IN:08:37:41 - OUT:DNO]</td>
+                                                   <td>[IN:08:37:41 - OUT:DNO]</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>Salisu Salisu (STO28)</td>
+                                                   <td>ABS</td>
+                                                   <td>[IN:08:37:41 - OUT:17:25:25]</td>
+                                                   <td>[IN:DNI - OUT:17:25:25]</td>
+                                                   <td>ABS</td>
+                                                   <td>[IN:08:37:41 - OUT:DNO]</td>
+                                                   <td>ABS</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>Salisu Salisu (STO28)</td>
+                                                   <td>ABS</td>
+                                                   <td>[IN:08:37:41 - OUT:17:25:25]</td>
+                                                   <td>ABS</td>
+                                                   <td>ABS</td>
+                                                   <td>ABS</td>
+                                                   <td>ABS</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>Salisu Salisu (STO28)</td>
+                                                   <td>ABS</td>
+                                                   <td>ABS</td>
+                                                   <td>ABS</td>
+                                                   <td>[IN:08:37:41 - OUT:17:25:25]</td>
+                                                   <td>ABS</td>
+                                                   <td>[IN:08:37:41 - OUT:17:25:25]</td>
+                                               </tr>
+                                               <tr>
+                                                   <td>Salisu Salisu (STO28)</td>
+                                                   <td>ABS</td>
+                                                   <td>[IN:08:37:41 - OUT:17:25:25]</td>
+                                                   <td>[IN:08:37:41 - OUT:17:25:25]</td>
+                                                   <td>ABS</td>
+                                                   <td>[IN:08:37:41 - OUT:17:25:25]</td>
+                                                   <td>ABS</td>
+                                               </tr>
+
+                                           </tbody>
+                                       </table>
+                                   </div>
+                               </div>
+                               <div class="col-md-12">
+                                   <nav aria-label="work time report">
+                                      <ul class="pagination pull-right">
+                                          <li class="page-item bd_blue">
+                                              <a class="page-link blue_color" href="#" aria-label="Previous">
+                                                  <span aria-hidden="true">Previous</span>
+                                                  <span class="sr-only">Previous</span>
+                                              </a>
+                                          </li>
+                                          <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">6</a></li>
+                                          <li class="page-item px-2">
+                                            <a class="page-link blue_color border-0 bg-transparent" href="#">of 60 Pages</a>
+                                          </li>
+                                          
+                                          <li class="page-item bd_blue pl-2">
+                                              <a class="page-link blue_color  border-0" href="#" aria-label="Next">
+                                                  <span aria-hidden="true">Next</span>
+                                                  <span class="sr-only">Next</span>
+                                              </a>
+                                          </li>
+                                      </ul>
+                                  </nav>
+                               </div>
+                      </div>
+                      <div class="element-container mt-75 mb-5">
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <div class="table-controls pull-right">
+                                      <button class="btn btn-sm banner_bg-color text-white px-5 py-2 mr-3 border-0  f-16"><i class="fa fa-share pr-3"></i>Share</button>
+                                      <button class="btn-sm  f-16 banner_bg-color text-white px-5 py-2 border-0 mr-3"><i class="fa fa-print pr-3"></i>Print</button>
+                                      <button class="btn-sm  f-16 banner_bg-color text-white px-5 py-2 border-0"><i class="fa fa-download pr-3"></i>Download</button>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+              </main>
+
+          </div>
+
+          <div class="tab-pane fade" id="list-employee" role="tabpanel" aria-labelledby="list-employee-list">
+            
+            <header>
+                <nav class="navbar navbar-expand-lg wide-navbar bg-white">
+                    <a class="navbar-brand blue-color h1" href="#"><i class="fa fa-long-arrow-left  text-dark" href="#"></i> 
+                      <span class="h3 ml-2">Employee</span></a>
+                    <button class="navbar-toggler banner_bg-color" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="fa fa-bars text-white"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <button class="btn add-employee banner_bg-color text-white">Add New Employee</button>
+                            
+                            
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0 mr-3">
+                            
+                            
+                            <li class="nav-item dropdown list-none">
+                                <a class="nav-link dropdown-toggle logged-user bb_black f-16" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                    Chizoba Egeonu
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">View Profile</a>
+                                    <a class="dropdown-item" href="#">Go to Dashboard</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">View Notification</a>
+                                </div>
+                            </li>
+                        </form>
+                    </div>
+                </nav>
+            </header>
+            <main class="element-wrapper width-110 pr-1">
+               <div class="element-container mt-75">
+                   <div class="row">
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                            <input type="date" id="startDate" class="form-control  card-shdw border-0 rounded filter">
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                            <input type="date" id="endDate" class="form-control  card-shdw border-0 rounded  filter">
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                            <select name="location" id="location" class="form-control  card-shdw border-0 rounded  filter">
+                                <option value="">Location</option>
+                                <option value="">Abuja</option>
+                                <option value="">Lagos</option>
+                                <option value="">Enugu</option>
+                                <option value="">Kano</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                            <select name="employee" id="employee-select" class="form-control card-shdw border-0 rounded  filter">
+                                <option value="">Employee</option>
+                                <option value="">Full Time</option>
+                                <option value="">Part Time</option>
+                                <option value="">Intern</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
+                            <select name="worktime" id="worktime" class="form-control  card-shdw border-0 rounded filter">
+                                <option value="" class="py-1">Work Time</option>
+                                <option value="">8hrs</option>
+                                <option value="">2hrs</option>
+                                <option value="">4hrs</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-1">
+                            <input type="search" class="form-control search-input border-0  card-shdw border-0 rounded filter" name="search" placeholder="Search">
+                            <!-- <button class="search-btn"><i class="fa fa-sliders"></i></button> -->
+                        </div>
+                       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-1">
+                            <!-- <input type="search" class="form-control search-input" name="search" placeholder="Search"> -->
+                            <button class=" btn search-btn border-0 bg-white slider  card-shdw border-0 rounded"><i class="fa fa-sliders"></i></button>
+                        </div>
+
+                   </div>
+               </div>
+
+                <div class="employees-components mt-112">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <a href="single_employee.html" class="dis-block employee-card-wrapper">
+                                <div class="card employee-card text-center bd-b-blue">
+                                    <div class="card-header">
+                                        <div class="employee_thumbnail">
+                                            <img src="img/image 4.1.png" class="width-80 rounded-circle" alt="">
+                                            <span class="img_dot bg_green"></span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body mt--3e bd-white pt-5">
+                                        <p class="text-center employee-name font_color f-fira">Dike Thelma Kelechi</p>
+                                        <p class="job-title light_grey f-14">
+                                            <span class="pr-3">LEAD DESIGNER</span>
+                                            <span class="dot"></span>
+                                            <span class="px-2">ABUJA</span>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer bg-white border-0 f-fira mt--2e">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p class="light_grey f-14 mb-0">Attendance</p>
+                                                <p class="font_color f-18 mb-0">95%</p>
+                                                <p class="light_grey f-14">157 Days</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="light_grey f-14">Punctuality</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                           
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <a href="" class="dis-block employee-card-wrapper">
+                                <div class="card employee-card bd-b-green text-center">
+                                    <div class="card-header">
+                                        <div class="employee_thumbnail">
+                                            <img src="img/image 5.1.png" class="width-80 rounded-circle" alt="">
+                                            <span class="img_dot bg_green"></span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body mt--3e bd-white pt-5">
+                                        <p class="text-center employee-name font_color f-fira">Friends Forever Ibeh</p>
+                                        <p class="job-title f-14 f-fira light_grey">
+                                        
+                                            <span class="pr-3">WEB DEVELOPER</span>
+                                            <span class="dot"></span>
+                                            <span class="px-2">ABUJA</span>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer bg-white border-0 mt--2e">
+                                        <div class="row">
+                                            <div class="col-md-6 ">
+                                                <p class="mb-0 f-14 light_grey">Attendance</p>
+                                                <p class="mb-0 f-18 font_color">95%</p>
+                                                <p class="f-14 light_grey">157 Days</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="light_grey f-14">Punctuality</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <a href="" class="dis-block employee-card-wrapper">
+                                <div class="card employee-card bd-b-red text-center">
+                                    <div class="card-header">
+                                        <div class="employee_thumbnail">
+                                            <img src="img/image 6.1.png" class="width-80 rounded-circle" alt="">
+                                            <span class="img_dot bg_red_color"></span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body f-fira mt--3e bd-white pt-5">
+                                        <p class="employee-name text-center font_color">Okoye Chidi Barth</p>
+                                        <p class="job-title f-14 light_grey">
+                                            <span class="pr-3 ">WEB DEVELOPER</span>
+                                            <span class="dot"></span>
+                                            <span class="px-2">ABUJA</span>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer bg-white border-0 f-fira mt--2e">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p class="f-14 light_grey mb-0">Attendance</p>
+                                                <p class="f-18 font_color mb-0">95%</p>
+                                                <p class="f-14 light_grey">157 Days</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="light_grey f-14">Punctuality</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <a href="" class="dis-block employee-card-wrapper ">
+                                <div class="card employee-card bd-b-dark text-center">
+                                    <div class="card-header">
+                                        <div class="employee_thumbnail">
+                                            <img src="img/image 3.1.png" alt="" class="width-80 rounded-circle">
+                                            <span class="img_dot bg_green"></span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="card-body font_color mt--3e bd-white pt-5">
+                                        <p class="employee-name text-center ">Felicia Frida Abu</p>
+                                        <p class="job-title f-12 light_grey">
+                                            <span class="pr-3">CONTENT DEVELOPER</span>
+                                            <span class="dot"></span>
+                                            <span class="px-2">ABUJA</span>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer bg-white border-0 f-fira mt--15 mt--2e">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p class="light_grey f-14 mb-0">Attendance</p>
+                                                <p class="f-18 mb-0 font_color">95%</p>
+                                                <p class="f-14 light_grey">157 Days</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="f-14 light_grey">Punctuality</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="row mt-6e">
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <a href="employee.html" class="dis-block employee-card-wrapper">
+                                <div class="card employee-card text-center bd-b-blue">
+                                    <div class="card-header">
+                                        <div class="employee_thumbnail">
+                                            <img src="img/image 4.1.png" class="width-80 rounded-circle" alt="">
+                                            <span class="img_dot bg_green"></span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body mt--3e bd-white pt-5">
+                                        <p class="text-center employee-name font_color f-fira">Dike Thelma Kelechi</p>
+                                        <p class="job-title light_grey f-14">
+                                            <span class="pr-3">LEAD DESIGNER</span>
+                                            <span class="dot"></span>
+                                            <span class="px-2">ABUJA</span>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer bg-white border-0 f-fira mt--2e">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p class="light_grey f-14 mb-0">Attendance</p>
+                                                <p class="font_color f-18 mb-0">95%</p>
+                                                <p class="light_grey f-14">157 Days</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="light_grey f-14">Punctuality</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                           
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <a href="" class="dis-block employee-card-wrapper">
+                                <div class="card employee-card bd-b-green text-center">
+                                    <div class="card-header">
+                                        <div class="employee_thumbnail">
+                                            <img src="img/image 5.1.png" class="width-80 rounded-circle" alt="">
+                                            <span class="img_dot bg_green"></span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body mt--3e bd-white pt-5">
+                                        <p class="text-center employee-name font_color f-fira">Friends Forever Ibeh</p>
+                                        <p class="job-title f-14 f-fira light_grey">
+                                        
+                                            <span class="pr-3">WEB DEVELOPER</span>
+                                            <span class="dot"></span>
+                                            <span class="px-2">ABUJA</span>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer bg-white border-0 mt--2e">
+                                        <div class="row">
+                                            <div class="col-md-6 ">
+                                                <p class="mb-0 f-14 light_grey">Attendance</p>
+                                                <p class="mb-0 f-18 font_color">95%</p>
+                                                <p class="f-14 light_grey">157 Days</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="light_grey f-14">Punctuality</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <a href="" class="dis-block employee-card-wrapper">
+                                <div class="card employee-card bd-b-red text-center">
+                                    <div class="card-header">
+                                        <div class="employee_thumbnail">
+                                            <img src="img/image 6.1.png" class="width-80 rounded-circle" alt="">
+                                            <span class="img_dot bg_red_color"></span>
+                                        </div>
+                                    </div>
+                                    <div class="card-body f-fira mt--3e bd-white pt-5">
+                                        <p class="employee-name text-center font_color">Okoye Chidi Barth</p>
+                                        <p class="job-title f-14 light_grey">
+                                            <span class="pr-3 ">WEB DEVELOPER</span>
+                                            <span class="dot"></span>
+                                            <span class="px-2">ABUJA</span>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer bg-white border-0 f-fira mt--2e">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p class="f-14 light_grey mb-0">Attendance</p>
+                                                <p class="f-18 font_color mb-0">95%</p>
+                                                <p class="f-14 light_grey">157 Days</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="light_grey f-14">Punctuality</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                            <a href="" class="dis-block employee-card-wrapper ">
+                                <div class="card employee-card bd-b-dark text-center">
+                                    <div class="card-header">
+                                        <div class="employee_thumbnail">
+                                            <img src="img/image 3.1.png" alt="" class="width-80 rounded-circle">
+                                            <span class="img_dot bg_green"></span>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="card-body font_color mt--3e bd-white pt-5">
+                                        <p class="employee-name text-center ">Felicia Frida Abu</p>
+                                        <p class="job-title f-12 light_grey">
+                                            <span class="pr-3">CONTENT DEVELOPER</span>
+                                            <span class="dot"></span>
+                                            <span class="px-2">ABUJA</span>
+                                        </p>
+                                    </div>
+                                    <div class="card-footer bg-white border-0 f-fira mt--15 mt--2e">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p class="light_grey f-14 mb-0">Attendance</p>
+                                                <p class="f-18 mb-0 font_color">95%</p>
+                                                <p class="f-14 light_grey">157 Days</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="f-14 light_grey">Punctuality</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="element-container mt-112">
+
+                    <div class="row mt-5">
+                        <div class="col-md-12">
+                            <div class="element-container">
+                                <nav aria-label="list of employees">
+                                    <ul class="pagination pull-right">
+                                        <li class="page-item bd_blue">
+                                            <a class="page-link blue_color" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">Previous</span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item bd_blue"><a class="page-link blue_color border" href="#">6</a></li>
+                                        
+                                        <li class="page-item px-3 bg-transparent"><a class="page-link blue_color border-0 bg-transparent" href="#">of 60 Pages</a></li>
+                                        <li class="page-item bd_blue pl-2">
+                                            <a class="page-link blue_color border" href="#" aria-label="Next">
+                                                <span aria-hidden="true">Next</span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+          </div>
+
+          <div class="tab-pane fade" id="list-punctuality" role="tabpanel" aria-labelledby="list-punctuality-list">
+            
+            <header>
+              <nav class="navbar navbar-expand-lg wide-navbar bg-white">
+                <a class="navbar-brand blue-color text-dark" href="#"><i class="fa fa-long-arrow-left text-dark"></i> Admin</a>
+                <button class="navbar-toggler banner_bg-color" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars text-white"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                      
+                      
+                      
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0 mr-3">
+                      
+                    <li class="nav-item dropdown list-none">
+                      <a class="nav-link dropdown-toggle logged-user bb_black f-16" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                        Chizoba Egeonu
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">View Profile</a>
+                        <a class="dropdown-item" href="#">Go to Dashboard</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">View Notification</a>
+                      </div>
+                    </li>
+                  </form>
+                </div>
+              </nav>
+            </header>
+
+            <div class="px-5 m-5">
+              <p class="h2">March</p>
+            </div>
+
+            <div class="px-5">
+              <div class="mx-5 p-5 bg-white">
+                <div class="d-flex justify-content-end px-5">
+                  <button class="btn btn-deep-blue px-4 ">March</button>
+                </div>
+
+                <div class="d-flex m-5">
+                  <div
+                    class="ldBar label-center ldBar-label"
+                    style="width:30%;height:30%;margin:auto"
+                    data-value="86"
+                    data-preset="circle"
+                  ></div>
+                  <div
+                    class="ldBar label-center ldBar-label"
+                    style="width:30%;height:30%;margin:auto"
+                    data-value="50"
+                    data-preset="circle"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+            
+            <header>
+              <nav class="navbar navbar-expand-lg wide-navbar bg-white">
+                <a class="navbar-brand blue-color text-dark" href="#"><i class="fa fa-long-arrow-left text-dark"></i> Admin</a>
+                <button class="navbar-toggler banner_bg-color" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fa fa-bars text-white"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                      
+                      
+                      
+                  </ul>
+                  <form class="form-inline my-2 my-lg-0 mr-3">
+                      
+                    <li class="nav-item dropdown list-none">
+                      <a class="nav-link dropdown-toggle logged-user bb_black f-16" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                        Chizoba Egeonu
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">View Profile</a>
+                        <a class="dropdown-item" href="#">Go to Dashboard</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">View Notification</a>
+                      </div>
+                    </li>
+                  </form>
+                </div>
+              </nav>
+            </header>
+
+            
+            <div class="p-5">
+             <div class="row px-5 mr-5 mb-1">
+               <div class="col-12">
+                 <ul class="nav nav-fill nav-tabs f-24 border-0" id="nav-tab" role="tablist">
+                   <li class="nav-item usecase_nav active-tab bg-white">
+                       <a class="nav-link active border-0 text-dark" id="nav-account-tab" data-toggle="tab" href="#nav-general" role="tab" aria-controls="nav-genral" aria-selected="true">Profile</a>
+                   </li>
+                   <li class="nav-item usecase_nav bg-white">
+                       <a class="nav-link border-0 text-dark" id="nav-pricing-tab" data-toggle="tab" href="#nav-pricing" role="tab" aria-controls="nav-pricing" aria-selected="false" >Password</a>
+                   </li>
+                   <li class="nav-item usecase_nav bg-white">
+                       <a class="nav-link border-0 text-dark" id="nav-case-tab" data-toggle="tab" href="#nav-case" role="tab" aria-controls="nav-case" aria-selected="false">Subscription/Billing</a>
+                   </li>
+                 </ul>
+               </div>
+            </div>
+
+            <!-- content -->
+            <div class="tab-content border-0 mx-5 pr-3 pt-2 " id="nav-tabContent">
+
+              <div class="tab-pane fade show active pt-1 mr-5 bg-white" id="nav-general" role="tabpanel" aria-labelledby="nav-general-tab">
+                     
+                <div class="p-5">
+                 <div class="row p-3">
+                   <div class="col-4 col-md-4">
+                     <div class="d-block ">
+                       <small>Organization Logo</small><br>
+                       <!-- <img src="..." alt="logo" width="30px"> -->
+                       <img src="img/Logo/sams-logo-sams-color-no-text.png" alt="" class="img-fluid ml-5" width="50px">
+                     </div>
+                     <div>
+                       <small>Name of Organization</small>
+                       <p>STeTis Companies Limited</p>
+                     </div>
+                     <div>
+                       <small>Password</small>
+                       <p>**********</p>
+                     </div>
+                   </div>
+
+                   <div class="col-4 col-md-4">
+                     
+                   </div>
+
+                   <div class="col-4 col-md-4">
+                     <button type="submit" class="btn custom-blue-bg text-white rounded-0 fw-btn">Save</button>
+
+                   </div>
+                 </div>
+                </div>
+
+              </div>
+
+
+                   <div class="tab-pane fade border  p-5 mr-5 bg-white" id="nav-pricing" role="tabpanel" aria-labelledby="nav-pricing-tab">
+                     
+                     <div class="mx-5 px-5">
+                       <form class="mx-5">
+                         <div class="form-group mb-4">
+                           <label for="formGroupExampleInput mb-0 pb-0">Old Password</label>
+                           <input type="text" class="form-control rounded-0 " id="formGroupExampleInput" placeholder="">
+                         </div>
+                         <div class="form-group mb-4">
+                           <label for="formGroupExampleInput2 mb-0">New Password</label>
+                           <input type="text" class="form-control rounded-0" id="formGroupExampleInput2" placeholder="">
+                         </div>
+                         <div class="form-group mb-5">
+                           <label for="formGroupExampleInput3 mb-0 pb-0">Confirm Password</label>
+                           <input type="text" class="form-control rounded-0" id="formGroupExampleInput3" placeholder="">
+                         </div>
+                         <button class="btn rounded-0 border-0 custom-blue-bg fw-btn text-white">Save</button>
+                       </form>
+                     </div>
+                     
+                   </div>
+
+                   <div class="tab-pane fade  pt-0 mr-5 " id="nav-case" role="tabpanel" aria-labelledby="nav-case-tab">
+                     
+                     <div class="new" >
+                       <div class="pt-0 bg-light my-2 d-flex">
+                         <div class="mr-auto">
+                           <input type="search" name="" class="form-control border rounded-0" placeholder="search">
+                         </div>
+
+                         <div>
+                           <button class="btn custom-blue-bg rounded-0 border-0 text-white xc">Renew Subscription</button>
+                         </div>
+
+                       </div>
+
+                       <div class="table-responsive bg-white py-0">
+                           <table class="table table-bordered table-hover my-0 text-center">
+                             <thead>
+                               <tr>
+                                 <th scope="col">Date paid</th>
+                                 <th scope="col">Expiry Date</th>
+                                 <th scope="col">Subscription Type</th>
+                               </tr>
+                             </thead>
+                             <tbody>
+                               <tr>
+                                 <td scope="row" class="border-0"></td>
+                                 <td class="border-0"></td>
+                                 <td class="border-0"></td>
+                               </tr>
+                               <tr>
+                                 <td scope="row">12-12-12</td>
+                                 <td>12-12-13</td>
+                                 <td>Full</td>
+                               </tr>
+                               <tr>
+                                 <td scope="row">12-12-12</td>
+                                 <td>12-12-13</td>
+                                 <td>Half</td>
+                               </tr>    
+                             </tbody>
+                           </table>
+                         </div>
+
+                     </div>
+
+                     <div class="old" style="display: none;">
+                       
+                       <div class="bg-white">
+                         <div class="header-elements d-flex border px-5 pt-3 pb-1">
+                           <div class="mr-auto">
+                             <p class="h5">Billing</p>
+                           </div>
+
+                           <div>
+                             <i class="far fa-times-circle text-danger " style="cursor: pointer;"></i>
+                           </div>
+                         </div>
+                         
+                         <div class="p-5 mx-5">
+                           <form class="px-5 mx-5">
+                             <div class="form-group mb-4">
+                               <input type="text" class="form-control rounded-0" id="inputAddress" placeholder="Card Number">
+                             </div>
+                             <div class="form-row mb-3">
+                               <div class="form-group col-md-6">
+                                 <input type="email" class="form-control rounded-0" id="inputEmail4" placeholder="MM">
+                               </div>
+                               <div class="form-group col-md-6">
+                                 <input type="password" class="form-control rounded-0" id="inputPassword4" placeholder="YY">
+                               </div>
+                             </div>
+                             
+                             <div class="form-group mb-5">
+                               <input type="text" class="form-control rounded-0 " id="inputAddress2" placeholder="Amount">
+                             </div>
+                             
+                             <div class="d-flex"> 
+                               <button type="submit" class="btn bg-secondary text-white xc rounded-0 fw-btn mr-3">Exit</button>
+                               <button type="submit" class="btn custom-blue-bg text-white rounded-0 fw-btn">Save</button>
+                             </div>
+
+                           </form>
+                         </div>
+
+                       </div>
+
+                     </div>
+
+                   </div> 
+
+
+                                 
+                   <!-- END:: USECASE Content -->
+               </div>
+                       
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="staffPresent" tabindex="-1" role="dialog" aria-labelledby="viewEmployeeAttendanceLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title bb_black f-18" id="exampleModalLabel"><a href="employee.html" class="blue-color f-24">Staff Present</a></h5>
+                  <button type="button" class="close red_color" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"><i class="fa fa-times-circle-o"></i></span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="table-responsive px-4">
+                              <table class="table">
+                                  <thead class="blue_color fw-700">
+                                      
+                                      <tr>
+                                          <td>Name</td>
+                                          <td>Location</td>
+                                          <td>Arrival Time</td>
+                                          <td>Status</td>
+                                      </tr>
+                                  </thead>
+                                  <tbody class="blue_color">
+                                      <tr>
+                                          <td>
+                                             Chidi Okoye
+                                          </td>
+                                          <td>STeTis office, Uyo,Akwa Ibom</td>
+                                          <td>07:06 <br> Mon, 18th March 2018</td>
+                                          <td>Early</td>
+                                          
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                             Chidi Okoye
+                                          </td>
+                                          <td>STeTis office, Uyo,Akwa Ibom</td>
+                                          <td>07:06 <br> Mon, 18th March 2018</td>
+                                          <td>Early</td>
+                                          
+                                      </tr>
+                                      <tr>
+                                          <td>
+                                             Chidi Okoye
+                                          </td>
+                                          <td>STeTis office, Uyo,Akwa Ibom</td>
+                                          <td>07:06 <br> Mon, 18th March 2018</td>
+                                          <td>Early</td>
+                                          
+                                      </tr>
+                                      
+                                      <tr>
+                                          <td>
+                                             Chidi Okoye
+                                          </td>
+                                          <td>STeTis office, Uyo,Akwa Ibom</td>
+                                          <td>07:06 <br> Mon, 18th March 2018</td>
+                                          <td>Early</td>
+                                          
+                                      </tr>
+                                      
+                                  </tbody>
+                              </table>
+                          </div>
+                      </div>
+                      
+                      <div class="col-md-12 mt-75 mb-5">
+                          <div class="table-controls pull-right">
+                              <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 mr-3 border-0"><i class="fa fa-share pr-3"></i>Share</button>
+                              <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 border-0 mr-3"><i class="fa fa-print pr-3"></i>Print</button>
+                              <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 border-0"><i class="fa fa-download pr-3"></i>Download</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Modal 2 -->
+  <div class="modal fade" id="staffAbsent" tabindex="-1" role="dialog" aria-labelledby="viewEmployeeAttendanceLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title bb_black f-18" id="exampleModalLabel"><a href="employee.html" class="blue-color f-24">Staff Absent</a></h5>
+                  <button type="button" class="close red_color" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"><i class="fa fa-times-circle-o"></i></span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="table-responsive">
+                              <table class="table">
+                                  <thead class="blue_color fw-700">
+                                      
+                                      <tr>
+                                          <td class="text-center">Name</td>
+                                          <td class="text-center">Location</td>
+                                          <td class="text-center">Arrival Time</td>
+                                          <td colspan="2"></td>
+                                      </tr>
+                                  </thead>
+                                  <tbody class="blue_color">
+                                      <tr>
+                                          <td class="text-center">
+                                             Chidi Okoye
+                                          </td>
+                                          <td class="text-center">STeTis office, Uyo,Akwa Ibom</td>
+                                          
+                                          <td><input type="text" class=" arrival_time form-control border-0 border-bottom"></td>
+                                          <td ></td>
+                                          
+                                      </tr>
+                                      <tr>
+                                          <td class="text-center">
+                                             Chidi Okoye
+                                          </td>
+                                          <td class="text-center">STeTis office, Uyo,Akwa Ibom</td>
+                                          
+                                          <td><input type="text" class=" arrival_time form-control border-0 border-bottom"></td>
+                                          <td></td>
+                                          
+                                      </tr>
+                                      <tr>
+                                          <td class="text-center">
+                                             Chidi Okoye
+                                          </td>
+                                          <td class="text-center">STeTis office, Uyo,Akwa Ibom</td>
+                                          
+                                          <td><input type="text" class=" arrival_time form-control border-0 border-bottom"></td>
+                                          <td></td>
+                                          
+                                      </tr>
+                                      <tr>
+                                          <td class="text-center">
+                                             Chidi Okoye
+                                          </td>
+                                          <td class="text-center">STeTis office, Uyo,Akwa Ibom</td>
+                                          
+                                          <td><input type="text" class=" arrival_time form-control border-0 border-bottom"></td>
+                                          <td></td>
+                                          
+                                      </tr>
+                                      
+                                      
+                                  </tbody>
+                              </table>
+                          </div>
+                      </div>
+                      
+                      <div class="col-md-12 mt-75 mb-5">
+                          <div class="table-controls pull-right">
+                              <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 mr-3 border-0"><i class="fa fa-share pr-3"></i>Share</button>
+                              <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 border-0 mr-3"><i class="fa fa-print pr-3"></i>Print</button>
+                              <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 border-0"><i class="fa fa-download pr-3"></i>Download</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Modal 3-->
+  <div class="modal fade" id="OoS" tabindex="-1" role="dialog" aria-labelledby="viewEmployeeAttendanceLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title bb_black f-18" id="exampleModalLabel"><a href="employee.html" class="blue-color f-24">Out of Station</a></h5>
+                  <button type="button" class="close red_color" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"><i class="fa fa-times-circle-o"></i></span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="table-responsive">
+                              <table class="table">
+                                  <thead class="blue_color fw-700">
+                                      
+                                      <tr>
+                                          <td class="text-center">Name</td>
+                                          <td class="text-center">Location</td>
+                                          <td class="">Date Started</td>
+                                          <td class="text-center">Return Date</td>
+                                      </tr>
+                                  </thead>
+                                  <tbody class="blue_color">
+                                      
+                                      <tr>
+                                          <td class="text-center">
+                                             Chidi Okoye
+                                          </td>
+                                          <td class="text-center">STeTis office, Uyo,Akwa Ibom</td>
+                                          <td class="">07:06 <br> Mon, 18th March 2018</td>
+                                          
+                                          <td class="text-center">18th April, 2018</td>
+                                          
+                                      </tr>
+                                      <tr>
+                                          <td class="text-center">
+                                             Chidi Okoye
+                                          </td>
+                                          <td class="text-center">STeTis office, Uyo,Akwa Ibom</td>
+                                          <td class="">07:06 <br> Mon, 18th March 2018</td>
+                                          
+                                          <td class="text-center">18th April, 2018</td>
+                                          
+                                      </tr>
+                                      <tr>
+                                          <td class="text-center">
+                                             Chidi Okoye
+                                          </td>
+                                          <td class="text-center">STeTis office, Uyo,Akwa Ibom</td>
+                                          <td class="">07:06 <br> Mon, 18th March 2018</td>
+                                          
+                                          <td class="text-center">18th April, 2018</td>
+                                          
+                                      </tr>
+                                      <tr>
+                                          <td class="text-center">
+                                             Chidi Okoye
+                                          </td>
+                                          <td class="text-center">STeTis office, Uyo,Akwa Ibom</td>
+                                          <td class="">07:06 <br> Mon, 18th March 2018</td>
+                                          
+                                          <td class="text-center">18th April, 2018</td>
+                                          
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                      </div>
+                      
+                      <div class="col-md-12 mt-75 mb-5">
+                          <div class="table-controls pull-right">
+                              <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 mr-3 border-0"><i class="fa fa-share pr-3"></i>Share</button>
+                              <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 border-0 mr-3"><i class="fa fa-print pr-3"></i>Print</button>
+                              <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 border-0"><i class="fa fa-download pr-3"></i>Download</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Modal 4-->
+  <div class="modal fade" id="lateMarks" tabindex="-1" role="dialog" aria-labelledby="viewEmployeeAttendanceLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title bb_black f-18" id="exampleModalLabel"><a href="employee.html" class="blue-color f-24">Late Marks</a></h5>
+                  <button type="button" class="close red_color" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"><i class="fa fa-times-circle-o"></i></span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="table-responsive">
+                              <table class="table">
+                                  <thead class="blue_color fw-700">
+                                      
+                                      <tr>
+                                          <td class="text-center">Name</td>
+                                          <td class="text-center">Location</td>
+                                          <td class="">Late Mark</td>
+                                          <td class="" colspan="2"></td>
+                                      </tr>
+                                  </thead>
+                                  <tbody class="blue_color">
+                                      
+                                      <tr>
+                                          <td class="text-center">
+                                             Chidi Okoye
+                                          </td>
+                                          <td class="text-center">STeTis office, Uyo,Akwa Ibom</td>
+                                          <td class=""> Missed 5 working days 
+                                           <br>penalty: 10% deduction</td>
+                                          
+                                          <td class=""></td>
+                                      </tr>
+                                      <tr>
+                                          <td class="text-center">
+                                             Chidi Okoye
+                                          </td>
+                                          <td class="text-center">STeTis office, Uyo,Akwa Ibom</td>
+                                          <td class=""> Missed 5 working days 
+                                           <br>penalty: 10% deduction</td>
+                                          
+                                          <td class=""></td>
+                                      </tr>
+                                      <tr>
+                                          <td class="text-center">
+                                             Chidi Okoye
+                                          </td>
+                                          <td class="text-center">STeTis office, Uyo,Akwa Ibom</td>
+                                          <td class=""> Missed 5 working days 
+                                           <br>penalty: 10% deduction</td>
+                                          
+                                          <td class=""></td>
+                                      </tr>
+                                      <tr>
+                                          <td class="text-center">
+                                             Chidi Okoye
+                                          </td>
+                                          <td class="text-center">STeTis office, Uyo,Akwa Ibom</td>
+                                          <td class=""> Missed 5 working days 
+                                           <br>penalty: 10% deduction</td>
+                                          
+                                          <td class=""></td>
+                                      </tr>
+                                     
+                                  </tbody>
+                              </table>
+                          </div>
+                      </div>
+                      
+                      <div class="col-md-12 mt-75 mb-5">
+                          <div class="table-controls pull-right">
+                              <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 mr-3 border-0"><i class="fa fa-share pr-3"></i>Share</button>
+                              <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 border-0 mr-3"><i class="fa fa-print pr-3"></i>Print</button>
+                              <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 border-0"><i class="fa fa-download pr-3"></i>Download</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Modal 5  -->
+  <div class="modal fade" id="dayOfYear" tabindex="-1" role="dialog" aria-labelledby="viewEmployeeAttendanceLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title blue_color f-30 text-center" id="exampleModalLabel">74th Day of the Year</h5>
+                  <button type="button" class="close red_color" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"><i class="fa fa-times-circle-o"></i></span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <div class="row">
+                      <div class="col-md-2"></div>
+                      <div class="col-md-8">
+                         <div class="calendar">
+                              <div class="googleCalendar" ="calendar">
+                                  <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=el4qfaq6qi7f8vg6l38sngb1gc%40group.calendar.google.com&amp;color=%23B1440E&amp;ctz=Africa%2FLagos" style="border-width:0" width="100%" height="400" frameborder="0" scrolling="no"></iframe>
+                              </div>
+                         </div>
+                      </div>
+                      <div class="col-md-2"></div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Modal 6-->
+  <div class="modal fade" id="staffLate" tabindex="-1" role="dialog" aria-labelledby="staffAttendance" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title blue-color f-30" id="exampleModalLabel">Staff Late</h5>
+                  <button type="button" class="close red_color" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true"><i class="fa fa-times-circle-o"></i></span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <div class="table-responsive">
+                              <table class="table">
+                                  <thead class="blue_color fw-700">
+                                      
+                                      <tr>
+                                          <td class="text-center">Name</td>
+                                          <td class="text-center">Location</td>
+                                          <td class="text-center">Arrival Time</td>
+                                          <td class="">Time Difference</td>
+                                      </tr>
+                                  </thead>
+                                  <tbody class="blue_color">
+                                      
+                                      <tr>
+                                          <td class="text-center">
+                                             Chidi Okoye
+                                          </td>
+                                          <td >STeTis office, Uyo,Akwa Ibom</td>
+                                          <td class="text-right"> 08:46 <br> Mon, 18th March 2018</td>
+                                          
+                                          <td class="text-left">Late <br> 30 Minutes 7 Seconds</td>
+                                      </tr>
+                                       <tr>
+                                          <td class="text-center">
+                                             Chidi Okoye
+                                          </td>
+                                          <td >STeTis office, Uyo,Akwa Ibom</td>
+                                          <td class="text-right"> 08:46 <br> Mon, 18th March 2018</td>
+                                          
+                                          <td class="text-left">Late <br> 30 Minutes 7 Seconds</td>
+                                      </tr>
+                                       <tr>
+                                          <td class="text-center">
+                                             Chidi Okoye
+                                          </td>
+                                          <td >STeTis office, Uyo,Akwa Ibom</td>
+                                          <td class="text-right"> 08:46 <br> Mon, 18th March 2018</td>
+                                          
+                                          <td class="text-left">Late <br> 30 Minutes 7 Seconds</td>
+                                      </tr>                                                                           
+                                       <tr>
+                                          <td class="text-center">
+                                             Chidi Okoye
+                                          </td>
+                                          <td >STeTis office, Uyo,Akwa Ibom</td>
+                                          <td class="text-right"> 08:46 <br> Mon, 18th March 2018</td>
+                                          
+                                          <td class="text-left">Late <br> 30 Minutes 7 Seconds</td>
+                                      </tr>
+                                  </tbody>
+                              </table>
+                          </div>
+                      </div>
+                      
+                      <div class="col-md-12 mt-75 mb-5">
+                          <div class="table-controls pull-right">
+                              <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 mr-3 border-0"><i class="fa fa-share pr-3"></i>Share</button>
+                              <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 border-0 mr-3"><i class="fa fa-print pr-3"></i>Print</button>
+                              <button class="btn btn-sm f-16 banner_bg-color text-white px-5 py-2 border-0"><i class="fa fa-download pr-3"></i>Download</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+       
+<!--JS, Popper.js, and jQuery  -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script> -->
+<!-- <script src="Assets/plugins/moment/moment.js"></script> -->
+<!-- <script src="js/jquery/jquery-1.9.0.min.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> -->
+<!-- <script src="js/script.js"></script> -->
+<!-- <script src="Assets/plugins/Calendar/calendar.js"></script> -->
+<script>
+  new Chart(document.getElementById("myChart"), {
+    type: 'bar',
+    data: {
+      labels: ["Pres", "Abs", "report", "LM", "ED", "TN"],
+      datasets: 
+        [
+          {
+            label: ["Present"],
+            backgroundColor: ["#9B51E0", "#EB5757", "#FED766", "#1BA052", "#4663A2", "#2A97CA"],
+            borderColor: ["#9B51E0", "#1BA052", "#FED766", "#4663A2", "#EB5757", "#2A97CA"],
+            data: [65, 59, 75, 81, 56, 55, 40]
+          },
+             {
+                label: 'Absent',  
+              backgroundColor: ["#EB5757"]
+
+              },
+
+              {
+                label: 'Late',        
+              backgroundColor: ["#FED766"]
+
+              },
+              //and the next one
+              
+              {
+                label: 'Out of Station',        
+              backgroundColor: ["#2A97CA"]
+
+              },
+              {
+                label: 'Early Departure',        
+              backgroundColor: ["#2A97CA"]
+
+              },
+              {
+                label: 'March 2018',        
+                backgroundColor: ["#FFFFFF"],
+                borderColor: ["#FFFFFF"],
+                // fontStyle : "Bold"
+              }            
+        ]
+    },
+    
+    options: {
+      // legend: { display: false },
+      scales: {
+        yAxes: [{
+            ticks: {
+                // beginAtZero: true
+                display: true
+            }
+        }],
+       
+         xAxes: [{
+    //         // Change here
+            barPercentage: 0.2
+        }]
+      }
+    }
+});
+      
+  $(document).ready(function(){
+
+    $(".xc").click(function(){
+          // $(".old,.new").toggle()
+      console.log('2');
+      });
+
+    $("#list-dashboard-list").click(function() {
+      /* Act on the event */
+      document.querySelector("title").innerHTML = "SAMS - Admin Dashboard"
+    });
+
+    $("#list-report-list").click(function() {
+      /* Act on the event */
+      document.querySelector("title").innerHTML = "SAMS - Admin Report Page"
+    });
+
+    $("#list-employee-list").click(function() {
+      /* Act on the event */
+      document.querySelector("title").innerHTML = "SAMS - Admin Employee Page "
+    });
+
+    $("#list-punctuality-list").click(function() {
+      /* Act on the event */
+      document.querySelector("title").innerHTML = "SAMS - Admin Punctuality Page "
+    });
+
+    $("#list-settings-list").click(function() {
+      /* Act on the event */
+      document.querySelector("title").innerHTML = "SAMS - Admin Settings Page "
+    });
+
+
+    $(".slider").click(function() {
+      /* Act on the event */
+        $(".filter").toggle();
+    });
+
+  });    
+
+  var header = document.querySelector('.nav-tabs');
+  var btns = header.getElementsByClassName("usecase_nav");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active-tab");
+      current[0].className = current[0].className.replace(" active-tab", "");
+      this.className += " active-tab";
+    });
+  }
+  
+
+</script>
+
+</body>
+</html>

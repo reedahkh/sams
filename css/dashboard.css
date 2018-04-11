@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Karma:400,600,700');
+ @import url('https://fonts.googleapis.com/css?family=Karma:400,600,700');
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700,800,900');
 
 * {
 	box-sizing: border-box;
-}
+} 
 body {
 	margin: 0;
 	padding: 0;
@@ -34,7 +34,7 @@ body {
 }
 
 .bg-linear{
-	background: linear-gradient(180deg, #0B2D40 -6.2%, rgba(74, 88, 153, 0.99) 115.14%);
+	background: linear-gradient(180deg, #0B2D40 -6.2%, rgba(74, 88, 153, 0.99) 115.14%); !important;
 	
 }
 .bg-transparent{
@@ -257,7 +257,10 @@ img.dashboard{
 input.arrival_time{
 	border-bottom:  1px solid #BDBDBD !important;
 }
-
+.tb-scroll{
+	height: 300px;
+	overflow: scroll;
+}
 button.close:hover{
 	color: #EB5757;
 }

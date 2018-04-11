@@ -102,6 +102,10 @@ iframe{
 	box-shadow: 0 0 10px #b0b0b0;
 	text-align: center;
 }
+/*.about-card:hover{
+	box-shadow: 0 0 20px #b0b0b0;
+    transform: scale(1.2, 1.2);
+}*/
 .img-div{
 	/*border: 1px solid green;*/
 	width: 30%;
@@ -146,6 +150,7 @@ iframe{
 	margin: 10% 0;
 }
 .hero-image{
+	position: relative;
 	width: 90%;
 }
 .hero-text{

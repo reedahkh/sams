@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css?family=Karma:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700,800,900');
+
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Fira Sans','Karma', sans-serif , serif !important;
+	background-color: #FAFAFA !important;
+	/* -webkit-font-smoothing: antialiased;
+	  	-moz-osx-font-smoothing: grayscale; */
+}
+
+
+.font_color{
+	color: #272727;
+}
+.sec_bg-color{
+	background: #EFF1F3;
+}
+.blue_color{
+	color:#0B2D40;
+}
+.blue-color{
+	color:#4368A5;
+}
+.bb_black{
+	color:#4F4F4F;
+}
+.sec_color{
+	color:#696773;
+}
+.bg-sec_color{
+	background: #696773;
+}
+.light_blue{
+	color: #3581B9;
+}
+.bg_yellow{
+	background: #F1A751;
+}
+.bg_pink{
+	background: #FBCCFF;
+}
+.pry_color{
+	color:#25A1D2;
+}
+.red_color{
+	color: #EB5757;
+}
+.bg_red_color{
+	background: #EB5757;
+}
+.bg_dark-grey{
+	background: #696773;
+}
+.bg_green{
+	background: #1ba052;
+}
+.green_color{
+	color:#219653;
+}
+.grey_text{
+	color: #828282;
+}
+.bg_btn{
+	background: #153550;
+}
+
+.light_grey{
+	color: #BDBDBD;
+}
+.bg-transparent{
+	background: transparent !important;
+}
+.list-none{
+	list-style-type: none;
+}
+.f-fira{
+	font-family: 'Fira Sans', sans-serif;
+}
+.mt-4e{
+	margin-top: 4em;
+}
+.mt-5e{
+	margin-top: 5em;
+}
+.mt-6e{
+	margin-top: 6em;
+}
+.width-60{
+	width:60px;
+}
+.width-80{
+	width:80px;
+}
+.width-110{
+	width:108%;
+}
+.width-120{
+	width:120px;
+}
+.width-30p{
+	width:30%;
+}
+.width-40p{
+	width:40%;
+}
+.banner_bg-color{
+	background:#0B2D40;
+}
+.white-text{
+	color: #FFF;
+}
+.bd-b-green{
+	border-bottom:3px solid #219653;
+}
+.mt-112{
+	margin-top:6.2rem;
+}
+.mt--15{
+	margin-top:-15px;
+}
+
+.pt-64{
+	padding-top:64px;
+}
+.bd-white{
+	border:1px solid #fff;
+}
+/*font size*/
+.f-10{
+	font-size: 10px;
+}
+.f-12{
+	font-size: 12px;
+}
+.f-14{
+	font-size: 14px;
+}
+.f-16{
+	font-size:16px;
+}
+.f-18{
+	font-size:18px;
+}
+.f-24{
+	font-size:24px;
+}
+.f-30{
+	font-size: 34px;
+}
+.f-34{
+	font-size:34px;
+}
+.f-36{
+	font-size: 36px;
+}
+.f-48{
+	font-size: 3em;
+}
+.f-60{
+	font-size: 60px;
+}
+.f-karma{
+	font-family: 'Karma'
+}
+sup{
+	font-size: 12px;
+}
+.bd-light{
+	border:  1px solid #F2F2F2;;
+}
+.bd-b-blue{
+	border-bottom: 3px solid #2B95C9;
+}
+.bd-b-green{
+	border-bottom: 3px solid #219653;
+}
+.bd-b-red{
+	border-bottom:3px solid #EB5757;
+}
+.bd-b-dark{
+	border-bottom: 3px solid #0B2D40;
+}
+.bd-l-blue{
+	border-left: 3px solid #4368A5;
+}
+.bd-l-red{
+	border-left:3px solid #EB5757;
+}
+.bd-l-dark{
+	border-left: 3px solid #0B2D40;
+}
+.bd-l-green{
+	border-left: 3px solid #219653;
+}
+.bd-l-yellow{
+	border-left: 3px solid #FED766;
+}
+.bd-l-light_blue{
+	border-left: 3px solid #2B95C9;
+}
+.bd-l-purple{
+	border-left: 3px solid #9B51E0;
+}
+.bd-r-light_blue{
+	border-right: 3px solid #2B95C9;
+}
+.bd-r-green{
+	border-right:3px solid #219653;
+}
+.bd-r-red{
+	border-right: 3px solid #B07156;
+}
+.fw-700{
+	font-weight: 700;
+}
+/*Others*/
+.t-15{
+	top:-1.5em
+}
+.p-60{
+	padding: 60px;
+}
+.h-73{
+	height: 73px;
+}
+.h-100{
+	height: 100vh !important;
+}
+.mt-75{
+	margin-top: 75px;
+}
+
+.card-box{
+	/*width: 173px;*/
+	padding: 1rem;
+	height: 122px;
+}
+.cardBox_wrapper:hover{
+	text-decoration: none;
+}
+.card-box:hover{
+	text-decoration: none;
+	color: #2B95C9;
+	-webkit-transform: translateY(-5px) scale(1.02);
+	transform: translateY(-5px) scale(1.02);
+	-webkit-box-shadow: 0px 5px 12px rgba(126, 142, 177, 0.2);
+		 /*box-shadow: 0px 5px 12px rgba(126, 142, 177, 0.2);*/
+		  box-shadow:0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.hide{
+	overflow: hidden;
+}
+
+.side-menu-item.active{
+	border-left: 3px solid #fff;
+	/*z-index: 2;*/
+    color: #fff;
+    background-color:transparent !important;
+    border-color: none !important;
+    /*border-left: 3px solid #fff !important;*/
+    /*box-shadow: inset 0 1px 2px rgba(0,0,0,.39), 0 -1px 1px transparent, 0 1px 0 transparent;*/
+}
+.side-menu-item{
+	background: transparent;
+	font-size: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 50px;
+}
+.ldBar-label {
+    color: red;
+    font-family: tahoma;
+    font-size: 1.5em;
+    font-weight: 900;
+    /*position: relative;*/
+    text-align: center;
+    margin-top: -70%;
+}
+.ldBar-label:after{
+	content:"%";
+	display:inline;
+}
+.btn-deep-blue{
+	background-color: #13334d;
+	color: #fff;
+}
+.list-none{
+	list-style-type: none;
+}
+.usecase_nav{
+	border:1px solid #f2f2f2;
+	height:60px;
+	color:#272727;
+	padding:10px;
+}
+.usecase_nav > a:hover{
+	color:#272727;
+}
+.active-tab, .usecase_nav:hover {
+    border-bottom: 3px solid #4368A5;
+}
+.cardBox_wrapper:focus{
+	outline: none;
+}
+.tb-scroll{
+	height: 300px;
+	overflow: scroll;
+}
+.card-shdw{
+	box-shadow: 0px 0px 6px #c4c4c4;
+}
+.employee-card-wrapper:hover{
+	text-decoration: none;
+}
+.employee_thumbnail{
+	width: 100px;
+	margin:auto;
+	margin-top: -3em;
+}
+.img_dot{
+	width: 7px;
+    height: 7px;
+    /*background: #219653;*/
+    position: absolute;
+    border-radius: 50%;
+    top: 1.3em;
+    left: 9.1em;
+}
+.card-header{
+	background: #fff;
+	border:none !important;
+}
+.side-menu-item:active{
+	color: #000!important;
+	outline: none !important;
+	border:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media( min-width:1210px){
+	.element-wrapper{
+		width:100%;
+		padding: 0 1em;
+	}
+}
+
+@media( max-width: 1200px ){
+	.card-box{
+		margin-bottom: 1em;
+		height: 190px;
+	}
+	.element-wrapper{
+		width:100%;
+		padding: 0 1em;
+	}
+	.img_dot{
+		left: 6.4em;
+	}
+}
+
+@media( max-width: 768px ){
+	.element-wrapper{
+		width:100%;
+		padding: 0 2em;
+	}
+	.card-box{
+		margin-bottom: 1em;
+	}
+	.element-wrapper{
+		width:100%;
+		padding: 0 2em;
+	}
+	.employee-card{
+		margin-bottom: 4em;
+	}
+	.img_dot{
+		left: 8em;
+	}
+}
+
+@media(max-width: 575px){
+	.element-wrapper{
+		width:100%;
+		padding: 0 2em;
+	}
+	.f-48{
+		font-size: 32px;
+	}
+	.card-box{
+		margin-bottom: 1em;
+	}
+	.element-wrapper{
+		width:100%;
+		padding: 0 2em;
+	}
+	.employee-card{
+		margin-bottom: 4em;
+	}
+	.img_dot{
+		left: 9.5em;
+	}
+}
+
+
+
+
+

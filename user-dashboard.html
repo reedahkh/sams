@@ -13,6 +13,7 @@
   <link rel="stylesheet" type="text/css" href="loading-bar.css"/>
   
   <!-- External CSS -->
+  <link rel="stylesheet" type="text/css" href="css/admin-dashboard.css">
   <link rel="stylesheet" type="text/css" href="css/user-dashboard.css">
 </head>    
 <body class="">
@@ -33,7 +34,7 @@
             Out of Station
           </a>
           <a class="list-group-item border-0 rounded-0 text-white pl-2" id="list-punctuality-list" data-toggle="list" href="#list-punctuality" role="tab" aria-controls="punctuality">
-            <img src="img/dashboard/users.svg" alt="" class="pr-1">
+            <img src="img/dashboard/chart.svg" alt="" class="pr-1">
             Punctuality
           </a>
           <a class="list-group-item border-0 rounded-0 text-white pl-2" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">
@@ -897,7 +898,18 @@
                 bottom: 0
                       }
                   }
-                  
+           scales: {
+        yAxes: [{
+            ticks: {
+                beginAtZero: true
+            }
+        }],
+       
+        xAxes: [{
+            // Change here
+            barPercentage: 0.2
+        }]
+      }       
       }
   });
 
@@ -945,12 +957,12 @@
         $(".old,.edit-p").toggle();
     });
 
-  });
-
-  $(".xc").click(function(){
+    $(".xc").click(function(){
           $(".old,.new").toggle()
       });
+  });
 
+  
 </script>
 
 </html>
