@@ -16,7 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
   
 </head>
 <body>
@@ -33,8 +33,8 @@
 					<div class="col-5 col-md-6 header-col-1-row-col">
 						<i class="fa fa-phone">&nbsp;+(234)-8138-790-480</i>
 					</div>
-					<div class="col-2 col-md-1 search header-col-1-row-col ">
-						<i class="fa fa-search text-white pr-2"></i>
+					<div class="col-2 col-md-1 ">
+						<!-- <i class="fa fa-search text-white pr-2"></i> -->
 					</div>
 				</div>
 			</div>
@@ -66,7 +66,7 @@
 	  	</ul>
 	    <ul class="navbar-nav  mt-2 mt-lg-0 my-2">
 	      <li class="nav-item active">
-	        <a class="nav-link text-white mr-4" href="#">Home <span class="sr-only">(current)</span></a>
+	        <a class="nav-link text-white mr-4" href="index.html">Home <span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
 	        <a class="nav-link text-white mr-4" href="about-us.html">About</a>
@@ -88,8 +88,8 @@
 	<main>
 		<div class="jumbotron jumbotron-fluid banner_img">
 			<div class="container hero row ">
-				<div class="col-12 col-md-6 ">
-					<img src="img/undraw_data_xmfy.svg" class="img-fluid img-responsive float-right hero-image">
+				<div class="col-12 col-md-6 animation">
+					<img src="img/undraw_data_xmfy.svg" class="img-fluid img-responsive float-right hero-image animated infinie rubberBand">
 				</div>
 				<div class="col-12 col-md-6 pt-5">
 					<p class="text-white hero-text mb-0 pb-0">We help you keep track of your team</p>
@@ -110,7 +110,7 @@
 				<div></div>
 			</div> -->
 			<div class="card-deck">
-			  <div class="card about-card py-5">
+			  <div class="card about-card py-5 animated flipInY">
 			  	<div class="img-div d-flex justify-content-center mx-auto">
 			  		<img class="img-responsive img-fluid text-center" src="img/icon_mission.svg" alt="Card image cap" width="70px">
 			  	</div>
@@ -119,7 +119,7 @@
 			      <p class="card-text">Explore the histroy of the lorem Ipsum passage and genrate your own text using</p>
 			      </div>
 			  </div>
-			  <div class="card about-card py-5">
+			  <div class="card about-card py-5 animated flipInY">
   			  	<div class="img-div d-flex justify-content-center mx-auto">
   			  		<img class="img-responsive img-fluid text-center" src="img/document.svg" alt="Card image cap" width="70px">
   			  	</div>
@@ -128,7 +128,7 @@
   			      <p class="card-text">Explore the histroy of the lorem Ipsum passage and genrate your own text using</p>
   			      </div>
   			  </div>
-			  <div class="card about-card py-5">
+			  <div class="card about-card py-5 animated flipInY">
   			  	<div class="img-div d-flex justify-content-center mx-auto">
   			  		<img class="img-responsive img-fluid text-center" src="img/link.svg" alt="Card image cap" width="70px">
   			  	</div>
@@ -147,7 +147,7 @@
 				<div class="col-12 col-md-6 hero-sub-col ">
 					<!-- <img src="img/undraw_data_xmfy.svg" width="480px" class="img-fluid img-responsive float-right"> -->
 
-					<p class="display-5 head-tag"> Ebere Dozie</p>
+					<p class="display-5 head-tag"> Mo' Salah</p>
 					<p class="mt-0 about-team-member skill-set " id="diff"> Android Developer</p>
 					<p class="my-2 about-team-member about-self" >Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
 					<header class="h4 about-team-member-2">GET IN TOUCH</header>
@@ -186,28 +186,28 @@
 				<div class="card-deck stats-card ">
 					<div class="card about-card py-5">
 					    <div class="card-body">
-					      <h5 class="card-title h1">230</h5>
+					      <h5 class="card-title h1"><span class="count">2300</span></h5>
 					      <p class="card-text h3">Subscribers</p>
 					      </div>
 					</div>
 
 					<div class="card about-card py-5">
 					    <div class="card-body">
-					      <h5 class="card-title h1">20</h5>
+					      <h5 class="card-title h1"><span class="count">5000</span></h5>
 					      <p class="card-text h3">Downloads</p>
 					      </div>
 					</div>
 
 					<div class="card about-card py-5">
 					    <div class="card-body">
-					      <h5 class="card-title h1">5300</h5>
+					      <h5 class="card-title h1"><span class="count">1500</span></h5>
 					      <p class="card-text h3">Partners</p>
 					      </div>
 					</div>
 
 					<div class="card about-card py-5">
 					    <div class="card-body">
-					      <h5 class="card-title h1">300</h5>
+					      <h5 class="card-title h1"><span class="count">1300</span></h5>
 					      <p class="card-text h3">Active Terminals</p>
 					      </div>
 					</div>
@@ -371,7 +371,7 @@
 	
 	
 	function about1() {
-		document.querySelector('.head-tag').innerHTML = "Ebere Dozie";
+		document.querySelector('.head-tag').innerHTML = "Mo' Salah";
 		document.querySelector('.skill-set').innerHTML = "Android Developer";
 		document.querySelector('.about-self').innerHTML = " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.";
 		// document.querySelector('.head-tag').innerHTML = "Ebere Dozie";
@@ -397,6 +397,46 @@
 		document.querySelector('.about-self').innerHTML = " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse.";
 		// document.querySelector('.head-tag').innerHTML = "Ebere Dozie";
 	}
+
+	$(document).ready(function(){
+		$('.hero-image').hover(function() {
+			$(this).addClass('rubberBand')
+		}, function() {
+			$(this).removeClass('rubberBand')
+			/* Stuff to do when the mouse leaves the element */
+		}); 
+		$('.about-card').hover(function() {
+			$(this).addClass('flipInY')
+		}, function() {
+			$(this).removeClass('flipInY')
+			/* Stuff to do when the mouse leaves the element */
+		}); 
+
+		$('.count').hover(function() {
+			roll();
+		}, function() {
+			// roll(stop(clearQueue, gotoEnd));
+			roll();
+		});
+
+		roll();
+
+		function roll () {
+			// body...
+			$('.count').each(function () {
+			    $(this).prop('Counter',0).animate({
+			        Counter: $(this).text()
+			    }, {
+			        duration: 2000,
+			        easing: 'swing',
+			        step: function (now) {
+			            $(this).text(Math.ceil(now));
+			        }
+			    });
+			});    
+		}
+	});
+
 </script>
 
 </html>

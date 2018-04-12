@@ -15,29 +15,30 @@
   <!-- External CSS -->
   <link rel="stylesheet" type="text/css" href="css/admin-dashboard.css">
   <link rel="stylesheet" type="text/css" href="css/user-dashboard.css">
+  <link rel="stylesheet" type="text/css" href="css/dashboard.css">
 </head>    
 <body class="">
 
   <div class="hide">
     <div class="row">
-      <div class="col-12 col-sm-12 col-md-2 col-lg-2 bg-linear px-0">
+      <div class="col-12 col-sm-12 col-md-2 col-lg-2 bg-linear-s px-0">
         <div class="list-group ml-1 mr-1 pl-3" id="list-tab" role="tablist">
           <header class="my-3 ml-4">
             <img src="img/Logo/sams-logo-sams-white-text-side copy.png" width="130px " class="ml-0 pl-0">
           </header>
-          <a class="list-group-item border-0 rounded-0 text-white pl-2" id="list-dashboard-list" data-toggle="list" href="#list-dashboard" role="tab" aria-controls="dashboard">
+          <a class="list-group-item side-menu-item border-0 rounded-0 text-white pl-2" id="list-dashboard-list" data-toggle="list" href="#list-dashboard" role="tab" aria-controls="dashboard">
             <img src="img/dashboard/file.svg" alt="" class="pr-1">
            My board
           </a>
-          <a class="list-group-item border-0 rounded-0 text-white pl-2" id="list-oos-list" data-toggle="list" href="#list-oos" role="tab" aria-controls="report">
+          <a class="list-group-item side-menu-item border-0 rounded-0 text-white pl-2" id="list-oos-list" data-toggle="list" href="#list-oos" role="tab" aria-controls="report">
             <img src="img/dashboard/vector.svg" alt="" class="pr-1">
             Out of Station
           </a>
-          <a class="list-group-item border-0 rounded-0 text-white pl-2" id="list-punctuality-list" data-toggle="list" href="#list-punctuality" role="tab" aria-controls="punctuality">
+          <a class="list-group-item side-menu-item border-0 rounded-0 text-white pl-2" id="list-punctuality-list" data-toggle="list" href="#list-punctuality" role="tab" aria-controls="punctuality">
             <img src="img/dashboard/chart.svg" alt="" class="pr-1">
             Punctuality
           </a>
-          <a class="list-group-item border-0 rounded-0 text-white pl-2" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">
+          <a class="list-group-item side-menu-item border-0 rounded-0 text-white pl-2" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">
             <img src="img/dashboard/gears.svg" alt="" class="pr-1">
             Settings
           </a>
@@ -317,7 +318,25 @@
             <div class="px-5">
               <div class="mx-5 p-5 bg-white">
                 <div class="d-flex justify-content-end px-5">
-                  <button class="btn btn-deep-blue px-4 ">March</button>
+                  <!-- <button class="btn btn-deep-blue px-4 ">March</button> -->
+                  <div class="d-flex justify-content-end ">
+                      <div class="d-flex justify-content-end ">
+                         <select class="form-control btn-deep-blue select">
+                           <option>January</option>
+                           <option>February</option>
+                           <option selected="selected">March</option>
+                           <option>April</option>
+                           <option>May</option>
+                           <option>June</option>
+                           <option>July</option>
+                           <option>August</option>
+                           <option>September</option>
+                           <option>October</option>
+                           <option>November</option>
+                           <option>December</option>
+                         </select>
+                      </div>
+                  </div>
                 </div>
 
                 <div class="d-flex m-5">
@@ -456,7 +475,7 @@
 
                       </div>
 
-                      <div class="table-responsive bg-white py-0">
+                      <div class="table-responsive bg-white py-0 tb-scroll">
                           <table class="table table-bordered table-hover my-0 text-center">
                             <thead>
                               <tr>
@@ -466,11 +485,6 @@
                               </tr>
                             </thead>
                             <tbody>
-                              <tr>
-                                <td scope="row" class="border-0"></td>
-                                <td class="border-0"></td>
-                                <td class="border-0"></td>
-                              </tr>
                               <tr>
                                 <td scope="row">12-12-12</td>
                                 <td>12-12-13</td>
@@ -551,7 +565,7 @@
         <span class="fa fa-ellipsis-h pull-right blue-color"></span>
     </a> -->
     <!-- Modal -->
-    <div class="modal fade" id="editAttendance" tabindex="-1" role="dialog" aria-labelledby="viewEmployeeAttendanceLabel" aria-hidden="true">
+  <!--   <div class="modal fade" id="editAttendance" tabindex="-1" role="dialog" aria-labelledby="viewEmployeeAttendanceLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-header">
@@ -710,6 +724,178 @@
                 </div>
             </div>
         </div>
+    </div> -->
+
+    <div class="modal fade" id="editAttendance" tabindex="-1" role="dialog" aria-labelledby="viewEmployeeAttendanceLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <!-- <div class="modal-header">
+                    <h5 class="modal-title bb_black f-18" id="exampleModalLabel"><a href="employee.html" class="bb_black f-24">Dike Thelma Kelechi</a> <i class="fa fa-chevron-right f-18"></i>Attendance</h5>
+                    <button type="button" class="close red_color" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="fa fa-times-circle-o"></i></span>
+                    </button>
+                </div> -->
+                <div class="modal-header">
+                  <h5 class="modal-title bb_black f-18" id="exampleModalLabel"><a href="employee.html" class="bb_black f-24">Dike Thelma Kelechi</a> <i class="fa fa-chevron-right f-18"></i>Attendance</h5>
+                  <button type="button" class="close rounded-circle" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="text-danger">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="table-responsive px-4 tb-scroll">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <td>125 Days Present</td>
+                                            <td>5 Days Absent</td>
+                                            <td colspan="5">08 Late Mark</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Date</td>
+                                            <td>Sign In</td>
+                                            <td>Break On</td>
+                                            <td>Break Out</td>
+                                            <td>Sign Out</td>
+                                            <td>Late Marks</td>
+                                            <td>Other</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                Thurs, 7 Jan.,2018
+                                            </td>
+                                            <td>08:30AM</td>
+                                            <td>12:00PM</td>
+                                            <td>12:45PM</td>
+                                            <td>5:00PM</td>
+                                            <td></td>
+                                            <td>2:00PM <br>Office Duty</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Thurs, 7 Jan.,2018
+                                            </td>
+                                            <td>08:30AM</td>
+                                            <td>12:00PM</td>
+                                            <td>12:45PM</td>
+                                            <td>5:00PM</td>
+                                            <td></td>
+                                            <td>2:00PM <br>Office Duty</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Thurs, 7 Jan.,2018
+                                            </td>
+                                            <td>08:30AM</td>
+                                            <td>12:00PM</td>
+                                            <td>12:45PM</td>
+                                            <td>5:00PM</td>
+                                            <td></td>
+                                            <td>2:00PM <br>Office Duty</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Thurs, 7 Jan.,2018
+                                            </td>
+                                            <td>08:30AM</td>
+                                            <td>12:00PM</td>
+                                            <td>12:45PM</td>
+                                            <td>5:00PM</td>
+                                            <td></td>
+                                            <td>2:00PM <br>Office Duty</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Thurs, 7 Jan.,2018
+                                            </td>
+                                            <td>08:30AM</td>
+                                            <td>12:00PM</td>
+                                            <td>12:45PM</td>
+                                            <td>5:00PM</td>
+                                            <td></td>
+                                            <td>2:00PM <br>Office Duty</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Thurs, 7 Jan.,2018
+                                            </td>
+                                            <td>08:30AM</td>
+                                            <td>12:00PM</td>
+                                            <td>12:45PM</td>
+                                            <td>5:00PM</td>
+                                            <td></td>
+                                            <td>2:00PM <br>Office Duty</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Thurs, 7 Jan.,2018
+                                            </td>
+                                            <td>08:30AM</td>
+                                            <td>12:00PM</td>
+                                            <td>12:45PM</td>
+                                            <td>5:00PM</td>
+                                            <td></td>
+                                            <td>2:00PM <br>Office Duty</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Thurs, 7 Jan.,2018
+                                            </td>
+                                            <td>08:30AM</td>
+                                            <td>12:00PM</td>
+                                            <td>12:45PM</td>
+                                            <td>5:00PM</td>
+                                            <td></td>
+                                            <td>2:00PM <br>Office Duty</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        
+                          <div class="mb-0 pb-0 pl-10">
+                            <div class="col-md-12 mt-5 mb-0 ml-5 pl-5">
+                            <div class="element-container">
+                              <nav aria-label="list of employees">
+                                  <ul class="pagination pull-right">
+                                      <li class="page-item bd_blue">
+                                          <a class="page-link blue_color" href="#" aria-label="Previous">
+                                              <span aria-hidden="true">Previous</span>
+                                              <span class="sr-only">Previous</span>
+                                          </a>
+                                      </li>
+                                      <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">6</a></li>
+                                      
+                                      <li class="page-item px-3 bg-transparent"><a class="page-link blue_color border-0 bg-transparent" href="#">
+                                          <input type="text" name="" placeholder="6 of 60" class="border-0 bg-transparent">
+                                      </a></li>
+                                      <li class="page-item bd_blue pl-0 border">
+                                          <a class="page-link blue_color border rounded-0 mx-0 " href="#" aria-label="Next">
+                                              <span aria-hidden="true">Next</span>
+                                              <span class="sr-only">Next</span>
+                                          </a>
+                                      </li>
+                                  </ul>
+                              </nav>
+                          </div>
+                       </div>
+                        </div>
+                        <div class="ml-5 pl-5 mt-0 pt-0">
+                          <div class="d-flex justify-content-end mt-75 mb-5 ml-5 pl-5 pt-0">
+                            <div class="table-controls pull-right pl-5">
+                                <button class="btn btn-sm banner_bg-color text-white px-5 py-2 mr-3 border-0"><i class="fa fa-share pr-3"></i>Share</button>
+                                <button class="btn-sm banner_bg-color text-white px-5 py-2 border-0 mr-3"><i class="fa fa-print pr-3"></i>Print</button>
+                                <button class="btn-sm banner_bg-color text-white px-5 py-2 border-0"><i class="fa fa-download pr-3"></i>Download</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- <a href="#">
@@ -720,16 +906,22 @@
     <div class="modal fade" id="editOOS" tabindex="-1" role="dialog" aria-labelledby="viewEmployeeAttendanceLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-                <div class="modal-header">
+               <!--  <div class="modal-header">
                     <h5 class="modal-title bb_black f-18" id="exampleModalLabel"><a href="employee.html" class="bb_black f-24">Leave</a></h5>
                     <button type="button" class="close red_color" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true"><i class="fa fa-times-circle-o"></i></span>
                     </button>
+                </div> -->
+                <div class="modal-header">
+                  <h5 class="modal-title bb_black f-18" id="exampleModalLabel"><a href="employee.html" class="bb_black f-24">Leave</a></h5>
+                  <button type="button" class="close rounded-circle" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="text-danger">&times;</span>
+                  </button>
                 </div>
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-12">
-                            <div class="table-responsive px-4">
+                            <div class="table-responsive px-4 tb-scroll">
                                 <table class="table table-bordered">
                                     <thead>
                                         <tr>
@@ -811,36 +1003,41 @@
                             </div>
                         </div>
                         
-                        <div class="col-md-12 mt-5">
-                            <nav aria-label="work time report">
-                                <ul class="pagination pull-right">
-                                    <li class="page-item bd_blue">
-                                        <a class="page-link blue_color" href="#" aria-label="Previous">
-                                            <span aria-hidden="true">Previous</span>
-                                            <span class="sr-only">Previous</span>
-                                        </a>
-                                    </li>
-                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">1</a></li>
-                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">2</a></li>
-                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">3</a></li>
-                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">4</a></li>
-                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">4</a></li>
-                                    <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">6</a></li>
-                                    <li class="page-item bd_blue">
-                                        <a class="page-link blue_color  border-0" href="#" aria-label="Next">
-                                            <span aria-hidden="true">Next</span>
-                                            <span class="sr-only">Next</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
+                        <div class="mb-0 pb-0 pl-10">
+                            <div class="col-md-12 mt-5 mb-0 ml-5 pl-5">
+                            <div class="element-container">
+                              <nav aria-label="list of employees">
+                                  <ul class="pagination pull-right">
+                                      <li class="page-item bd_blue">
+                                          <a class="page-link blue_color" href="#" aria-label="Previous">
+                                              <span aria-hidden="true">Previous</span>
+                                              <span class="sr-only">Previous</span>
+                                          </a>
+                                      </li>
+                                      <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">6</a></li>
+                                      
+                                      <li class="page-item px-3 bg-transparent"><a class="page-link blue_color border-0 bg-transparent" href="#">
+                                          <input type="text" name="" placeholder="6 of 60" class="border-0 bg-transparent">
+                                      </a></li>
+                                      <li class="page-item bd_blue pl-0 border">
+                                          <a class="page-link blue_color border rounded-0 mx-0 " href="#" aria-label="Next">
+                                              <span aria-hidden="true">Next</span>
+                                              <span class="sr-only">Next</span>
+                                          </a>
+                                      </li>
+                                  </ul>
+                              </nav>
+                          </div>
                        </div>
-                        <div class="col-md-12 mt-75 mb-5">
-                            <div class="table-controls pull-right">
+                        </div>
+                        <div class="ml-5 pl-5 mt-0 pt-0">
+                          <div class="d-flex justify-content-end mt-75 mb-5 ml-5 pl-5 pt-0">
+                            <div class="table-controls pull-right pl-5">
                                 <button class="btn btn-sm banner_bg-color text-white px-5 py-2 mr-3 border-0"><i class="fa fa-share pr-3"></i>Share</button>
                                 <button class="btn-sm banner_bg-color text-white px-5 py-2 border-0 mr-3"><i class="fa fa-print pr-3"></i>Print</button>
                                 <button class="btn-sm banner_bg-color text-white px-5 py-2 border-0"><i class="fa fa-download pr-3"></i>Download</button>
                             </div>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -865,40 +1062,48 @@
       type: 'bar',
       data: {
       	labels: ["Pres", "Abs", "Oos", "LM", "ED", "TN"],
-          datasets: [
-          // gracie each dataset starts here
-          	{
-              label: 'Farida' ,
-              data: [65, 59, 75, 81, 56, 55, 40],
-              backgroundColor: ["#9B51E0", "#1BA052", "#FED766", "#4663A2", "#EB5757", "#2A97CA"]
-          	},
-              //here is the next one
-              {
-              	label: 'Okoye',        
-              backgroundColor: ["#2A97CA"]
-
-          	  },
-          	  //and the next one
-          	  {
-              	label: 'Okoye',  
+          datasets: 
+        [
+          {
+            label: ["Present"],
+            backgroundColor: ["#9B51E0", "#EB5757", "#FED766", "#1BA052", "#4663A2", "#2A97CA"],
+            borderColor: ["#9B51E0", "#1BA052", "#FED766", "#4663A2", "#EB5757", "#2A97CA"],
+            data: [65, 59, 75, 81, 56, 55, 40]
+          },
+             {
+                label: 'Absent',  
               backgroundColor: ["#EB5757"]
 
-              }
-          ],
+              },
+
+              {
+                label: 'Late',        
+              backgroundColor: ["#FED766"]
+
+              },
+              //and the next one
+              
+              {
+                label: 'Out of Station',        
+              backgroundColor: ["#2A97CA"]
+
+              },
+              {
+                label: 'Early Departure',        
+              backgroundColor: ["#2A97CA"]
+
+              },
+              {
+                label: 'March 2018',        
+                backgroundColor: ["#FFFFFF"],
+                borderColor: ["#FFFFFF"],
+                // fontStyle : "Bold"
+              }            
+        ],
 
       },
       options: {
-          legend: { display: true },
-          events: ["mousemove", "mouseout", "click", "touchstart", "touchmove", "touchend"],
-          layout: {
-            padding: {
-                left: 0,
-                right: 0,
-                top: 0,
-                bottom: 0
-                      }
-                  }
-           scales: {
+                     scales: {
         yAxes: [{
             ticks: {
                 beginAtZero: true
@@ -913,6 +1118,66 @@
       }
   });
 
+// new Chart(document.getElementById("myChart"), {
+//     type: 'bar',
+//     data: {
+//       labels: ["Pres", "Abs", "report", "LM", "ED", "TN"],
+//       datasets: 
+//         [
+//           {
+//             label: ["Present"],
+//             backgroundColor: ["#9B51E0", "#EB5757", "#FED766", "#1BA052", "#4663A2", "#2A97CA"],
+//             borderColor: ["#9B51E0", "#1BA052", "#FED766", "#4663A2", "#EB5757", "#2A97CA"],
+//             data: [65, 59, 75, 81, 56, 55, 40]
+//           },
+//              {
+//                 label: 'Absent',  
+//               backgroundColor: ["#EB5757"]
+
+//               },
+
+//               {
+//                 label: 'Late',        
+//               backgroundColor: ["#FED766"]
+
+//               },
+//               //and the next one
+              
+//               {
+//                 label: 'Out of Station',        
+//               backgroundColor: ["#2A97CA"]
+
+//               },
+//               {
+//                 label: 'Early Departure',        
+//               backgroundColor: ["#2A97CA"]
+
+//               },
+//               {
+//                 label: 'March 2018',        
+//                 backgroundColor: ["#FFFFFF"],
+//                 borderColor: ["#FFFFFF"],
+//                 // fontStyle : "Bold"
+//               }            
+//         ]
+//     },
+    
+//     options: {
+//       // legend: { display: false },
+//       scales: {
+//         yAxes: [{
+//             ticks: {
+//                 // beginAtZero: true
+//                 display: true
+//             }
+//         }],
+       
+//          xAxes: [{
+//     //         // Change here
+//             barPercentage: 1
+//         }]
+//       }
+//     }
   // new Chart(document.getElementById("myChart");
   // 	var myChart = new Chart(ctx, {
   //     type: 'bar',

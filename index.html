@@ -22,6 +22,7 @@
 	<link rel="stylesheet" type="text/css" href="css/header.css">
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
 	<link rel="stylesheet" type="text/css" href="css/custom.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
 </head>
 <body>
 	
@@ -38,8 +39,8 @@
 					<div class="col-5 col-md-6 header-col-1-row-col">
 						<i class="fa fa-phone">&nbsp;+(234)-8138-790-480</i>
 					</div>
-					<div class="col-2 col-md-1 search header-col-1-row-col ">
-						<i class="fa fa-search text-white pr-2"></i>
+					<div class="col-2 col-md-1">
+						<!-- <i class="fa fa-search text-white pr-2"></i> -->
 					</div>
 				</div>
 			</div>
@@ -60,7 +61,7 @@
 
 	<!-- header-2 -->
 	<nav class="navbar navbar-expand-lg main-nav navbar-light py-1">
-	  <a class="navbar-brand" href="#"><img src="img/Logo/sams-logo-sams-white-text-side copy.png" width="150px"></a>
+	  <a class="navbar-brand" href="index.html"><img src="img/Logo/sams-logo-sams-white-text-side copy.png" width="150px"></a>
 	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -71,7 +72,7 @@
 	  	</ul>
 	    <ul class="navbar-nav  mt-2 mt-lg-0 my-2">
 	      <li class="nav-item active">
-	        <a class="nav-link text-white mr-4" href="#">Home <span class="sr-only">(current)</span></a>
+	        <a class="nav-link text-white mr-4" href="index.html">Home <span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
 	        <a class="nav-link text-white mr-4" href="about-us.html">About</a>
@@ -140,20 +141,20 @@
 		</div>
 		<!-- <div class="d-flex justify-content-end"> -->
 			<div class="play">
-				<button class="btn ">
+				<button class="btn  play-btn">
 					<img src="Assets/img/play.png" alt="play button">
 				</button>
 				<figcaption class="text-center"> watch our story</figcaption>
 			</div>
 		<!-- </div> -->
-		<div class="about" style="padding-top: 112px">
+		<div class="about animated fadeInUp" style="padding-top: 112px; ">
 			<div class="section_content hide mt-112">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6">
 							<div class="header">
 								<hr class="hr_about">
-								<p class="f-60 blue_color">About SAMS</p>
+								<p class="f-60 blue_color ">About SAMS</p>
 								<p class="f-24 f-karma grey_text pr-5">
 									SAMS empowers you with realtime
 									insight and seamless mobile access
@@ -176,13 +177,13 @@
 			</div>
 		</div>
 
-		<section class="app hide mt-112" >
+		<section class="app hide mt-112 animated fadeInUp" >
 			<div class="app_bg">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-6">
 							<div class="mobile_container p-5">
-								<img src="Assets/img/phone.png" class="img-fluid" alt=""> 
+								<img src="Assets/img/phone.png" class="img-fluid animated infinite bounce" alt=""> 
 							</div>
 						</div>
 						<div class="col-md-6">
@@ -202,12 +203,12 @@
 								<div class="row">
 									<div class="col-6 col-sm-6 col-md-6">
 										<a href="https://play.google.com/store/apps/details?id=com.stetis.sams&hl=en" class="btn btn_playStore_1">
-											<img src="img/playstore.png" class="img-fluid" alt="">
+											<img src="img/googlestore.png" class="img-fluid" alt="">
 										</a>
 									</div>
 									<div class="col-6 col-sm-6 col-md-6">
 										<a href="https://itunes.apple.com/us/app/sams-ng/id1352987922?ls=1&mt=8" class="btn btn_playStore_2">
-											<img src="img/appstore.png" class="img-fluid" alt="">
+											<img src="img/appstore.png" class="img-fuid" alt="" height="80px">
 										</a>
 									</div>
 								</div>
@@ -220,7 +221,7 @@
 			
 		</section>
 		
-		<section class="features mt-112">
+		<section class="features mt-112 animated fadeInUp">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3"></div>
@@ -262,7 +263,7 @@
 					<div class="col-xs-12 col-sm-6 col-md-4  bd-white banner_bg-color card_container">
 						<div class="pb-3 text-white text-center banner_bg-color side_1">
 							<div class="icon">
-								<img src="img/report-white.svg" class="width-50" alt="">
+								<img src="img/report-white.svg" class="" alt="" height="50px">
 							</div>
 							<div class="card_details px-2">
 								<p class="f-30 title">Real Time Reporting</p>
@@ -391,7 +392,7 @@
 			</div>
 		</section>
 
-		<section class="testimonial mt-112 hide">
+		<section class="testimonial mt-112 hide animated fadeInUp">
 			<div class="testimonial_bg">
 				<div class="row">
 					<div class="col-md-1"></div>
@@ -595,6 +596,10 @@
 		</div>
 
 	</footer>
+
+
+
+
 	<!-- End:: Footer -->
 <!--JS, Popper.js, and jQuery  -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
@@ -610,22 +615,44 @@
 <script src="Assets/plugins/BigVideo/bower_components/BigVideo/lib/bigvideo.js"></script>
 <script src="Assets/plugins/BigVideo/bower_components/modernizr/modernizr-2.5.3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
-
+<script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
 <script src="js/script.js"></script>
 <script type="text/javascript">
-	$(function() {
-        var BV = new $.BigVideo({container: $('#video_bg')});
+	
 
-        BV.init();
-        //BV.getPlayer().pause();
-        if (Modernizr.touch) {
-			    BV.show('img/poster.jpg');
-			} else {
-			    BV.show('video/SAMS_Advert.mp4', {ambient:false}, {autoplay:true});
-			}
-        
+    // $(document).ready(function(){
+    // 	$(".btn").click(function () {
+    // 		// body...
+    		$(function() {
+		        var BV = new $.BigVideo({container: $('#video_bg')});
 
-    });
+		        BV.init();
+		        //BV.getPlayer().pause();
+		        if (Modernizr.touch) {
+					    BV.show('img/poster.jpg');
+					} else {
+					    BV.show('video/SAMS_Advert.mp4', {ambient:false}, {autoplay:true});
+					}
+		        
+
+		    	});
+    // 	})
+    // });
+
+ init controller
+ var controller = new ScrollMagic.Controller();
+
+ // create a scene
+ new ScrollMagic.Scene({
+         duration: 100,    // the scene should last for a scroll distance of 100px
+         offset: 50        // start this scene after scrolling for 50px
+     })
+     .setPin(".about") // pins the element for the the scene's duration
+     .addTo(controller); // assign the scene to the controller
+
+
+
+ 
 </script>
 
 </body>

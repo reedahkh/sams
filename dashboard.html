@@ -12,9 +12,10 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         
         <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
-        <link href="Assets/plugins/Calendar/calendar.css" rel="stylesheet">
-        
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css"> -->
+        <!-- <link href="Assets/plugins/Calendar/calendar.css" rel="stylesheet"> -->
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700">
         <!-- External CSS -->
         <link rel="stylesheet" type="text/css" href="css/custom.css">
         <link rel="stylesheet" type="text/css" href="css/dashboard.css">
@@ -63,7 +64,7 @@
                     <div class="col-lg-9">
                         <header>
                             <nav class="navbar navbar-expand-lg wide-navbar bg-white">
-                                <a class="navbar-brand blue-color" href="#"><i class="fa fa-long-arrow-left"></i> Admin</a>
+                                <a class="navbar-brand blue-color" href="#"> Admin</a>
                                 <button class="navbar-toggler banner_bg-color" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="fa fa-bars text-white"></span>
                                 </button>
@@ -108,7 +109,7 @@
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
                                         <a href="#" type="button" class="cardBox_wrapper dis-block" data-toggle="modal" data-target="#staffPresent">
-                                            <div class="card card-box text-center bd-l-light_blue">
+                                            <div class="card card-box text-center bd-l-light_blue blue-color">
                                                 <div class="value f-34">14</div>
                                                 <div class="label f-18">Staff Present</div>
                                             </div>
@@ -198,7 +199,7 @@
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
                                         <a href="#" class="cardBox_wrapper dis-block" data-toggle="modal" data-target="#staffAbsent">
-                                            <div class="card card-box text-center bd-l-red">
+                                            <div class="card card-box text-center bd-l-red blue-color">
                                                 <div class="value f-34">34</div>
                                                 <div class="label f-18">Staff Absent</div>
                                             </div>
@@ -291,7 +292,7 @@
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
                                         <a href="#" class="cardBox_wrapper" data-toggle="modal" data-target="#OoS">
-                                            <div class="card card-box text-center bd-l-blue">
+                                            <div class="card card-box text-center bd-l-blue blue-color">
                                                 <div class="value f-34">14</div>
                                                 <div class="label f-18">Out of Station</div>
                                             </div>
@@ -382,7 +383,7 @@
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
                                         <a href="#" class="cardBox_wrapper" data-toggle="modal" data-target="#lateMarks">
-                                            <div class="card card-box text-center bd-l-yellow">
+                                            <div class="card card-box text-center bd-l-yellow blue-color">
                                                 <div class="value f-34">24</div>
                                                 <div class="label f-18">Late Marks</div>
                                             </div>
@@ -474,7 +475,7 @@
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
                                         <a href="#" class="cardBox_wrapper" data-toggle="modal" data-target="#dayOfYear">
-                                            <div class="card card-box text-center bd-l-green">
+                                            <div class="card card-box text-center bd-l-green blue-color">
                                                 <div class="value f-34">74</div>
                                                 <div class="label f-18">Early Daparture</div>
                                             </div>
@@ -508,7 +509,7 @@
                                     </div>
                                     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
                                         <a href="#" class="cardBox_wrapper" data-toggle="modal" data-target="#staffLate">
-                                            <div  class="card card-box text-center bd-l-purple">
+                                            <div  class="card card-box text-center bd-l-purple blue-color">
                                                 <div class="value f-34">13</div>
                                                 <div class="label f-18">Total No. of Employee(s)</div>
                                             </div>
@@ -599,9 +600,11 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="card">
-                                            <div class="googleCalendar" ="calendar">
+                                            <!-- <div class="googleCalendar" ="calendar">
                                                 <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showPrint=0&amp;showCalendars=0&amp;showTz=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=el4qfaq6qi7f8vg6l38sngb1gc%40group.calendar.google.com&amp;color=%23B1440E&amp;ctz=Africa%2FLagos" style="border-width:0" width="100%" height="250" frameborder="0" scrolling="no"></iframe>
-                                            </div>
+                                            </div> -->
+                                            <div class="container">
+                                            </div> <!-- end container -->
                                         </div>
                                         
                                     </div>
@@ -617,7 +620,7 @@
                                 <div class="row">
                                     <div class="col-md-12">
                                         <p class="f-24 blue-color">Awaiting Approval</p>
-                                        <div class="table-responsive">
+                                        <div class="table-responsive tb-scroll">
                                             <table class="table table-bordered table-hover">
                                                 <thead>
                                                     <td class="fw-700">STAFF ID</td>
@@ -726,53 +729,83 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
-        <script src="Assets/plugins/moment/moment.js"></script>
-        <script src="js/jquery/jquery-1.9.0.min.js"></script>
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> -->
+        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script> -->
+        <!-- <script src="Assets/plugins/moment/moment.js"></script> -->
+        <!-- <script src="js/jquery/jquery-1.9.0.min.js"></script> -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
         <script src="js/script.js"></script>
-        <script src="Assets/plugins/Calendar/calendar.js"></script>
+        <!-- <script src="Assets/plugins/Calendar/calendar.js"></script> -->
         <script>
-             new Chart(document.getElementById("myChart"), {
-                type: 'bar',
-                data: {
-                  labels: ["Pres", "Abs", "Oos", "LM", "ED", "TN"],
-                  datasets: 
-                    [
-                        {
-                            label: ["Present"],
-                            backgroundColor: ["#9B51E0", "#1BA052", "#FED766", "#4663A2", "#EB5757", "#2A97CA"],
-                            borderColor: ["#9B51E0", "#1BA052", "#FED766", "#4663A2", "#EB5757", "#2A97CA"],
-                            data: [65, 59, 75, 81, 56, 55, 40]
-                        }
-                        
-                    ]
-                },
-                
-                options: {
-                    legend: { display: false },
-                    title: {
-                        display: true,
-                        text: 'March 2018',
-                        responsive: true
+              new Chart(document.getElementById("myChart"), {
+    type: 'bar',
+    data: {
+      labels: ["Pres", "Abs", "report", "LM", "ED", "TN"],
+      datasets: 
+        [
+          {
+            label: ["Present"],
+            backgroundColor: ["#9B51E0", "#EB5757", "#FED766", "#1BA052", "#4663A2", "#2A97CA"],
+            borderColor: ["#9B51E0", "#1BA052", "#FED766", "#4663A2", "#EB5757", "#2A97CA"],
+            data: [65, 59, 75, 81, 56, 55, 40]
+          },
+             {
+                label: 'Absent',  
+              backgroundColor: ["#EB5757"]
 
-                    },
-                    scales: {
-                        yAxes: [{
-                            ticks: {
-                                beginAtZero: true
-                            }
-                        }],
+              },
+
+              {
+                label: 'Late',        
+              backgroundColor: ["#FED766"]
+
+              },
+              //and the next one
+              
+              {
+                label: 'Out of Station',        
+              backgroundColor: ["#2A97CA"]
+
+              },
+              {
+                label: 'Early Departure',        
+              backgroundColor: ["#2A97CA"]
+
+              },
+              {
+                label: 'March 2018',        
+                backgroundColor: ["#FFFFFF"],
+                borderColor: ["#FFFFFF"],
+                // fontStyle : "Bold"
+              }            
+        ]
+    },
+    
+    options: {
+      // legend: { display: false },
+      scales: {
+        yAxes: [{
+            ticks: {
+                // beginAtZero: true
+                display: true
+            }
+        }],
+       
+         xAxes: [{
+    //         // Change here
+            barPercentage: 1
+        }]
+      }
+    }
+});
+  $(document).ready(function(){
+
+
+  });       
+
+
+
                        
-                        xAxes: [{
-                            // Change here
-                            barPercentage: 0.2
-                        }]
-                    }
-                }
-            });
-                        
         </script>
         
     </body>

@@ -17,6 +17,7 @@
         <!-- External CSS -->
         <link rel="stylesheet" type="text/css" href="css/custom.css">
         <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+       <link rel="stylesheet" type="text/css" href="loading-bar.css"/>
     </head>
     <body>
         <main>
@@ -398,7 +399,7 @@
                                                                 <div class="modal-body">
                                                                     <div class="row">
                                                                         <div class="col-md-12">
-                                                                            <div class="table-responsive px-4">
+                                                                            <div class="table-responsive px-4 tb-scroll">
                                                                                 <table class="table table-bordered">
                                                                                     <thead>
                                                                                         <tr>
@@ -541,7 +542,78 @@
                                             <div class="card-header bd-r-red">
                                                 <div class="clearfix">
                                                     <span class="pull-left f-16">Punctuality</span>
-                                                    <span class="fa fa-ellipsis-h pull-right blue-color"></span>
+                                                     <a href="#" data-toggle="modal" data-target="#punctuality">
+                                                        <span class="fa fa-ellipsis-h pull-right blue-color"></span>
+                                                    </a>
+                                                </div>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="punctuality" tabindex="-1" role="dialog" aria-labelledby="viewEmployeeAttendanceLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-lg" role="document">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title bb_black f-18" id="exampleModalLabel"><a href="employee.html" class="bb_black f-24">Dike Thelma Kelechi</a> <i class="fa fa-chevron-right f-18"></i>Punctuality</h5>
+                                                                <button type="button" class="close red_color" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true"><i class="fa fa-times-circle-o"></i></span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+
+                                                                        <div class="px-5">
+                                                                             <div class="mx-5 bg-white">
+                                                                                 <div class="d-flex justify-content-end ">
+                                                                                     <div class="d-flex justify-content-end ">
+                                                                                        <select class="form-control btn-deep-blue select">
+                                                                                          <option>January</option>
+                                                                                          <option>February</option>
+                                                                                          <option selected="selected">March</option>
+                                                                                          <option>April</option>
+                                                                                          <option>May</option>
+                                                                                          <option>June</option>
+                                                                                          <option>July</option>
+                                                                                          <option>August</option>
+                                                                                          <option>September</option>
+                                                                                          <option>October</option>
+                                                                                          <option>November</option>
+                                                                                          <option>December</option>
+                                                                                        </select>
+                                                                                     </div>
+                                                                                 </div>
+
+                                                                                 <div class="d-flex m-5">
+                                                                                     <div
+                                                                                         class="ldBar label-center ldBar-label"
+                                                                                          style="width:30%;height:30%;margin:auto"
+                                                                                        data-value="86"
+                                                                                        data-preset="circle">
+                                                                                     </div>
+                                                                                      <div
+                                                                                        class="ldBar label-center ldBar-label"
+                                                                                        style="width:30%;height:30%;margin:auto"
+                                                                                        data-value="50"
+                                                                                        data-preset="circle"
+                                                                                      >
+                                                                                          
+                                                                                      </div>
+                                                                                 </div>
+                                                                             </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    
+                                                                    
+                                                                    <div class="col-md-12 mt-75 mb-5">
+                                                                        <div class="table-controls pull-right">
+                                                                            <button class="btn btn-sm banner_bg-color text-white px-5 py-2 mr-3 border-0"><i class="fa fa-share pr-3"></i>Share</button>
+                                                                            <button class="btn-sm banner_bg-color text-white px-5 py-2 border-0 mr-3"><i class="fa fa-print pr-3"></i>Print</button>
+                                                                            <button class="btn-sm banner_bg-color text-white px-5 py-2 border-0"><i class="fa fa-download pr-3"></i>Download</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <hr>
                                                 
@@ -579,7 +651,27 @@
                                 <div class="row mt-5">
                                     <div class="col-md-12">
                                         <div class="element-container mb-75">
-                                            <button class="btn-lg btn-delete border-0 text-white pull-right f-18">Delete Employee</button>
+                                            <button class="btn-lg btn-delete border-0 text-white pull-right f-18"  type="button" data-toggle="modal" data-target="#deletemodal">Delete Employee</button>
+
+                                            <div class="modal rounded-0" tabindex="-1" role="dialog" id="deletemodal">
+                                              <div class="modal-dialog rounded-0 " role="document">
+                                                <div class="modal-content rounded-0">
+                                                  <div class="modal-header ">
+                                                    <h5 class="modal-title">Delete Employee</h5>
+                                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                      <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                  </div>
+                                                  <div class="modal-body my-4">
+                                                    <p class="h5">Are you sure you want to <span class="text-danger">delete</span> this employee?</p>
+                                                  </div>
+                                                  <div class="modal-footer ">
+                                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                                    <button type="button" class="btn btn-danger">Delete</button>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -601,43 +693,91 @@
         
         <script src="js/script.js"></script>
         <script>
+
             new Chart(document.getElementById("myChart"), {
-                type: 'bar',
+    type: 'bar',
+    data: {
+      labels: ["Pres", "Abs", "report", "LM", "ED", "TN"],
+      datasets: 
+        [
+          {
+            label: ["Present"],
+            backgroundColor: ["#9B51E0", "#EB5757", "#FED766", "#1BA052", "#4663A2", "#2A97CA"],
+            borderColor: ["#9B51E0", "#1BA052", "#FED766", "#4663A2", "#EB5757", "#2A97CA"],
+            data: [65, 59, 75, 81, 56, 55, 40]
+          },
+             {
+                label: 'Absent',  
+              backgroundColor: ["#EB5757"]
+
+              },
+
+              {
+                label: 'Late',        
+              backgroundColor: ["#FED766"]
+
+              },
+              //and the next one
+              
+              {
+                label: 'Out of Station',        
+              backgroundColor: ["#2A97CA"]
+
+              },
+              {
+                label: 'Early Departure',        
+              backgroundColor: ["#2A97CA"]
+
+              },
+              {
+                label: 'March 2018',        
+                backgroundColor: ["#FFFFFF"],
+                borderColor: ["#FFFFFF"],
+                // fontStyle : "Bold"
+              }            
+        ]
+    },
+    
+    options: {
+      // legend: { display: false },
+      scales: {
+        yAxes: [{
+            ticks: {
+                // beginAtZero: true
+                display: true
+            }
+        }],
+       
+         xAxes: [{
+    //         // Change here
+            barPercentage: 1
+        }]
+      }
+    }
+});                        
+        </script>
+        <script>
+            new Chart(document.getElementById("pieChart"), {
+                type: 'doughnut',
                 data: {
                   labels: ["Pres", "Abs", "Oos", "LM", "ED", "TN"],
                   datasets: 
                     [
                         {
-                            label: ["Present"],
+                            
                             backgroundColor: ["#9B51E0", "#1BA052", "#FED766", "#4663A2", "#EB5757", "#2A97CA"],
                             borderColor: ["#9B51E0", "#1BA052", "#FED766", "#4663A2", "#EB5757", "#2A97CA"],
-                            data: [65, 59, 75, 81, 56, 55, 40]
+                            data: [65]
                         }
                         
                     ]
                 },
-                
-                options: {
-                    legend: { display: false },
-                    title: {
-                        display: true,
-                        text: 'March 2018'
-                    },
-                    scales: {
-                        yAxes: [{
-                            ticks: {
-                                beginAtZero: true
-                            }
-                        }],
-                       
-                        xAxes: [{
-                            // Change here
-                            barPercentage: 0.2
-                        }]
-                    }
+                option:{
+                    cutoutPercentage: 80
                 }
+                
+               
             });
-                        
         </script>
     </body>
 </html>

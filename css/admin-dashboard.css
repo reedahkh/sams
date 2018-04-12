@@ -311,9 +311,10 @@ sup{
 	outline: none;
 }
 .tb-scroll{
-	height: 300px;
+	max-height: 300px;
 	overflow: scroll;
 }
+
 .card-shdw{
 	box-shadow: 0px 0px 6px #c4c4c4;
 }

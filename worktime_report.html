@@ -23,7 +23,7 @@
             <div class="hide">
                 <div class="row justify-content-start">
                     <!-- Start side menu -->
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-auto bg-linear">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-auto bg-linear-s">
                         <header>
                             <div class="logo ">
                                 <nav class="navbar navbar-expand-lg bg-transparent">
@@ -77,7 +77,7 @@
                     <div class="col-lg-9">
                         <header>
                             <nav class="navbar navbar-expand-lg wide-navbar bg-white">
-                                <a class="navbar-brand blue_color" href="#"><i class="fa fa-long-arrow-left"></i>Admin</a>
+                                <!-- <a class="navbar-brand blue_color" href="#"><i class="fa fa-long-arrow-left"></i>Admin</a> -->
                                 <button class="navbar-toggler banner_bg-color" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="fa fa-bars text-white"></span>
                                 </button>
@@ -109,13 +109,13 @@
                                 
                                 <div class="row">
                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
-                                        <input type="date" id="startDate" class="form-control">
+                                        <input type="date" id="startDate" class="form-control card-shdw border-0 rounded filter">
+                                    </div>
+                                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2 ">
+                                        <input type="date" id="endDate" class="form-control card-shdw border-0 rounded filter">
                                     </div>
                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
-                                        <input type="date" id="endDate" class="form-control">
-                                    </div>
-                                    <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
-                                        <select name="location" id="location" class="form-control">
+                                        <select name="location" id="location" class="form-control card-shdw border-0 rounded filter">
                                             <option value="">Location</option>
                                             <option value="">Abuja</option>
                                             <option value="">Lagos</option>
@@ -124,7 +124,7 @@
                                         </select>
                                     </div>
                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
-                                        <select name="employee" id="employee-select" class="form-control">
+                                        <select name="employee" id="employee-select" class="form-control card-shdw border-0 rounded filter">
                                             <option value="">Employee</option>
                                             <option value="">Full Time</option>
                                             <option value="">Part Time</option>
@@ -132,7 +132,7 @@
                                         </select>
                                     </div>
                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
-                                        <select name="worktime" id="worktime" class="form-control">
+                                        <select name="worktime" id="worktime" class="form-control card-shdw border-0 rounded filter">
                                             <option value="" class="py-1">Work Time</option>
                                             <option value="">8hrs</option>
                                             <option value="">2hrs</option>
@@ -140,16 +140,16 @@
                                         </select>
                                     </div>
                                     <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-2">
-                                        <input type="search" class="form-control search-input" name="search" placeholder="Search">
-                                        <button class="search-btn"><i class="fa fa-sliders"></i></button>
+                                        <input type="search" class="form-control search-input card-shdw border-0 rounded filter" name="search" placeholder="Search">
+                                        <button class=" btn search-btn slider card-shdw border-0 rounded "><i class="fa fa-sliders"></i></button>
                                     </div>
-                                </div>
+                               </div>
                                 <p class="mt-3 f-14">DNI: Did Not Clock In, DNO: Did Not Clock Out. ABS: Absent</p>
                             </div>
                             <div class="element-container mt-75">
 
                                <div class="card mb-5">
-                                   <div class="table-responsive">
+                                   <div class="table-responsive tb-scroll">
                                        <table class="table table-lightborder table-bordered">
                                            <thead class="fw-700">
                                                
@@ -163,11 +163,7 @@
                                                
                                            </thead>
                                            <tbody class="f-12">
-                                               <tr>
-                                                   <td colspan="8" rowspan=""></td>
-                                                   
-                                               </tr>
-                                               
+                                              
                                                <tr>
                                                    <td>Salisu Salisu (STO28)</td>
                                                    <td>0 Min</td>
@@ -247,7 +243,9 @@
                                           </li>
                                           <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">6</a></li>
                                           <li class="page-item px-2">
-                                            <a class="page-link blue_color border-0 bg-transparent" href="#">of 60 Pages</a>
+                                            <a class="page-link blue_color border-0 bg-transparent" href="#">
+                                              <input type="text" name="" placeholder="6 of 60" class="border-0 bg-transparent">
+                                            </a>
                                           </li>
                                           
                                           <li class="page-item bd_blue pl-2">
@@ -286,5 +284,23 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
         
         <script src="js/script.js"></script>
+        <script>
+
+            
+            $(document).ready(function(){
+
+             
+
+              $(".slider").click(function() {
+                /* Act on the event */
+                                    $(".filter").toggle();
+              });
+
+
+             
+
+            });    
+
+        </script>
     </body>
 </html>
