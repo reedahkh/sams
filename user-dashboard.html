@@ -30,10 +30,6 @@
             <img src="img/dashboard/file.svg" alt="" class="pr-1">
            My board
           </a>
-          <a class="list-group-item side-menu-item border-0 rounded-0 text-white pl-2" id="list-oos-list" data-toggle="list" href="#list-oos" role="tab" aria-controls="report">
-            <img src="img/dashboard/vector.svg" alt="" class="pr-1">
-            Out of Station
-          </a>
           <a class="list-group-item side-menu-item border-0 rounded-0 text-white pl-2" id="list-punctuality-list" data-toggle="list" href="#list-punctuality" role="tab" aria-controls="punctuality">
             <img src="img/dashboard/chart.svg" alt="" class="pr-1">
             Punctuality
@@ -49,30 +45,31 @@
         <div class="tab-content" id="nav-tabContent">
 
           <div class="tab-pane fade show active" id="list-dashboard" role="tabpanel" aria-labelledby="list-dashboard-list">
-
+            
             <header class="bg-white py-1 pl-2 pr-5">
-                <div class="row">
-                  <div class="col-12 col-md-6 d-flex pt-0">
-                    <i class="fas fa-arrow-left blue-color mt-2 pt-1 mr-3"></i>
-                    <p class="h5 mr-3 mt-2">Dike, Thelma Kelechi</p>
-                    <button class="btn bg-transparent btn-view blue-color">Make an Admin</button>
-                  </div>
-                  <div class="col-12 col-md-3">
-                    <!-- <input type="" name="" placeholder="Search &hellip;" class="form-control"> -->
-                  </div>
-                  <div class="col-12 col-md-3 text-right">
-                    <div class="dropdown">
-                      <button class="btn bg-transparent dropdown-toggle nav-drp" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Chizoba Egeonu
-                      </button>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
-                    </div>
-                  </div>                                    
+              <div class="row">
+                <div class="col-12 col-md-6 d-flex pt-0">
+                  <i class="fas fa-arrow-left blue-color mt-2 pt-1 mr-3"></i>
+                  <p class="h5 mr-3 mt-2">Dike, Thelma Kelechi</p>
+                  <!-- <button class="btn bg-transparent btn-view blue-color">Make an Admin</button> -->
                 </div>
+                <div class="col-12 col-md-3">
+                  <!-- <input type="" name="" placeholder="Search &hellip;" class="form-control"> -->
+                </div>
+                <div class="col-12 col-md-3 text-right">
+                  <div class="dropdown">
+                    <button class="btn bg-transparent dropdown-toggle nav-drp" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Chizoba Egeonu
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="single_employee.html">View Profile</a>
+                      <a class="dropdown-item" href="dashboard.html">Go to Dashboard</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">View Notification</a>
+                    </div>
+                  </div>
+                </div>                                    
+              </div>
             </header>
 
             <div class="old">
@@ -193,39 +190,7 @@
               </div>
             </div>
 
-              <div class="mr-5 pr-10 edit-p" style="display: none;">
-                <div class="bg-white p-5 m-5 card-shdw">
-                  <form class="mx-5">
-                    <div class="d-flex">
-                      <div class="mr-auto">
-                        <p class="h2 mb-5">Edit Profile</p>
-                      </div>
-                      <div>
-                        <i class="far fa-times-circle text-danger cx" style="cursor: pointer;"></i>
-                      </div>
-                    </div>
-                    <div class="form-group mb-4">
-                      <label for="formGroupExampleInput mb-0 pb-0">Name</label>
-                      <input type="text" class="form-control rounded-0 " id="formGroupExampleInput" placeholder="Dike Thelma Kelechi">
-                    </div>
-                    <div class="form-group mb-4">
-                      <label for="formGroupExampleInput2 mb-0">Department</label>
-                      <input type="text" class="form-control rounded-0" id="formGroupExampleInput2" placeholder="ICT">
-                    </div>
-                    <div class="form-group mb-5">
-                      <label for="formGroupExampleInput3 mb-0 pb-0">Role</label>
-                      <input type="text" class="form-control rounded-0" id="formGroupExampleInput3" placeholder="Lead Designer">
-                    </div>
-                    <div class="d-flex  ">
-                      <!-- <button class="btn bg-danger px-4 btn-lg oos justify-content-start mr-auto rounded-0 text-white" >Cancel</button> -->
-                      <button class="btn btn-deep-blue px-4 btn-lg fw-btn rounded-0 text-white">Apply</button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-
             <div class="new" style="display: none;">
-
               <div class="mr-5 pr-10">
                 <div class="bg-white p-5 m-5 card-shdw">
                   <form class="mx-5">
@@ -249,40 +214,41 @@
                   </form>
                 </div>
               </div>
+            </div>
 
-              
+            <div class="mr-5 pr-10 edit-p" style="display: none;">
+              <div class="bg-white p-5 m-5 card-shdw">
+                <form class="mx-5">
+                  <div class="d-flex">
+                    <div class="mr-auto">
+                      <p class="h2 mb-5">Edit Profile</p>
+                    </div>
+                    <div>
+                      <i class="far fa-times-circle text-danger cx" style="cursor: pointer;"></i>
+                    </div>
+                  </div>
+                  <div class="form-group mb-4">
+                    <label for="formGroupExampleInput mb-0 pb-0">Name</label>
+                    <input type="text" class="form-control rounded-0 " id="formGroupExampleInput" placeholder="Dike Thelma Kelechi">
+                  </div>
+                  <div class="form-group mb-4">
+                    <label for="formGroupExampleInput2 mb-0">Department</label>
+                    <input type="text" class="form-control rounded-0" id="formGroupExampleInput2" placeholder="ICT">
+                  </div>
+                  <div class="form-group mb-5">
+                    <label for="formGroupExampleInput3 mb-0 pb-0">Role</label>
+                    <input type="text" class="form-control rounded-0" id="formGroupExampleInput3" placeholder="Lead Designer">
+                  </div>
+                  <div class="d-flex  ">
+                    <button class="btn btn-deep-blue px-4 btn-lg fw-btn rounded-0 text-white">Apply</button>
+                  </div>
+                </form>
+              </div>
             </div>
 
           </div>
 
-          <div class="tab-pane fade" id="list-oos" role="tabpanel" aria-labelledby="list-oos-list">
-            
-            <header class="bg-white py-1 pl-2 pr-5">
-                <div class="row">
-                  <div class="col-12 col-md-6 d-flex pt-0">
-                    <i class="fas fa-arrow-left blue-color mt-2 pt-1 mr-3"></i>
-                    <p class="h5 mr-3 mt-2">Dike, Thelma Kelechi</p>
-                    <!-- <button class="btn bg-transparent btn-view blue-color">Make an Admin</button> -->
-                  </div>
-                  <div class="col-12 col-md-3">
-                    <!-- <input type="" name="" placeholder="Search &hellip;" class="form-control"> -->
-                  </div>
-                  <div class="col-12 col-md-3 text-right">
-                    <div class="dropdown">
-                      <button class="btn bg-transparent dropdown-toggle nav-drp" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Chizoba Egeonu
-                      </button>
-                      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                      </div>
-                    </div>
-                  </div>                                    
-                </div>
-            </header>
 
-          </div>
 
           <div class="tab-pane fade" id="list-punctuality" role="tabpanel" aria-labelledby="list-punctuality-list">
             
@@ -302,9 +268,10 @@
                       Chizoba Egeonu
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="single_employee.html">View Profile</a>
+                      <a class="dropdown-item" href="dashboard.html">Go to Dashboard</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">View Notification</a>
                     </div>
                   </div>
                 </div>                                    
@@ -376,16 +343,17 @@
                       Chizoba Egeonu
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <a class="dropdown-item" href="#">Action</a>
-                      <a class="dropdown-item" href="#">Another action</a>
-                      <a class="dropdown-item" href="#">Something else here</a>
+                      <a class="dropdown-item" href="single_employee.html">View Profile</a>
+                      <a class="dropdown-item" href="dashboard.html">Go to Dashboard</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">View Notification</a>
                     </div>
                   </div>
                 </div>                                    
               </div>
             </header>
 
-             <div class="p-5">
+            <div class="p-5">
               <div class="row px-5 mr-5 mb-1">
                 <div class="col-12">
                   <ul class="nav nav-fill nav-tabs f-24 border-0" id="nav-tab" role="tablist">
@@ -552,18 +520,17 @@
               </div>
             </div>
 
-
           </div>
-
 
         </div>
       </div>
+
     </div>
   </div>
     
-    <!-- <a href="#">
-        <span class="fa fa-ellipsis-h pull-right blue-color"></span>
-    </a> -->
+
+
+  
     <!-- Modal -->
   <!--   <div class="modal fade" id="editAttendance" tabindex="-1" role="dialog" aria-labelledby="viewEmployeeAttendanceLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
@@ -858,30 +825,31 @@
                         
                           <div class="mb-0 pb-0 pl-10">
                             <div class="col-md-12 mt-5 mb-0 ml-5 pl-5">
-                            <div class="element-container">
-                              <nav aria-label="list of employees">
-                                  <ul class="pagination pull-right">
-                                      <li class="page-item bd_blue">
-                                          <a class="page-link blue_color" href="#" aria-label="Previous">
-                                              <span aria-hidden="true">Previous</span>
-                                              <span class="sr-only">Previous</span>
-                                          </a>
-                                      </li>
-                                      <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">6</a></li>
-                                      
-                                      <li class="page-item px-3 bg-transparent"><a class="page-link blue_color border-0 bg-transparent" href="#">
-                                          <input type="text" name="" placeholder="6 of 60" class="border-0 bg-transparent">
-                                      </a></li>
-                                      <li class="page-item bd_blue pl-0 border">
-                                          <a class="page-link blue_color border rounded-0 mx-0 " href="#" aria-label="Next">
-                                              <span aria-hidden="true">Next</span>
-                                              <span class="sr-only">Next</span>
-                                          </a>
-                                      </li>
-                                  </ul>
-                              </nav>
+                              <div class="element-container">
+                                <nav aria-label="list of employees">
+                                    <ul class="pagination pull-right">
+                                        <li class="page-item bd_blue">
+                                            <a class="page-link blue_color" href="#" aria-label="Previous">
+                                                <span aria-hidden="true">Previous</span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item bd_blue"><a class="page-link blue_color border-0" href="#">6</a></li>
+                                        
+                                        <li class="page-item px-3 bg-transparent"><a class="page-link blue_color border-0 bg-transparent" href="#">
+                                            <input type="text" name="" placeholder="6 of 60" class="border-0 bg-transparent">
+                                        </a></li>
+                                        <li class="page-item bd_blue pl-0 border">
+                                            <a class="page-link blue_color border rounded-0 mx-0 " href="#" aria-label="Next">
+                                                <span aria-hidden="true">Next</span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                              </div>
+                            </div>
                           </div>
-                       </div>
                         </div>
                         <div class="ml-5 pl-5 mt-0 pt-0">
                           <div class="d-flex justify-content-end mt-75 mb-5 ml-5 pl-5 pt-0">
@@ -1118,95 +1086,7 @@
       }
   });
 
-// new Chart(document.getElementById("myChart"), {
-//     type: 'bar',
-//     data: {
-//       labels: ["Pres", "Abs", "report", "LM", "ED", "TN"],
-//       datasets: 
-//         [
-//           {
-//             label: ["Present"],
-//             backgroundColor: ["#9B51E0", "#EB5757", "#FED766", "#1BA052", "#4663A2", "#2A97CA"],
-//             borderColor: ["#9B51E0", "#1BA052", "#FED766", "#4663A2", "#EB5757", "#2A97CA"],
-//             data: [65, 59, 75, 81, 56, 55, 40]
-//           },
-//              {
-//                 label: 'Absent',  
-//               backgroundColor: ["#EB5757"]
 
-//               },
-
-//               {
-//                 label: 'Late',        
-//               backgroundColor: ["#FED766"]
-
-//               },
-//               //and the next one
-              
-//               {
-//                 label: 'Out of Station',        
-//               backgroundColor: ["#2A97CA"]
-
-//               },
-//               {
-//                 label: 'Early Departure',        
-//               backgroundColor: ["#2A97CA"]
-
-//               },
-//               {
-//                 label: 'March 2018',        
-//                 backgroundColor: ["#FFFFFF"],
-//                 borderColor: ["#FFFFFF"],
-//                 // fontStyle : "Bold"
-//               }            
-//         ]
-//     },
-    
-//     options: {
-//       // legend: { display: false },
-//       scales: {
-//         yAxes: [{
-//             ticks: {
-//                 // beginAtZero: true
-//                 display: true
-//             }
-//         }],
-       
-//          xAxes: [{
-//     //         // Change here
-//             barPercentage: 1
-//         }]
-//       }
-//     }
-  // new Chart(document.getElementById("myChart");
-  // 	var myChart = new Chart(ctx, {
-  //     type: 'bar',
-  //     data: {
-  //       labels: ["Pres", "Abs", "Oos", "LM", "ED", "TN"],
-  //       datasets: 
-  //         [
-  //             {
-  //                 label: 'Present',
-  //                 backgroundColor: ["#9B51E0", "#1BA052", "#FED766", "#4663A2", "#EB5757", "#2A97CA"],
-  //                 // borderColor: ["#9B51E0", "#1BA052", "#FED766", "#4663A2", "#EB5757", "#2A97CA"],
-  //                 data: [65, 59, 75, 81, 56, 55, 40]
-  //             }
-  //             // {
-  //             //     label:'Present',
-  //             // },
-  //             // {
-  //             //     label:'Absent',
-  //             // }
-  //         ]
-  //     },
-      
-  //     options: {
-  //         legend: { display: true },
-  //         // title: {
-  //         //     display: true,
-  //         //     text: 'March 2018'
-  //         // }
-	 //          }
 
 
   $(document).ready(function(){
