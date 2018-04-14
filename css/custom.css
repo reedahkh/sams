@@ -806,6 +806,14 @@ ul.price_benefits li{
 	color: #fff;
 }
 
+.login_btn_2 :hover{
+	width: 232px;
+	height: 47px;
+	background: #219653;
+	border-radius: 3px;
+	color: #fff;
+}
+
 /*footer*/
 footer{
 	font-family: 'Fira Sans';

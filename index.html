@@ -128,7 +128,8 @@
 											</div>
 										</div>
 											<div class="buttons text-center mt-5">
-												<button class="btn login_btn_2">Sign Up</button>
+										<a class="btn login_btn_2 text-white" href="signup.html">Sign Up</a>
+
 											</div>
 									</form>
 								</div>
@@ -607,7 +608,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-<!-- <script src="https://vjs.zencdn.net/4.3/video.js"></script> -->
+<script src="https://vjs.zencdn.net/4.3/video.js"></script> 
 
 <!-- BigVideo -->
 
@@ -620,35 +621,32 @@
 <script type="text/javascript">
 	
 
-    // $(document).ready(function(){
-    // 	$(".btn").click(function () {
-    // 		// body...
-    		$(function() {
-		        var BV = new $.BigVideo({container: $('#video_bg')});
+    $(document).ready(function(){
+    	
+    	$(function() {
+	        var BV = new $.BigVideo({container: $('#video_bg')});
 
-		        BV.init();
-		        //BV.getPlayer().pause();
-		        if (Modernizr.touch) {
-					    BV.show('img/poster.jpg');
-					} else {
-					    BV.show('video/SAMS_Advert.mp4', {ambient:false}, {autoplay:true});
-					}
-		        
+	        BV.init();
+	        BV.getPlayer().pause();
 
-		    	});
-    // 	})
-    // });
+	        BV.show('video/SAMS_Advert.mp4', { ambient:false }, { autoplay:true });
+	        
+	        
+	    });
+    })
 
- init controller
- var controller = new ScrollMagic.Controller();
 
- // create a scene
- new ScrollMagic.Scene({
-         duration: 100,    // the scene should last for a scroll distance of 100px
-         offset: 50        // start this scene after scrolling for 50px
-     })
-     .setPin(".about") // pins the element for the the scene's duration
-     .addTo(controller); // assign the scene to the controller
+
+	// init controller
+	// var controller = new ScrollMagic.Controller();
+
+	//  // create a scene
+	// new ScrollMagic.Scene({
+	//         duration: 100,    // the scene should last for a scroll distance of 100px
+	//         offset: 50        // start this scene after scrolling for 50px
+	//     })
+	//     .setPin(".about") // pins the element for the the scene's duration
+	//     .addTo(controller); // assign the scene to the controller
 
 
 
