@@ -95,6 +95,7 @@ body {
 }
 .mt-75{
 	margin-top: 75px;
+	width: 100%;
 }
 .plr-5{
 	padding: 0 7px !important;
@@ -333,6 +334,9 @@ button.close:hover{
 	box-shadow: 0px 0px 6px #c4c4c4;
 }
 
+.okk{
+	margin-left:0.1%;
+}
 
 
 
