@@ -334,6 +334,10 @@ sup{
   right: -2.25rem;
 }
 
+.lik{
+	margin-top: 5px;
+}
+
 .lik:hover{
   color: #FFF;
   margin-top: 2px;
@@ -816,6 +820,7 @@ ul.price_benefits li{
 	background: #219653;
 	border-radius: 3px;
 	color: #fff;
+	padding-top: 9px;
 }
 
 /*footer*/
