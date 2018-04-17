@@ -95,6 +95,52 @@
 	<!-- End:: Header -->
 
 	<!-- start main -->
+	<style>
+			.dd-selected-image{
+				height: 30px;
+			}
+			.dd-option-image{
+				height: 30px;
+			}
+	
+			.dd-selected{
+				height: 50px;
+				width: 100%;
+			}
+	
+			.dd-selected-text{
+				line-height: 35px !important;
+				margin-left: 5px;
+				font-size: 20px;
+				font-weight: lighter !important;
+			}
+	
+			.dd-option{
+				height: 50px;
+				width: 100%;
+			}
+	
+			.dd-option-text{
+				line-height: 35px !important;
+				margin-left: 5px;
+				font-size: 20px;
+				font-weight: lighter !important;
+
+			}
+
+			.dd-select{
+				background-color: #FAFAFA !important;
+				border:1px solid #FAFAFA !important;
+				width: 400px !important;
+				margin-bottom:10px;
+			}
+
+			.dd-options{
+				background-color: #FAFAFA !important;
+				border:1px solid #FAFAFA !important;
+				width: 400px !important;
+			}
+		</style>
 	<div class="main">
 		<div class="wrapper">
 			<div id="video_bg" class=""></div>
@@ -109,12 +155,19 @@
 									<form action="">
 										<div class="form-group mt-4">
 											<label for="Country" class="mt-4">Country Code</label>
-											<select class="form-control bg-light border-0 form-control-lg mb-4" id="sel1" >
-												<option>(+33)&nbsp; &nbsp; France</option>
-												<option>(+1) &nbsp; &nbsp;Canada</option>
-												<option>(+234) &nbsp; &nbsp;Nigeria</option>
-												<option>(+254) &nbsp; &nbsp; Kenya</option>
-											</select>
+											<select id="demo-htmlselect" class="form-control bg-light border-0 form-control-lg mb-4 h-47 wow" >
+													<option value="0" data-imagesrc="https://image.flaticon.com/icons/svg/580/580969.svg"
+													><span class="wow">Nigeria</span></option>
+
+													<option value="1" data-imagesrc="https://image.flaticon.com/icons/svg/330/330490.svg" class="imh"
+														>France</option>
+
+														<option value="2" data-imagesrc="https://image.flaticon.com/icons/svg/330/330459.svg"
+														><span class="wow">USA</span></option>
+														
+														<option value="3" data-imagesrc="https://image.flaticon.com/icons/svg/330/330442.svg"
+														><span class="wow">Canada</span></option>	
+												</select>
 											<label for="phone-number">Phone Number</label>
 											<br>
 											<input type="text" name="phone-number" class="form-control h-47 green-caret" required="">
@@ -614,6 +667,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script src="https://vjs.zencdn.net/4.3/video.js"></script> 
 
+<script type="text/javascript" src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js" ></script>
 <!-- BigVideo -->
 
 <script src="Assets/plugins/video.js/video.js"></script>
@@ -656,6 +710,15 @@
 
  
 </script>
+
+<script>
+		$('#demo-htmlselect').ddslick({
+		onSelected: function(selectedData){
+			//callback function: do something with selectedData;
+			
+		},
+	});
+		</script>
 
 </body>
 
