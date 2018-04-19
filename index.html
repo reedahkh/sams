@@ -816,9 +816,13 @@
 	        var BV = new $.BigVideo({container: $('#video_bg')});
 
 	        BV.init();
-	        BV.getPlayer().pause();
+			BV.getPlayer().pause();
+			
 
-	        BV.show('video/SAMS_Advert.mp4', { ambient:false }, { autoplay:true });
+
+			BV.show('video/SAMS_Advert.mp4', { ambient:false }, { autoplay:true });
+			BV.loop('video/SAMS_Advert.mp4', { ambient:false }, { autoplay:true });
+			
 	        
 	        
 	    });

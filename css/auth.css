@@ -1,0 +1,25 @@
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #c4c4c4 !important;
+	/*background-color: #828282 !important;*/
+	opacity: 1 !important; /* Firefox */
+	font-family: Lato;
+	font-size: 80%;
+}
+hr{
+	width: 8%;
+	/*height: 50%;*/
+	border: 3px solid green;
+	background-color : green;
+}
+.h-47{
+	height: 47px;
+	background: #FAFAFA;
+	border: 1px solid #FAFAFA;
+}
+.h-47:focus{
+	outline: none;
+	box-shadow: none;
+}
+.placeholder-color  input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+color: #FFFFFF !important;
+}
