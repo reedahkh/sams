@@ -24,7 +24,7 @@
 
 	<!-- header-2 -->
 	<nav class="navbar navbar-expand-lg px-5 py-4 bg_dark-grey navbar-light">
-		<a class="navbar-brand" href="#">
+		<a class="navbar-brand" href="index.html">
 			<img src="img/Logo/sams-logo-sams-white-text-side copy.png" width="150px">
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -108,11 +108,12 @@
 								<p class="big_title f-48 pl-3">Employee Management Made Easy</p>
 								<p class="small_text f-14 pl-5">Explore the history of the classic Lorem Ipsum passage and generate your own text using any number of characters,</p>
 								<div class="buttons mt-5 pl-5">
-									<a class="btn signup_btn mr-3" href="signup.html">Sign Up</a>
-									<a class="btn login_btn" href="login.html">Log In</a>
+									<a class="btn signup_btn mr-3" id="signupbtn" onclick="signup()" style="color:#FAFAFA;">Sign Up</a>
+									<a class="btn login_btn" id="loginbtn"  onclick="login()">Log In</a>
 								</div>
 							</div>
-							<div class="col-md-6">
+							<!-- Sign up -->
+							<div class="col-md-6" id="signup">
 								<div class="form_card">
 									<div class="title">
 										<hr class="hr">
@@ -297,9 +298,100 @@
 											</div>
 												
 												<div class="buttons text-center mt-5">
-													<a class="btn login_btn_2 lil" href="otp_login.html">Sign Up</a>
+													<a class="btn login_btn_2 lil" onclick="otp()" style="color:#FAFAFA;">Sign Up</a>
 												</div>
 												
+										</form>
+									</div>
+								</div>
+							</div>
+							<!-- Login  -->
+							<div class="col-md-6" id="login" style="display:none;">
+								<div class="form_card">
+									<div class="title why">
+										<hr class="hr">
+										<p class="med_text text-center f-36 blue_color">Welcome Back </p>
+										<p class="text-center light_grey f-14">Let us help you manage your company</p>
+									</div>
+									<div class="form-group login_form p-60">
+										<form action="">
+											<label for="">Phone Number</label>
+											<br>
+											<input type="text" class="form-control h-47 green-caret" required="">
+											<div class="form-group mt-4">
+												<label for="">Password</label>
+												<br>
+												<input type="password" class="form-control h-47 green caret" required="">
+											</div>
+											<div class="form-group">
+												<div class="checkbox">
+													<label class="control control-checkbox green_color">
+											            Remember Me
+											            <input type="checkbox" checked="checked" />
+											            <div class="control_indicator"></div>
+											        </label>
+													<a href="password-reset.html" class="pull-right green_color forgot_password">Forgot Password ?</a>
+												</div>
+											</div>
+											<div class="form-group mt-4 captcha px-3 pt-4">
+												<div class="checkbox">
+													<label class="control control-checkbox mt-2">
+											            I am not a robot
+											            <input type="checkbox"  />
+											            <div class="control_indicator"></div>
+											        </label>
+													<img src="Assets/img/captcha.png" class="captcha_img pull-right img-fluid" alt="captcha">
+
+												</div>
+												<div class="privacy_terms text-right mt-3">
+													<span>
+														<a href="" class="font_color">Privacy</a>
+													</span>
+													<span><a href="" class="font_color">Terms</a></span>
+												</div>
+												<div class="buttons text-center mt-5">
+													<a class="btn login_btn_2 lil" href="dashboard.html">Log In</a>
+												</div>
+												
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							<!-- OTP Login -->
+							<div class="col-md-6" id="otp" style="display:none;">
+								<div class="form_card">
+									<div class="title">
+										<hr class="hr">
+										<p class="med_text text-center f-36 blue_color"> OTP Number </p>
+										<p class="text-center light_grey f-14">Enter the OTP Number that was sent to your phone number <br> or Email Address</p>
+									</div>
+									<div class="form-group login_form p-60">
+										<form action="">
+											<label for="">OTP Number</label>
+											<br>
+											<input type="text" class="form-control h-47 green-caret" required="">										
+											<div class="form-group mt-5 captcha px-3 pt-4">
+												<div class="checkbox">
+													<label class="control control-checkbox mt-2">
+											            I am not a robot
+											            <input type="checkbox"  />
+											            <div class="control_indicator"></div>
+											        </label>
+													<img src="Assets/img/captcha.png" class="captcha_img pull-right img-fluid" alt="captcha">
+
+												</div>
+												<div class="privacy_terms text-right mt-3">
+													<span>
+														<a href="" class="font_color">Privacy</a>
+													</span>
+													<span><a href="" class="font_color">Terms</a></span>
+												</div>
+												<div class="buttons text-center mt-5">
+													<a class="btn login_btn_2 lik" href="signup-organization.html">Confirm</a>
+												</div>
+												
+											</div>
 										</form>
 									</div>
 								</div>
@@ -344,6 +436,42 @@
     },
 	height:150,
 });
+	</script>
+
+	<script>
+		 var x = document.getElementById('login');
+		  var y = document.getElementById('signup');
+		  var z = document.getElementById('otp')
+		  var a = document.getElementById('loginbtn');
+		  var b = document.getElementById('signupbtn');
+		function signup(){
+          x.style.display = 'none';
+		  y.style.display = 'block';
+		  z.style.display = 'none';
+		  b.style.backgroundColor = '#219653';
+		  a.style.backgroundColor = '#FFFFFF';
+		  b.style.color ='#FFF';
+		  a.style.color ='#000';
+
+		}
+
+		function login(){
+          x.style.display = 'block';
+		  y.style.display = 'none';
+		  z.style.display = 'none';
+		  b.style.backgroundColor = '#FFF';
+		  a.style.backgroundColor = '#219653';
+		  b.style.color ='#000'
+		  a.style.color ='#fff'
+		  b.style.borderColor ='#219653';
+		  
+		}
+
+		function otp(){
+			x.style.display = 'none';
+		  y.style.display = 'none';
+		  z.style.display = 'block';
+		}
 	</script>
 </html>
 

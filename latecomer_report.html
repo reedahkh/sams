@@ -17,34 +17,27 @@
         <!-- External CSS -->
         <link rel="stylesheet" type="text/css" href="css/custom.css">
         <link rel="stylesheet" type="text/css" href="css/dashboard.css">
+         <link rel="stylesheet" type="text/css" href="css/admin-dashboard.css">
+        <link rel="stylesheet" type="text/css" href="css/user-dashboard.css">
     </head>
     <body>
         <main>
             <div class="hide">
                 <div class="row justify-content-start">
                     <!-- Start side menu -->
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-auto bg-linear-s">
-                        <header>
-                            <div class="logo ">
-                                <nav class="navbar navbar-expand-lg bg-transparent">
-                                    <img src="img/Logo/sams-logo-sams-white-text-side copy.png" width="150px">
-                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="true" aria-label="Toggle navigation">
-                                        <span class="text-white fa fa-bars"></span>
-                                    </button>
-                                </nav>
-                                
-                            </div>
-                        </header>
-                        <div >
-                            <ul class=" navbar-nav list-group mt-4e">
-                                <a href="dashboard.html" class="list-group-item side-menu-item text-white border-0">
-                                    <img src="img/dashboard/file.svg" alt="" class="dashboard pr-3">Dashboard
-                                </a>
-                                
-                                <li class="dropdown list-none side-menu-item active">
-                                    <a class="nav-link dropdown-toggle reports text-white" href="reports.html" id="reportsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
-                                        <img src="img/dashboard/vector.svg" alt="" class=" dashboard pr-3">
-                                        Reports
+                    <div class="col-12 col-sm-12 col-md-2 col-lg-2 bg-linear px-0">
+                        <div class="list-group ml-1 mr-1 pl-3" id="list-tab" role="tablist">
+                          <header class="my-3 ml-4">
+                            <img src="img/Logo/sams-logo-sams-white-text-side copy.png" width="150px " class="">
+                          </header>
+                          <div class="ml-4 mt-3">
+                          <a class="list-group-item side-menu-item border-0 rounded-0 text-white pl-2" " href="dashboard.html">
+                            <img src="img/dashboard/file.svg" alt="" class="pr-1">
+                            Dashboard
+                          </a>
+                           <a class="nav-link dropdown-toggle reports text-white" href="reports.html" id="reportsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+                                        <img src="img/dashboard/vector.svg" alt="" class="dashboard pr-3 " style="margin-left: -5%;">
+                                        <span style="font-size: 21px; margin-left:-2%;">Reports</span>
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="reportsDropdown">
                                         <a class="dropdown-item f-16" href="reports.html">General Attendance Reports</a>
@@ -57,19 +50,19 @@
                                         <div class="dropdown-divider"></div>
                                         <a class="dropdown-item f-16" href="attendance_summary.html">Attendance Summary Report </a>
                                     </div>
-                                </li>
-                                 
-                                 <a href="employee.html" class="list-group-item text-white side-menu-item border-0">
-                                    <img src="img/dashboard/users.svg" alt="" class="dashboard pr-3">Employee
-                                 </a>
-                                 <a href="punctuality.html" class="list-group-item text-white side-menu-item border-0">
-                                    <img src="img/dashboard/chart.svg" alt="" class="dashboard pr-3">Punctuality
-                                 </a>
-                                 
-                                 <a href="settings.html" class="list-group-item side-menu-item text-white border-0">
-                                    <img src="img/dashboard/gears.svg" alt="" class="dashboard pr-3">Settings
-                                 </a>
-                            </ul>
+                          <a class="list-group-item side-menu-item border-0 rounded-0 text-white pl-2"  href="employee.html">
+                            <img src="img/dashboard/users.svg" alt="" class="pr-1">
+                            Employee
+                          </a>
+                          <a class="list-group-item side-menu-item border-0 rounded-0 text-white pl-2" href="punctuality.html" role="tab">
+                             <img src="img/dashboard/chart.svg" alt="" class="pr-1">
+                            Punctuality
+                          </a>
+                          <a class="list-group-item side-menu-item border-0 rounded-0 text-white pl-2" href="settings.html">
+                            <img src="img/dashboard/gears.svg" alt="" class="pr-1">
+                            Settings
+                          </a>
+                        </div>  
                         </div>
                     </div>
                     <!-- end side menu -->

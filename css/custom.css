@@ -399,17 +399,17 @@ sup{
 	top: -50em;
 }
 .wrapper{
-	height: 797px;
+	height: 700px;
 }
 #video_bg{
-	height: 797px;
+	height: 767px;
 	position: relative;
 	width: 100%;
 	
 }
 #big-video-wrap{
 	position: absolute;
-	height:797px ;
+	height:767px ;
 }
 #big-video-vid{
 	top: 0 !important;
@@ -577,7 +577,7 @@ ul.price_benefits li{
 	font-size:18px;
 	font-family: 'Karma';
 	padding: 15px 0 35px;
-	margin-top:70px;
+	margin-top:40px;
 }
 .price_heading{
 	font-family: 'Fira Sans';

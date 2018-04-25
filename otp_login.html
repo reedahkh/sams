@@ -25,7 +25,7 @@
 	
 	<!-- header-2 -->
 	<nav class="navbar navbar-expand-lg px-5 py-4 bg_dark-grey navbar-light">
-		<a class="navbar-brand" href="#">
+		<a class="navbar-brand" href="index.html">
 			<img src="img/Logo/sams-logo-sams-white-text-side copy.png" width="150px">
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -63,11 +63,12 @@
 								<p class="big_title f-48 pl-3">Employee Management Made Easy</p>
 								<p class="small_text f-14 pl-5">Explore the history of the classic Lorem Ipsum passage and generate your own text using any number of characters,</p>
 								<div class="buttons mt-5 pl-5">
-									<a class="btn signup_btn mr-3" href="signup.html">Sign Up</a>
-									<a class="btn login_btn" href="login.html">Log In</a>
+									<a class="btn signup_btn mr-3" id="signupbtn" onclick="signup()">Sign Up</a>
+									<a class="btn login_btn" id="loginbtn" onclick="login()">Log In</a>
 								</div>
 							</div>
-							<div class="col-md-6">
+							<!-- OTP -->
+							<div class="col-md-6" id="otp">
 								<div class="form_card">
 									<div class="title">
 										<hr class="hr">
@@ -104,6 +105,255 @@
 									</div>
 								</div>
 							</div>
+							
+							<!-- Login -->
+							<div class="col-md-6" id="login" style="display:none;">
+								<div class="form_card">
+									<div class="title why">
+										<hr class="hr">
+										<p class="med_text text-center f-36 blue_color">Welcome Back </p>
+										<p class="text-center light_grey f-14">Let us help you manage your company</p>
+									</div>
+									<div class="form-group login_form p-60">
+										<form action="">
+											<label for="">Phone Number</label>
+											<br>
+											<input type="text" class="form-control h-47 green-caret" required="">
+											<div class="form-group mt-4">
+												<label for="">Password</label>
+												<br>
+												<input type="password" class="form-control h-47 green caret" required="">
+											</div>
+											<div class="form-group">
+												<div class="checkbox">
+													<label class="control control-checkbox green_color">
+											            Remember Me
+											            <input type="checkbox" checked="checked" />
+											            <div class="control_indicator"></div>
+											        </label>
+													<a href="password-reset.html" class="pull-right green_color forgot_password">Forgot Password ?</a>
+												</div>
+											</div>
+											<div class="form-group mt-4 captcha px-3 pt-4">
+												<div class="checkbox">
+													<label class="control control-checkbox mt-2">
+											            I am not a robot
+											            <input type="checkbox"  />
+											            <div class="control_indicator"></div>
+											        </label>
+													<img src="Assets/img/captcha.png" class="captcha_img pull-right img-fluid" alt="captcha">
+
+												</div>
+												<div class="privacy_terms text-right mt-3">
+													<span>
+														<a href="" class="font_color">Privacy</a>
+													</span>
+													<span><a href="" class="font_color">Terms</a></span>
+												</div>
+												<div class="buttons text-center mt-5">
+													<a class="btn login_btn_2 lil" href="dashboard.html">Log In</a>
+												</div>
+												
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+							 
+							<!-- Sign up -->
+							<div class="col-md-6" id="signup" style="display:none;">
+								<div class="form_card">
+									<div class="title">
+										<hr class="hr">
+										<p class="med_text text-center f-36 blue_color">Hello, Good to Have You</p>
+										<p class="text-center light_grey f-14">Let us help you manage your company</p>
+									</div>
+									<div class="form-group login_form p-60 why">
+										<form action="">
+											<div class="form-group mt-4 ">
+												<label for="Country" class="mt-4">Country Code</label>
+												<!-- <select class="form-control bg-light border-0 form-control-lg mb-4" id="sel1" >
+													<option>(+33)&nbsp; &nbsp; France</option>
+													<option>(+1) &nbsp; &nbsp;Canada</option>
+													<option>(+234) &nbsp; &nbsp;Nigeria</option>
+													<option>(+254) &nbsp; &nbsp; Kenya</option>
+												</select> -->
+												<select id="demo-htmlselect" class="form-control bg-light border-0 form-control-lg mb-4 wow" >
+														
+														<option value="0" data-imagesrc="https://image.flaticon.com/icons/svg/580/580969.svg"
+														><span>(+234)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Nigeria</span></option>
+
+														<option value="1" data-imagesrc="https://image.flaticon.com/icons/svg/580/580944.svg" class="imh"
+															><span>(+212)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Morocco</span></option>
+
+															<option value="2" data-imagesrc="https://image.flaticon.com/icons/svg/580/580869.svg"
+															><span>(+213)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Algeria</span></option>
+															
+															<option value="3" data-imagesrc="https://image.flaticon.com/icons/svg/330/330485.svg"
+															><span>(+27)</span>&nbsp;&nbsp;&nbsp;<span class="wow">South Africa</span></option>
+															
+															<option value="4" data-imagesrc="https://image.flaticon.com/icons/svg/580/580959.svg"
+															><span>(+230)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Mauritius</span></option>
+	
+															<option value="5" data-imagesrc="https://image.flaticon.com/icons/svg/330/330647.svg" class="imh"
+															><span>(+238)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Cape Verde</span></option>
+															
+	
+														<option value="6" data-imagesrc="https://image.flaticon.com/icons/svg/330/330636.svg"
+														><span>(+216)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Tunisia</span></option>
+														
+														
+												<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330680.svg"
+														><span>(+251)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Ethiopia</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330432.svg"
+														><span>(+248)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Seychelles</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330443.svg"
+														><span>(+261)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Madagascar</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330528.svg"
+														><span>(+243)</span>&nbsp;&nbsp;&nbsp;<span class="wow">DRC Congo</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/581/581037.svg"
+														><span>(+256)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Uganda</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330618.svg"
+														><span>(+254)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Kenya</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330441.svg"
+														><span>(+249)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Sudan</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330454.svg"
+														><span>(+218)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Libya</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/580/580950.svg"
+														><span>(+223)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Mali</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330679.svg"
+														><span>(+255)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Tanzania</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330674.svg"
+														><span>(+263)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Zimbabwe</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330632.svg"
+														><span>(+233)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Ghana</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330580.svg"
+														><span>(+237)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Cameroon</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330458.svg"
+														><span>(+221)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Senegal</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330620.svg"
+														><span>(+291)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Eritrea</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330595.svg"
+														><span>(+226)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Burkina faso</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330524.svg"
+														><span>(+225)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Ivory Coast</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330516.svg"
+														><span>(+231)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Liberia</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330623.svg"
+														><span>(+264)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Namibia</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330568.svg"
+														><span>(+244)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Angola</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330602.svg"
+														><span>(+252)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Somalia</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330479.svg"
+														><span>(+250)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Rwanda</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330589.svg"
+														><span>(+258)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Mozambique</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330619.svg"
+														><span>(+235)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Chad</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330496.svg"
+														><span>(+224)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Guniea</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330463.svg"
+														><span>(+227)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Niger</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330626.svg"
+														><span>(+241)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Gabon</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330617.svg"
+														><span>(+253)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Djibouti</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330539.svg"
+														><span>(+220)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Gambia</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330612.svg"
+														><span>(+228)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Togo</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330593.svg"
+														><span>(+232)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Sierra Leone</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330635.svg"
+														><span>(+222)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Mauritania</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330559.svg"
+														><span>(+267)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Botswana</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330625.svg"
+														><span>(+229)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Benin</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330653.svg"
+														><span>(+260)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Zambia</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330471.svg"
+														><span>(+265)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Malawi</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330628.svg"
+														><span>(+257)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Burundi</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330509.svg"
+														><span>(+266)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Lesotho</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330531.svg"
+														><span>(+268)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Swaziland</span></option>
+
+														<option value="7" data-imagesrc="https://image.flaticon.com/icons/svg/330/330656.svg"
+														><span>(+269)</span>&nbsp;&nbsp;&nbsp;<span class="wow">Comoros</span></option>
+
+													
+																
+													</select>
+												
+													
+											</div>
+											<label for="">Phone Number</label>
+											<br>
+											<input type="teCxt" class="form-control h-47 green-caret" required="">
+
+											
+											<div class="form-group">
+												<div class="checkbox">
+													<label class="control control-checkbox green_color">
+											            I agree to terms and conditions 
+											            <input type="checkbox" checked="checked" />
+											            <div class="control_indicator"></div>
+											        </label>
+													
+												</div>
+											</div>
+												
+												<div class="buttons text-center mt-5">
+													<a class="btn login_btn_2 lil" onclick="otp()" style="color:#FAFAFA;">Sign Up</a>
+												</div>
+												
+										</form>
+									</div>
+								</div>
+							</div>
+
 						</div>
 					</div>
 				</div>
@@ -125,6 +375,53 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
+<script>
+	var x = document.getElementById('login');
+	 var y = document.getElementById('signup');
+	 var z = document.getElementById('otp')
+	 var a = document.getElementById('loginbtn');
+	 var b = document.getElementById('signupbtn');
+	 a.style.backgroundColor = '#219653';
+	 b.style.color ='#000';
+	 a.style.color ='#fff';
+	 b.style.borderColor ='#219653';
+	 b.style.backgroundColor = '#FFF';
+
+   function signup(){
+	 x.style.display = 'none';
+	 y.style.display = 'block';
+	 z.style.display = 'none';
+	 b.style.backgroundColor = '#219653';
+	 a.style.backgroundColor = '#FFFFFF';
+	 b.style.color ='#FFF';
+	 a.style.color ='#000';
+
+   }
+
+   function login(){
+	 x.style.display = 'block';
+	 y.style.display = 'none';
+	 z.style.display = 'none';
+	 b.style.backgroundColor = '#FFF';
+	 a.style.backgroundColor = '#219653';
+	 b.style.color ='#000';
+	 a.style.color ='#fff';
+	 b.style.borderColor ='#219653';
+	 
+   }
+
+   function otp(){
+	   x.style.display = 'none';
+	 y.style.display = 'none';
+	 z.style.display = 'block';
+	 b.style.backgroundColor = '#FFF';
+	 a.style.backgroundColor = '#219653';
+	 b.style.color ='#FFF';
+	 a.style.color ='#000';
+
+   }
+</script>
 
 </html>
 

@@ -10,6 +10,15 @@
 .footer-div-1-col-2{
 	padding-top: 3%;
 }
+
+.foot{
+	margin-top:-2%;
+}
+
+.foot_h{
+	margin-top:-1%;
+	font-size: 15px;
+}
 .subscribe-text-1{
 	font-size: 2.5em;
 	font-weight: lighter;
